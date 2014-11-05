@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 import java.awt.*;
+import java.util.ArrayList;
 /**
  *
  * @author Hudson
@@ -17,6 +18,26 @@ public class Chimera extends javax.swing.JFrame {
     public Chimera() {
         initComponents();
     }
+    
+    // Animals
+    Animal goldenRetriever = new Animal("Dog", "Golden Retriever", 15);
+    Animal beagle = new Animal("Dog", "Beagle", 20);
+    Animal siamese = new Animal("Cat", "Siamese", 13);
+    Animal calico = new Animal("Cat", "Calico", 14);
+    Animal rabbit = new Animal("Rabbit", "Bunny", 10);
+    Animal elephant = new Animal("Elephant", "African", 100);
+    Animal blackBear = new Animal("Bear", "Black Bear", 80);
+    Animal polarBear = new Animal("Bear", "Polar Bear", 90);
+    
+    // current state
+    ChimeraCreation current = 
+            new ChimeraCreation(goldenRetriever,
+                                goldenRetriever,
+                                goldenRetriever,
+                                45,
+                                "Docile",
+                                "Medium",
+                                new ArrayList());
     
     /**
      * This method is called from within the constructor to initialize the form.
@@ -483,110 +504,133 @@ public class Chimera extends javax.swing.JFrame {
     }//GEN-LAST:event_ChangeTorsoRightButtonActionPerformed
 
     private void DogButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DogButtonMouseClicked
-        this.switchToDesignPanel("Dog");
+        this.switchToDesignPanel(goldenRetriever);
     }//GEN-LAST:event_DogButtonMouseClicked
 
     private void CatButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CatButtonMouseClicked
-        this.switchToDesignPanel("Cat");
+        this.switchToDesignPanel(calico);
     }//GEN-LAST:event_CatButtonMouseClicked
 
     private void RabbitButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RabbitButtonMouseClicked
-        this.switchToDesignPanel("Rabbit");
+        this.switchToDesignPanel(rabbit);
     }//GEN-LAST:event_RabbitButtonMouseClicked
 
     private void ElephantButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ElephantButtonMouseClicked
-        this.switchToDesignPanel("Elephant");
+        this.switchToDesignPanel(elephant);
     }//GEN-LAST:event_ElephantButtonMouseClicked
 
     private void BearButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BearButtonMouseClicked
-        this.switchToDesignPanel("Bear");
+        this.switchToDesignPanel(blackBear);
     }//GEN-LAST:event_BearButtonMouseClicked
 
     private void ChangeHeadLeftButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ChangeHeadLeftButtonMouseClicked
-        String animal = this.cycleAnimals(AnimalViewHeadLabel.getText(), "Backwards");
-        AnimalViewHeadLabel.setText(animal);
+        Animal animal = this.cycleAnimals(current.head, "Backwards");
+        current.head = animal;
+        AnimalViewHeadLabel.setText(animal.name);
+        headChoiceLabel.setText(animal.name);
+        headPriceLabel.setText(Integer.toString(animal.price));
     }//GEN-LAST:event_ChangeHeadLeftButtonMouseClicked
 
     private void ChangeTorsoLeftButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ChangeTorsoLeftButtonMouseClicked
-        String animal = this.cycleAnimals(AnimalViewTorsoLabel.getText(), "Backwards");
-        AnimalViewTorsoLabel.setText(animal);
+        Animal animal = this.cycleAnimals(current.torso, "Backwards");
+        current.torso = animal;
+        AnimalViewTorsoLabel.setText(animal.name);
+        torsoChoiceLabel.setText(animal.name);
+        torsoPriceLabel.setText(Integer.toString(animal.price));
     }//GEN-LAST:event_ChangeTorsoLeftButtonMouseClicked
 
     private void ChangeLegsLeftButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ChangeLegsLeftButtonMouseClicked
-        String animal = this.cycleAnimals(AnimalViewLegsLabel.getText(), "Backwards");
-        AnimalViewLegsLabel.setText(animal);
+        Animal animal = this.cycleAnimals(current.legs, "Backwards");
+        current.legs = animal;
+        AnimalViewLegsLabel.setText(animal.name);
+        legsChoiceLabel.setText(animal.name);
+        legsPriceLabel.setText(Integer.toString(animal.price));
     }//GEN-LAST:event_ChangeLegsLeftButtonMouseClicked
 
     private void ChangeHeadRightButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ChangeHeadRightButtonMouseClicked
-        String animal = this.cycleAnimals(AnimalViewHeadLabel.getText(), "Forwards");
-        AnimalViewHeadLabel.setText(animal);
+        Animal animal = this.cycleAnimals(current.head, "Forwards");
+        current.head = animal;
+        AnimalViewHeadLabel.setText(animal.name);
+        headChoiceLabel.setText(animal.name);
+        headPriceLabel.setText(Integer.toString(animal.price));
     }//GEN-LAST:event_ChangeHeadRightButtonMouseClicked
 
     private void ChangeTorsoRightButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ChangeTorsoRightButtonMouseClicked
-        String animal = this.cycleAnimals(AnimalViewTorsoLabel.getText(), "Forwards");
-        AnimalViewTorsoLabel.setText(animal);
+        Animal animal = this.cycleAnimals(current.torso, "Forwards");
+        current.torso = animal;
+        AnimalViewTorsoLabel.setText(animal.name);
+        torsoChoiceLabel.setText(animal.name);
+        torsoPriceLabel.setText(Integer.toString(animal.price));
     }//GEN-LAST:event_ChangeTorsoRightButtonMouseClicked
 
     private void ChangeLegsRightButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ChangeLegsRightButtonMouseClicked
-        String animal = this.cycleAnimals(AnimalViewLegsLabel.getText(), "Forwards");
-        AnimalViewLegsLabel.setText(animal);
+        Animal animal = this.cycleAnimals(current.legs, "Forwards");
+        current.legs = animal;
+        AnimalViewLegsLabel.setText(animal.name);
+        legsChoiceLabel.setText(animal.name);
+        legsPriceLabel.setText(Integer.toString(animal.price));
     }//GEN-LAST:event_ChangeLegsRightButtonMouseClicked
 
-    private void switchToDesignPanel(String baseAnimal){
+    private void switchToDesignPanel(Animal baseAnimal){
         CardLayout cl = (CardLayout)(CardPanel.getLayout());
         cl.next(CardPanel);
-        AnimalViewHeadLabel.setText(baseAnimal);
-        AnimalViewTorsoLabel.setText(baseAnimal);
-        AnimalViewLegsLabel.setText(baseAnimal);
-        headChoiceLabel.setText(baseAnimal);
-        headPriceLabel.setText("$15.00");
-        torsoChoiceLabel.setText(baseAnimal);
-        torsoPriceLabel.setText("$15.00");
-        legsChoiceLabel.setText(baseAnimal);
-        legsPriceLabel.setText("$15.00");
+        
+        current.head = baseAnimal;
+        current.torso = baseAnimal;
+        current.legs = baseAnimal;
+        
+        AnimalViewHeadLabel.setText(baseAnimal.name);
+        AnimalViewTorsoLabel.setText(baseAnimal.name);
+        AnimalViewLegsLabel.setText(baseAnimal.name);
+        headChoiceLabel.setText(baseAnimal.name);
+        headPriceLabel.setText(Integer.toString(baseAnimal.price));
+        torsoChoiceLabel.setText(baseAnimal.name);
+        torsoPriceLabel.setText(Integer.toString(baseAnimal.price));
+        legsChoiceLabel.setText(baseAnimal.name);
+        legsPriceLabel.setText(Integer.toString(baseAnimal.price));
     }
     
     // Decides which animal is next in rotation
     // This should probably change from nested switch statements and use 
     // a doubly linked list or something
-    private String cycleAnimals(String current, String direction){
+    private Animal cycleAnimals(Animal current, String direction){
         
-        String result = "";
+        Animal result = goldenRetriever;
         
         if (direction.equals("Forwards")){
-            switch (current){
+            switch (current.name){
                 case "Dog":
-                    result = "Cat";
+                    result = calico;
                     break;
                 case "Cat":
-                    result = "Rabbit";
+                    result = rabbit;
                     break;
                 case "Rabbit":
-                    result = "Elephant";
+                    result = elephant;
                     break;
                 case "Elephant":
-                    result = "Bear";
+                    result = blackBear;
                     break;
                 case "Bear":
-                    result = "Dog";
+                    result = goldenRetriever;
                     break;
             }
         } else if (direction.equals("Backwards")){
-            switch (current){
+            switch (current.name){
                 case "Dog":
-                    result = "Bear";
+                    result = blackBear;
                     break;
                 case "Cat":
-                    result = "Dog";
+                    result = goldenRetriever;
                     break;
                 case "Rabbit":
-                    result = "Cat";
+                    result = calico;
                     break;
                 case "Elephant":
-                    result = "Rabbit";
+                    result = rabbit;
                     break;
                 case "Bear":
-                    result = "Elephant";
+                    result = elephant;
                     break;
             } 
         }
@@ -714,4 +758,60 @@ public class Chimera extends javax.swing.JFrame {
     private javax.swing.JLabel tricksSpaceFiller;
     private javax.swing.JPanel tricksjPanel;
     // End of variables declaration//GEN-END:variables
+
+    // Represents a customa Chimera Creation currently being assembled
+    private class ChimeraCreation{
+        
+        Animal head;
+        Animal torso;
+        Animal legs;
+        int price;
+        String temperament;
+        String energyLevel;
+        ArrayList<Skill> skills;
+        
+        public ChimeraCreation(Animal head, Animal torso, Animal legs, 
+                               int price, String temperament, 
+                               String energyLevel, ArrayList<Skill> skills){
+            this.head = head;
+            this.torso = torso;
+            this.legs = legs;
+            this.price = price;
+            this.temperament = temperament;
+            this.energyLevel = energyLevel;
+            this.skills = skills;
+        }
+        
+    }
+    
+    // Represents an animal that can be selected for a Chimera Creation
+    // body part
+    private class Animal{
+        
+        String name;
+        String breed;
+        int price;
+        
+        public Animal(String name, String breed, int price){
+            this.name = name;
+            this.breed = breed;
+            this.price = price;
+        }
+        
+    }
+    
+    // represents a skill that a Chimera Creation can have
+    private class Skill{
+        
+        String name;
+        int price;
+        String description;
+        
+        public Skill(String name, int price, String description){
+            this.name = name;
+            this.price = price;
+            this.description = description;
+        }
+        
+    }
 }
