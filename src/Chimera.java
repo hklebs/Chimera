@@ -5,9 +5,10 @@
  */
 import java.awt.*;
 import java.util.ArrayList;
+import javax.swing.*;
 /**
  *
- * @author Hudson
+ * @author Hudson and Bryan
  */
 public class Chimera extends javax.swing.JFrame {
 
@@ -34,7 +35,6 @@ public class Chimera extends javax.swing.JFrame {
             new ChimeraCreation(goldenRetriever,
                                 goldenRetriever,
                                 goldenRetriever,
-                                45,
                                 "Docile",
                                 "Medium",
                                 new ArrayList());
@@ -92,18 +92,41 @@ public class Chimera extends javax.swing.JFrame {
         personalityPanel = new javax.swing.JPanel();
         skillsPanel = new javax.swing.JPanel();
         tricksjPanel = new javax.swing.JPanel();
+        jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
         jCheckBox1 = new javax.swing.JCheckBox();
+        jLabel3 = new javax.swing.JLabel();
+        jPanel3 = new javax.swing.JPanel();
         jCheckBox2 = new javax.swing.JCheckBox();
+        jLabel4 = new javax.swing.JLabel();
+        jPanel4 = new javax.swing.JPanel();
         jCheckBox3 = new javax.swing.JCheckBox();
+        jLabel5 = new javax.swing.JLabel();
+        jPanel5 = new javax.swing.JPanel();
         jCheckBox4 = new javax.swing.JCheckBox();
+        jLabel6 = new javax.swing.JLabel();
+        jPanel6 = new javax.swing.JPanel();
         jCheckBox5 = new javax.swing.JCheckBox();
+        jLabel7 = new javax.swing.JLabel();
         trainingPanel = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jCheckBox6 = new javax.swing.JCheckBox();
-        jCheckBox7 = new javax.swing.JCheckBox();
-        jCheckBox8 = new javax.swing.JCheckBox();
-        jCheckBox9 = new javax.swing.JCheckBox();
+        jPanel7 = new javax.swing.JPanel();
+        jLabel8 = new javax.swing.JLabel();
+        jPanel8 = new javax.swing.JPanel();
+        jCheckBox10 = new javax.swing.JCheckBox();
+        jLabel9 = new javax.swing.JLabel();
+        jPanel9 = new javax.swing.JPanel();
+        jCheckBox11 = new javax.swing.JCheckBox();
+        jLabel10 = new javax.swing.JLabel();
+        jPanel10 = new javax.swing.JPanel();
+        jCheckBox12 = new javax.swing.JCheckBox();
+        jLabel11 = new javax.swing.JLabel();
+        jPanel11 = new javax.swing.JPanel();
+        jCheckBox13 = new javax.swing.JCheckBox();
+        jLabel12 = new javax.swing.JLabel();
+        jPanel12 = new javax.swing.JPanel();
+        jCheckBox14 = new javax.swing.JCheckBox();
+        jLabel13 = new javax.swing.JLabel();
         cartPanel = new javax.swing.JPanel();
         cartScrollPanel = new javax.swing.JScrollPane();
         itemsPanel = new javax.swing.JPanel();
@@ -124,12 +147,11 @@ public class Chimera extends javax.swing.JFrame {
         legsPriceLabel = new javax.swing.JLabel();
         CartTricksPanel = new javax.swing.JPanel();
         tricksLabel = new javax.swing.JLabel();
-        tricksSpaceFiller = new javax.swing.JLabel();
-        tricksChoiceLabel = new javax.swing.JLabel();
         tricksPriceLabel = new javax.swing.JLabel();
+        tricksListPanel = new javax.swing.JPanel();
         totalPanel = new javax.swing.JPanel();
         totalLabel = new javax.swing.JLabel();
-        totalTextField = new javax.swing.JTextField();
+        totalPriceLabel = new javax.swing.JLabel();
 
         personalityDialog.setTitle("Personality Chooser");
         personalityDialog.setBounds(new java.awt.Rectangle(0, 0, 120, 40));
@@ -326,66 +348,133 @@ public class Chimera extends javax.swing.JFrame {
         personalityPanel.setLayout(new java.awt.BorderLayout());
         jTabbedPane1.addTab("Personality", personalityPanel);
 
-        skillsPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 80, 5));
+        skillsPanel.setLayout(new java.awt.GridLayout(1, 2));
 
-        tricksjPanel.setLayout(new java.awt.GridLayout(6, 0));
+        tricksjPanel.setLayout(new java.awt.GridLayout(6, 1));
 
         jLabel1.setText("Tricks");
-        tricksjPanel.add(jLabel1);
+        jPanel1.add(jLabel1);
+
+        tricksjPanel.add(jPanel1);
+
+        jPanel2.setLayout(new javax.swing.BoxLayout(jPanel2, javax.swing.BoxLayout.LINE_AXIS));
 
         jCheckBox1.setText("Sit");
-        jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox1ActionPerformed(evt);
-            }
-        });
-        tricksjPanel.add(jCheckBox1);
+        jPanel2.add(jCheckBox1);
 
-        jCheckBox2.setText("Stand");
+        jLabel3.setText("jLabel3");
+        jPanel2.add(jLabel3);
+
+        tricksjPanel.add(jPanel2);
+
+        jPanel3.setLayout(new javax.swing.BoxLayout(jPanel3, javax.swing.BoxLayout.LINE_AXIS));
+
+        jCheckBox2.setText("Stay");
         jCheckBox2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox2ActionPerformed(evt);
             }
         });
-        tricksjPanel.add(jCheckBox2);
+        jPanel3.add(jCheckBox2);
 
-        jCheckBox3.setText("Rollover");
-        tricksjPanel.add(jCheckBox3);
+        jLabel4.setText("jLabel4");
+        jPanel3.add(jLabel4);
 
-        jCheckBox4.setText("Come");
-        tricksjPanel.add(jCheckBox4);
+        tricksjPanel.add(jPanel3);
 
-        jCheckBox5.setText("Stay");
-        tricksjPanel.add(jCheckBox5);
+        jPanel4.setLayout(new javax.swing.BoxLayout(jPanel4, javax.swing.BoxLayout.LINE_AXIS));
+
+        jCheckBox3.setText("Come");
+        jPanel4.add(jCheckBox3);
+
+        jLabel5.setText("jLabel5");
+        jPanel4.add(jLabel5);
+
+        tricksjPanel.add(jPanel4);
+
+        jPanel5.setLayout(new javax.swing.BoxLayout(jPanel5, javax.swing.BoxLayout.LINE_AXIS));
+
+        jCheckBox4.setText("Shake Hands");
+        jPanel5.add(jCheckBox4);
+
+        jLabel6.setText("jLabel6");
+        jPanel5.add(jLabel6);
+
+        tricksjPanel.add(jPanel5);
+
+        jPanel6.setLayout(new javax.swing.BoxLayout(jPanel6, javax.swing.BoxLayout.LINE_AXIS));
+
+        jCheckBox5.setText("Play Dead");
+        jPanel6.add(jCheckBox5);
+
+        jLabel7.setText("jLabel7");
+        jPanel6.add(jLabel7);
+
+        tricksjPanel.add(jPanel6);
 
         skillsPanel.add(tricksjPanel);
 
-        trainingPanel.setLayout(new java.awt.GridLayout(6, 0));
+        trainingPanel.setLayout(new java.awt.GridLayout(6, 1));
 
-        jLabel2.setText("Training");
-        trainingPanel.add(jLabel2);
+        jLabel8.setText("Training");
+        jPanel7.add(jLabel8);
 
-        jCheckBox6.setText("Agility");
-        jCheckBox6.addActionListener(new java.awt.event.ActionListener() {
+        trainingPanel.add(jPanel7);
+
+        jPanel8.setLayout(new javax.swing.BoxLayout(jPanel8, javax.swing.BoxLayout.LINE_AXIS));
+
+        jCheckBox10.setText("Therapy");
+        jCheckBox10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox6ActionPerformed(evt);
+                jCheckBox10ActionPerformed(evt);
             }
         });
-        trainingPanel.add(jCheckBox6);
+        jPanel8.add(jCheckBox10);
 
-        jCheckBox7.setText("Therapy");
-        jCheckBox7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox7ActionPerformed(evt);
-            }
-        });
-        trainingPanel.add(jCheckBox7);
+        jLabel9.setText("jLabel9");
+        jPanel8.add(jLabel9);
 
-        jCheckBox8.setText("Guide");
-        trainingPanel.add(jCheckBox8);
+        trainingPanel.add(jPanel8);
 
-        jCheckBox9.setText("Hearing");
-        trainingPanel.add(jCheckBox9);
+        jPanel9.setLayout(new javax.swing.BoxLayout(jPanel9, javax.swing.BoxLayout.LINE_AXIS));
+
+        jCheckBox11.setText("Agility");
+        jPanel9.add(jCheckBox11);
+
+        jLabel10.setText("jLabel10");
+        jPanel9.add(jLabel10);
+
+        trainingPanel.add(jPanel9);
+
+        jPanel10.setLayout(new javax.swing.BoxLayout(jPanel10, javax.swing.BoxLayout.LINE_AXIS));
+
+        jCheckBox12.setText("Seeing");
+        jPanel10.add(jCheckBox12);
+
+        jLabel11.setText("jLabel11");
+        jPanel10.add(jLabel11);
+
+        trainingPanel.add(jPanel10);
+
+        jPanel11.setLayout(new javax.swing.BoxLayout(jPanel11, javax.swing.BoxLayout.LINE_AXIS));
+
+        jCheckBox13.setText("Comfort");
+        jPanel11.add(jCheckBox13);
+
+        jLabel12.setText("jLabel12");
+        jPanel11.add(jLabel12);
+
+        trainingPanel.add(jPanel11);
+
+        jPanel12.setLayout(new javax.swing.BoxLayout(jPanel12, javax.swing.BoxLayout.LINE_AXIS));
+
+        jCheckBox14.setText("jCheckBox14");
+        jPanel12.add(jCheckBox14);
+
+        jLabel13.setText("jLabel13");
+        jPanel12.add(jLabel13);
+
+        trainingPanel.add(jPanel12);
 
         skillsPanel.add(trainingPanel);
 
@@ -438,11 +527,12 @@ public class Chimera extends javax.swing.JFrame {
 
         tricksLabel.setText("Tricks:");
         CartTricksPanel.add(tricksLabel);
-        CartTricksPanel.add(tricksSpaceFiller);
-        CartTricksPanel.add(tricksChoiceLabel);
 
         tricksPriceLabel.setText("$0.00");
         CartTricksPanel.add(tricksPriceLabel);
+
+        tricksListPanel.setLayout(new java.awt.GridLayout(10, 1));
+        CartTricksPanel.add(tricksListPanel);
 
         itemsPanel.add(CartTricksPanel);
 
@@ -455,14 +545,8 @@ public class Chimera extends javax.swing.JFrame {
         totalLabel.setText("Total:");
         totalPanel.add(totalLabel);
 
-        totalTextField.setEditable(false);
-        totalTextField.setText("$0.00");
-        totalTextField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                totalTextFieldActionPerformed(evt);
-            }
-        });
-        totalPanel.add(totalTextField);
+        totalPriceLabel.setText("jLabel3");
+        totalPanel.add(totalPriceLabel);
 
         cartPanel.add(totalPanel, java.awt.BorderLayout.PAGE_END);
 
@@ -474,26 +558,6 @@ public class Chimera extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void totalTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_totalTextFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_totalTextFieldActionPerformed
-
-    private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jCheckBox1ActionPerformed
-
-    private void jCheckBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jCheckBox2ActionPerformed
-
-    private void jCheckBox6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jCheckBox6ActionPerformed
-
-    private void jCheckBox7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jCheckBox7ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         personalityDialog.dispose();
@@ -528,7 +592,8 @@ public class Chimera extends javax.swing.JFrame {
         current.head = animal;
         AnimalViewHeadLabel.setText(animal.name);
         headChoiceLabel.setText(animal.name);
-        headPriceLabel.setText(Integer.toString(animal.price));
+        headPriceLabel.setText(formatPriceString(animal.price));
+        this.setTotal();
     }//GEN-LAST:event_ChangeHeadLeftButtonMouseClicked
 
     private void ChangeTorsoLeftButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ChangeTorsoLeftButtonMouseClicked
@@ -536,7 +601,8 @@ public class Chimera extends javax.swing.JFrame {
         current.torso = animal;
         AnimalViewTorsoLabel.setText(animal.name);
         torsoChoiceLabel.setText(animal.name);
-        torsoPriceLabel.setText(Integer.toString(animal.price));
+        torsoPriceLabel.setText(formatPriceString(animal.price));
+        this.setTotal();
     }//GEN-LAST:event_ChangeTorsoLeftButtonMouseClicked
 
     private void ChangeLegsLeftButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ChangeLegsLeftButtonMouseClicked
@@ -544,7 +610,8 @@ public class Chimera extends javax.swing.JFrame {
         current.legs = animal;
         AnimalViewLegsLabel.setText(animal.name);
         legsChoiceLabel.setText(animal.name);
-        legsPriceLabel.setText(Integer.toString(animal.price));
+        legsPriceLabel.setText(formatPriceString(animal.price));
+        this.setTotal();
     }//GEN-LAST:event_ChangeLegsLeftButtonMouseClicked
 
     private void ChangeHeadRightButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ChangeHeadRightButtonMouseClicked
@@ -552,7 +619,8 @@ public class Chimera extends javax.swing.JFrame {
         current.head = animal;
         AnimalViewHeadLabel.setText(animal.name);
         headChoiceLabel.setText(animal.name);
-        headPriceLabel.setText(Integer.toString(animal.price));
+        headPriceLabel.setText(formatPriceString(animal.price));
+        this.setTotal();
     }//GEN-LAST:event_ChangeHeadRightButtonMouseClicked
 
     private void ChangeTorsoRightButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ChangeTorsoRightButtonMouseClicked
@@ -560,7 +628,8 @@ public class Chimera extends javax.swing.JFrame {
         current.torso = animal;
         AnimalViewTorsoLabel.setText(animal.name);
         torsoChoiceLabel.setText(animal.name);
-        torsoPriceLabel.setText(Integer.toString(animal.price));
+        torsoPriceLabel.setText(formatPriceString(animal.price));
+        this.setTotal();
     }//GEN-LAST:event_ChangeTorsoRightButtonMouseClicked
 
     private void ChangeLegsRightButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ChangeLegsRightButtonMouseClicked
@@ -568,8 +637,17 @@ public class Chimera extends javax.swing.JFrame {
         current.legs = animal;
         AnimalViewLegsLabel.setText(animal.name);
         legsChoiceLabel.setText(animal.name);
-        legsPriceLabel.setText(Integer.toString(animal.price));
+        legsPriceLabel.setText(formatPriceString(animal.price));
+        this.setTotal();
     }//GEN-LAST:event_ChangeLegsRightButtonMouseClicked
+
+    private void jCheckBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox2ActionPerformed
+
+    private void jCheckBox10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox10ActionPerformed
 
     private void switchToDesignPanel(Animal baseAnimal){
         CardLayout cl = (CardLayout)(CardPanel.getLayout());
@@ -579,15 +657,16 @@ public class Chimera extends javax.swing.JFrame {
         current.torso = baseAnimal;
         current.legs = baseAnimal;
         
-        AnimalViewHeadLabel.setText(baseAnimal.name);
-        AnimalViewTorsoLabel.setText(baseAnimal.name);
-        AnimalViewLegsLabel.setText(baseAnimal.name);
-        headChoiceLabel.setText(baseAnimal.name);
-        headPriceLabel.setText(Integer.toString(baseAnimal.price));
-        torsoChoiceLabel.setText(baseAnimal.name);
-        torsoPriceLabel.setText(Integer.toString(baseAnimal.price));
-        legsChoiceLabel.setText(baseAnimal.name);
-        legsPriceLabel.setText(Integer.toString(baseAnimal.price));
+        AnimalViewHeadLabel.setText(current.head.name);
+        AnimalViewTorsoLabel.setText(current.torso.name);
+        AnimalViewLegsLabel.setText(current.legs.name);
+        headChoiceLabel.setText(current.head.name);
+        headPriceLabel.setText(formatPriceString(current.head.price));
+        torsoChoiceLabel.setText(current.torso.name);
+        torsoPriceLabel.setText(formatPriceString(current.torso.price));
+        legsChoiceLabel.setText(current.legs.name);
+        legsPriceLabel.setText(formatPriceString(current.legs.price));
+        this.setTotal();
     }
     
     // Decides which animal is next in rotation
@@ -637,6 +716,39 @@ public class Chimera extends javax.swing.JFrame {
         
         return result;
         
+    }
+    
+    // Takes price integer and returns string in dollar format
+    private String formatPriceString(int price){
+        String amt = Integer.toString(price);
+        return "$" + amt + ".00";
+    }
+    
+    // takes a price string and returns integer of equivalent value
+    private int priceStringToInt(String price){
+        String[] parts = price.split(".");
+        return Integer.parseInt(parts[0].split("$")[1]);
+    }
+    
+    //sets the total amount for the current state of the creation
+    private void setTotal(){
+        this.current.computeTotal();
+        totalPriceLabel.setText(formatPriceString(current.price));
+    }
+    
+    private void addSkill(String skillName, int price, String descr){
+        Skill skill = new Skill(skillName, price, descr);
+        current.skills.add(skill);
+    }
+    
+    //sets the list of skills selected for this creation
+    private void setSkills(){
+        if (current.skills.size() > 0){
+            for (Skill skill : current.skills) {
+                JLabel label = new JLabel(skill.name);
+                tricksListPanel.add(label);
+            }
+        }
     }
     
     /**
@@ -723,16 +835,39 @@ public class Chimera extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JCheckBox jCheckBox1;
+    private javax.swing.JCheckBox jCheckBox10;
+    private javax.swing.JCheckBox jCheckBox11;
+    private javax.swing.JCheckBox jCheckBox12;
+    private javax.swing.JCheckBox jCheckBox13;
+    private javax.swing.JCheckBox jCheckBox14;
     private javax.swing.JCheckBox jCheckBox2;
     private javax.swing.JCheckBox jCheckBox3;
     private javax.swing.JCheckBox jCheckBox4;
     private javax.swing.JCheckBox jCheckBox5;
-    private javax.swing.JCheckBox jCheckBox6;
-    private javax.swing.JCheckBox jCheckBox7;
-    private javax.swing.JCheckBox jCheckBox8;
-    private javax.swing.JCheckBox jCheckBox9;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel10;
+    private javax.swing.JPanel jPanel11;
+    private javax.swing.JPanel jPanel12;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
+    private javax.swing.JPanel jPanel8;
+    private javax.swing.JPanel jPanel9;
     private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JRadioButton jRadioButton3;
     private javax.swing.JTabbedPane jTabbedPane1;
@@ -750,12 +885,11 @@ public class Chimera extends javax.swing.JFrame {
     private javax.swing.JLabel torsoSpaceFiller;
     private javax.swing.JLabel totalLabel;
     private javax.swing.JPanel totalPanel;
-    private javax.swing.JTextField totalTextField;
+    private javax.swing.JLabel totalPriceLabel;
     private javax.swing.JPanel trainingPanel;
-    private javax.swing.JLabel tricksChoiceLabel;
     private javax.swing.JLabel tricksLabel;
+    private javax.swing.JPanel tricksListPanel;
     private javax.swing.JLabel tricksPriceLabel;
-    private javax.swing.JLabel tricksSpaceFiller;
     private javax.swing.JPanel tricksjPanel;
     // End of variables declaration//GEN-END:variables
 
@@ -771,15 +905,34 @@ public class Chimera extends javax.swing.JFrame {
         ArrayList<Skill> skills;
         
         public ChimeraCreation(Animal head, Animal torso, Animal legs, 
-                               int price, String temperament, 
-                               String energyLevel, ArrayList<Skill> skills){
+                               String temperament, String energyLevel, 
+                               ArrayList<Skill> skills){
             this.head = head;
             this.torso = torso;
             this.legs = legs;
-            this.price = price;
+            this.price = 0;
             this.temperament = temperament;
             this.energyLevel = energyLevel;
             this.skills = skills;
+            
+            computeTotal();
+        }
+        
+        // computes total for creation based on price of head, torso, legs,
+        // and skills
+        public void computeTotal(){
+            this.price = this.head.price + this.torso.price + this.legs.price;
+        }
+        
+        // computes the price of all the skills chosen for the creation
+        private int computeSkillsTotal(){
+            int total = 0;
+            if (this.skills.size() > 0){
+                for (Skill skill : this.skills) {
+                    total += skill.price;
+                }
+            }
+            return total;
         }
         
     }
