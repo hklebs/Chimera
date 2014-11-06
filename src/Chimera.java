@@ -48,13 +48,10 @@ public class Chimera extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        personalityDialog = new javax.swing.JDialog();
-        jRadioButton3 = new javax.swing.JRadioButton();
-        docileRadioButton = new javax.swing.JRadioButton();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jButton3 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         personalityButtonGroup = new javax.swing.ButtonGroup();
+        paymentButtonGroup = new javax.swing.ButtonGroup();
+        jOptionPane1 = new javax.swing.JOptionPane();
         CardPanel = new javax.swing.JPanel();
         ChimeraEntryPanel = new javax.swing.JPanel();
         ChimeraWelcomePanel = new javax.swing.JPanel();
@@ -72,6 +69,57 @@ public class Chimera extends javax.swing.JFrame {
         ElephantButton = new javax.swing.JButton();
         BearButton = new javax.swing.JButton();
         ChimeraDesignPanel = new javax.swing.JPanel();
+        cartPanel = new javax.swing.JPanel();
+        cartScrollPanel = new javax.swing.JScrollPane();
+        itemsPanel = new javax.swing.JPanel();
+        CartHeadPanel = new javax.swing.JPanel();
+        jPanel29 = new javax.swing.JPanel();
+        headLabel = new javax.swing.JLabel();
+        jPanel30 = new javax.swing.JPanel();
+        headChoiceLabel = new javax.swing.JLabel();
+        headPriceLabel = new javax.swing.JLabel();
+        jPanel31 = new javax.swing.JPanel();
+        headBreedTitleLabel = new javax.swing.JLabel();
+        headBreedLabel = new javax.swing.JLabel();
+        CartTorsoPanel = new javax.swing.JPanel();
+        jPanel32 = new javax.swing.JPanel();
+        torsoLabel = new javax.swing.JLabel();
+        jPanel33 = new javax.swing.JPanel();
+        torsoChoiceLabel = new javax.swing.JLabel();
+        torsoPriceLabel = new javax.swing.JLabel();
+        jPanel34 = new javax.swing.JPanel();
+        torsoBreedTitleLabel = new javax.swing.JLabel();
+        torsoBreedLabel = new javax.swing.JLabel();
+        CartLegsPanel = new javax.swing.JPanel();
+        jPanel35 = new javax.swing.JPanel();
+        legsLabel = new javax.swing.JLabel();
+        jPanel36 = new javax.swing.JPanel();
+        legsChoiceLabel = new javax.swing.JLabel();
+        legsPriceLabel = new javax.swing.JLabel();
+        jPanel37 = new javax.swing.JPanel();
+        legsBreedTitleLabel = new javax.swing.JLabel();
+        legsBreedLabel = new javax.swing.JLabel();
+        CartPersonalityPanel = new javax.swing.JPanel();
+        jPanel51 = new javax.swing.JPanel();
+        jLabel9 = new javax.swing.JLabel();
+        jPanel52 = new javax.swing.JPanel();
+        jLabel10 = new javax.swing.JLabel();
+        personalityTemperamentLabel = new javax.swing.JLabel();
+        jPanel53 = new javax.swing.JPanel();
+        jLabel12 = new javax.swing.JLabel();
+        personalityEnergyLevelLabel = new javax.swing.JLabel();
+        CartTricksPanel = new javax.swing.JPanel();
+        jPanel38 = new javax.swing.JPanel();
+        tricksLabel = new javax.swing.JLabel();
+        jPanel39 = new javax.swing.JPanel();
+        tricksPriceLabel = new javax.swing.JLabel();
+        totalPanel = new javax.swing.JPanel();
+        jButton7 = new javax.swing.JButton();
+        jPanel25 = new javax.swing.JPanel();
+        totalLabel = new javax.swing.JLabel();
+        totalPriceLabel = new javax.swing.JLabel();
+        animalPanel = new javax.swing.JPanel();
+        customizationPanel = new javax.swing.JPanel();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         designPanel = new javax.swing.JPanel();
         AnimalViewPanel = new javax.swing.JPanel();
@@ -193,82 +241,86 @@ public class Chimera extends javax.swing.JFrame {
         breedLegsRightButton = new javax.swing.JButton();
         jPanel28 = new javax.swing.JPanel();
         breedLegsLabel = new javax.swing.JLabel();
-        cartPanel = new javax.swing.JPanel();
-        cartScrollPanel = new javax.swing.JScrollPane();
-        itemsPanel = new javax.swing.JPanel();
-        CartHeadPanel = new javax.swing.JPanel();
-        jPanel29 = new javax.swing.JPanel();
-        headLabel = new javax.swing.JLabel();
-        jPanel30 = new javax.swing.JPanel();
-        headChoiceLabel = new javax.swing.JLabel();
-        headPriceLabel = new javax.swing.JLabel();
-        jPanel31 = new javax.swing.JPanel();
-        headBreedTitleLabel = new javax.swing.JLabel();
-        headBreedLabel = new javax.swing.JLabel();
-        CartTorsoPanel = new javax.swing.JPanel();
-        jPanel32 = new javax.swing.JPanel();
-        torsoLabel = new javax.swing.JLabel();
-        jPanel33 = new javax.swing.JPanel();
-        torsoChoiceLabel = new javax.swing.JLabel();
-        torsoPriceLabel = new javax.swing.JLabel();
-        jPanel34 = new javax.swing.JPanel();
-        torsoBreedTitleLabel = new javax.swing.JLabel();
-        torsoBreedLabel = new javax.swing.JLabel();
-        CartLegsPanel = new javax.swing.JPanel();
-        jPanel35 = new javax.swing.JPanel();
-        legsLabel = new javax.swing.JLabel();
-        jPanel36 = new javax.swing.JPanel();
-        legsChoiceLabel = new javax.swing.JLabel();
-        legsPriceLabel = new javax.swing.JLabel();
-        jPanel37 = new javax.swing.JPanel();
-        legsBreedTitleLabel = new javax.swing.JLabel();
-        legsBreedLabel = new javax.swing.JLabel();
-        CartPersonalityPanel = new javax.swing.JPanel();
-        jPanel51 = new javax.swing.JPanel();
-        jLabel9 = new javax.swing.JLabel();
-        jPanel52 = new javax.swing.JPanel();
-        jLabel10 = new javax.swing.JLabel();
-        personalityTemperamentLabel = new javax.swing.JLabel();
-        jPanel53 = new javax.swing.JPanel();
-        jLabel12 = new javax.swing.JLabel();
-        personalityEnergyLevelLabel = new javax.swing.JLabel();
-        CartTricksPanel = new javax.swing.JPanel();
-        jPanel38 = new javax.swing.JPanel();
-        tricksLabel = new javax.swing.JLabel();
-        jPanel39 = new javax.swing.JPanel();
-        tricksPriceLabel = new javax.swing.JLabel();
-        totalPanel = new javax.swing.JPanel();
-        jButton7 = new javax.swing.JButton();
-        jPanel25 = new javax.swing.JPanel();
-        totalLabel = new javax.swing.JLabel();
-        totalPriceLabel = new javax.swing.JLabel();
-
-        personalityDialog.setTitle("Personality Chooser");
-        personalityDialog.setBounds(new java.awt.Rectangle(0, 0, 120, 40));
-        personalityDialog.getContentPane().setLayout(new java.awt.FlowLayout());
-
-        personalityButtonGroup.add(jRadioButton3);
-        jRadioButton3.setText("Protective");
-        personalityDialog.getContentPane().add(jRadioButton3);
-
-        personalityButtonGroup.add(docileRadioButton);
-        docileRadioButton.setText("Docile");
-        docileRadioButton.setSelected(true);
-        personalityDialog.getContentPane().add(docileRadioButton);
-
-        personalityButtonGroup.add(jRadioButton1);
-        jRadioButton1.setText("Aggressive");
-        personalityDialog.getContentPane().add(jRadioButton1);
-
-        jButton3.setText("Close");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-        personalityDialog.getContentPane().add(jButton3);
-
-        personalityDialog.pack();
+        jPanel54 = new javax.swing.JPanel();
+        backToEntryButton = new javax.swing.JButton();
+        jPanel55 = new javax.swing.JPanel();
+        checkoutPanel = new javax.swing.JPanel();
+        jPanel56 = new javax.swing.JPanel();
+        checkoutEntryScrollPane = new javax.swing.JScrollPane();
+        checkoutEntryPanel = new javax.swing.JPanel();
+        jPanel79 = new javax.swing.JPanel();
+        contactInfoPanel = new javax.swing.JPanel();
+        contactInfoLabelPanel = new javax.swing.JPanel();
+        contactInfoLabel = new javax.swing.JLabel();
+        contactNamePanel = new javax.swing.JPanel();
+        nameLabel = new javax.swing.JLabel();
+        nameInputPanel = new javax.swing.JPanel();
+        firstNameTextField = new javax.swing.JTextField();
+        lastNameTextField = new javax.swing.JTextField();
+        contactEmailPanel = new javax.swing.JPanel();
+        contactEmailLabel = new javax.swing.JLabel();
+        contactEmailTextField = new javax.swing.JTextField();
+        mailingAddressPanel = new javax.swing.JPanel();
+        mailingAddressLabelPanel = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        jPanel61 = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
+        mailingStreetAddressTextField = new javax.swing.JTextField();
+        jPanel60 = new javax.swing.JPanel();
+        jPanel62 = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        mailingCityTextField = new javax.swing.JTextField();
+        jPanel63 = new javax.swing.JPanel();
+        jPanel64 = new javax.swing.JPanel();
+        jLabel6 = new javax.swing.JLabel();
+        mailingStateComboBox = new javax.swing.JComboBox();
+        jPanel65 = new javax.swing.JPanel();
+        jLabel7 = new javax.swing.JLabel();
+        mailingPostalCodeTextField = new javax.swing.JTextField();
+        billingAddressPanel = new javax.swing.JPanel();
+        jPanel59 = new javax.swing.JPanel();
+        jLabel8 = new javax.swing.JLabel();
+        jPanel66 = new javax.swing.JPanel();
+        billingMailingCheckBox = new javax.swing.JCheckBox();
+        jPanel67 = new javax.swing.JPanel();
+        jLabel11 = new javax.swing.JLabel();
+        billingStreetAddressTextField = new javax.swing.JTextField();
+        jPanel68 = new javax.swing.JPanel();
+        jPanel69 = new javax.swing.JPanel();
+        jLabel14 = new javax.swing.JLabel();
+        billingCityTextField = new javax.swing.JTextField();
+        jPanel70 = new javax.swing.JPanel();
+        jPanel71 = new javax.swing.JPanel();
+        jLabel15 = new javax.swing.JLabel();
+        billingStateComboBox = new javax.swing.JComboBox();
+        jPanel72 = new javax.swing.JPanel();
+        jLabel16 = new javax.swing.JLabel();
+        billingPostalCodeTextField = new javax.swing.JTextField();
+        paymentPanel = new javax.swing.JPanel();
+        jPanel74 = new javax.swing.JPanel();
+        jLabel17 = new javax.swing.JLabel();
+        jPanel75 = new javax.swing.JPanel();
+        jRadioButton2 = new javax.swing.JRadioButton();
+        jRadioButton4 = new javax.swing.JRadioButton();
+        jRadioButton5 = new javax.swing.JRadioButton();
+        jRadioButton6 = new javax.swing.JRadioButton();
+        jPanel76 = new javax.swing.JPanel();
+        jLabel18 = new javax.swing.JLabel();
+        nameOnCardTextField = new javax.swing.JTextField();
+        jPanel77 = new javax.swing.JPanel();
+        jPanel73 = new javax.swing.JPanel();
+        jLabel19 = new javax.swing.JLabel();
+        cardNumberTextField = new javax.swing.JTextField();
+        jPanel78 = new javax.swing.JPanel();
+        jLabel20 = new javax.swing.JLabel();
+        jComboBox3 = new javax.swing.JComboBox();
+        cardYearExpireSpinner = new javax.swing.JSpinner();
+        jPanel80 = new javax.swing.JPanel();
+        jPanel81 = new javax.swing.JPanel();
+        completeOrderButton = new javax.swing.JButton();
+        jPanel57 = new javax.swing.JPanel();
+        backToAnimalPanelButton = new javax.swing.JButton();
+        jPanel58 = new javax.swing.JPanel();
 
         jButton2.setText("jButton2");
 
@@ -367,6 +419,250 @@ public class Chimera extends javax.swing.JFrame {
 
         ChimeraDesignPanel.setBackground(new java.awt.Color(255, 255, 255));
         ChimeraDesignPanel.setLayout(new java.awt.BorderLayout());
+
+        cartPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(52, 85, 102), 3));
+        cartPanel.setPreferredSize(new java.awt.Dimension(215, 280));
+        cartPanel.setLayout(new java.awt.BorderLayout());
+
+        cartScrollPanel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 2, true));
+        cartScrollPanel.setMaximumSize(new java.awt.Dimension(160, 220));
+        cartScrollPanel.setPreferredSize(new java.awt.Dimension(160, 220));
+
+        itemsPanel.setBackground(new java.awt.Color(255, 255, 255));
+        itemsPanel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 1, true));
+        itemsPanel.setMaximumSize(new java.awt.Dimension(32767, 350));
+        itemsPanel.setMinimumSize(new java.awt.Dimension(130, 350));
+        itemsPanel.setPreferredSize(new java.awt.Dimension(130, 350));
+        itemsPanel.setLayout(new java.awt.GridLayout(5, 0, 0, 5));
+
+        CartHeadPanel.setBackground(new java.awt.Color(255, 255, 255));
+        CartHeadPanel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 2, true));
+        CartHeadPanel.setMaximumSize(new java.awt.Dimension(92, 51));
+        CartHeadPanel.setLayout(new java.awt.GridLayout(3, 1));
+
+        jPanel29.setBackground(new java.awt.Color(255, 175, 74));
+        jPanel29.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 175, 74), 3, true));
+        jPanel29.setLayout(new java.awt.GridLayout(1, 0));
+
+        headLabel.setBackground(new java.awt.Color(255, 175, 74));
+        headLabel.setFont(new java.awt.Font("Gulim", 0, 18)); // NOI18N
+        headLabel.setText(" Head:");
+        jPanel29.add(headLabel);
+
+        CartHeadPanel.add(jPanel29);
+
+        jPanel30.setLayout(new java.awt.GridLayout(1, 2));
+
+        headChoiceLabel.setBackground(new java.awt.Color(226, 230, 232));
+        headChoiceLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        headChoiceLabel.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jPanel30.add(headChoiceLabel);
+
+        headPriceLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        headPriceLabel.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        headPriceLabel.setText("$0.00");
+        jPanel30.add(headPriceLabel);
+
+        CartHeadPanel.add(jPanel30);
+
+        jPanel31.setLayout(new java.awt.GridLayout(1, 2));
+
+        headBreedTitleLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        headBreedTitleLabel.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        headBreedTitleLabel.setText("  Breed:");
+        jPanel31.add(headBreedTitleLabel);
+
+        headBreedLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        headBreedLabel.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jPanel31.add(headBreedLabel);
+
+        CartHeadPanel.add(jPanel31);
+
+        itemsPanel.add(CartHeadPanel);
+
+        CartTorsoPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 2));
+        CartTorsoPanel.setLayout(new java.awt.GridLayout(3, 1));
+
+        jPanel32.setBackground(new java.awt.Color(255, 175, 74));
+        jPanel32.setLayout(new java.awt.GridLayout(1, 0));
+
+        torsoLabel.setFont(new java.awt.Font("Gulim", 0, 18)); // NOI18N
+        torsoLabel.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        torsoLabel.setText(" Torso:");
+        jPanel32.add(torsoLabel);
+
+        CartTorsoPanel.add(jPanel32);
+
+        jPanel33.setLayout(new java.awt.GridLayout(1, 2));
+
+        torsoChoiceLabel.setBackground(new java.awt.Color(255, 255, 255));
+        torsoChoiceLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        torsoChoiceLabel.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jPanel33.add(torsoChoiceLabel);
+
+        torsoPriceLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        torsoPriceLabel.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        torsoPriceLabel.setText("$0.00");
+        jPanel33.add(torsoPriceLabel);
+
+        CartTorsoPanel.add(jPanel33);
+
+        jPanel34.setLayout(new java.awt.GridLayout(1, 2));
+
+        torsoBreedTitleLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        torsoBreedTitleLabel.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        torsoBreedTitleLabel.setText("  Breed:");
+        jPanel34.add(torsoBreedTitleLabel);
+
+        torsoBreedLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        torsoBreedLabel.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jPanel34.add(torsoBreedLabel);
+
+        CartTorsoPanel.add(jPanel34);
+
+        itemsPanel.add(CartTorsoPanel);
+
+        CartLegsPanel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 2, true));
+        CartLegsPanel.setLayout(new java.awt.GridLayout(3, 1));
+
+        jPanel35.setBackground(new java.awt.Color(255, 175, 74));
+        jPanel35.setLayout(new java.awt.GridLayout(1, 0));
+
+        legsLabel.setBackground(new java.awt.Color(206, 88, 79));
+        legsLabel.setFont(new java.awt.Font("Gulim", 0, 18)); // NOI18N
+        legsLabel.setText(" Legs:");
+        jPanel35.add(legsLabel);
+
+        CartLegsPanel.add(jPanel35);
+
+        jPanel36.setLayout(new java.awt.GridLayout(1, 2));
+
+        legsChoiceLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        legsChoiceLabel.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jPanel36.add(legsChoiceLabel);
+
+        legsPriceLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        legsPriceLabel.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        legsPriceLabel.setText("$0.00");
+        jPanel36.add(legsPriceLabel);
+
+        CartLegsPanel.add(jPanel36);
+
+        jPanel37.setLayout(new java.awt.GridLayout(1, 0));
+
+        legsBreedTitleLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        legsBreedTitleLabel.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        legsBreedTitleLabel.setText("  Breed:");
+        jPanel37.add(legsBreedTitleLabel);
+
+        legsBreedLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        legsBreedLabel.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jPanel37.add(legsBreedLabel);
+
+        CartLegsPanel.add(jPanel37);
+
+        itemsPanel.add(CartLegsPanel);
+
+        CartPersonalityPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 2));
+        CartPersonalityPanel.setLayout(new java.awt.GridLayout(3, 1));
+
+        jPanel51.setBackground(new java.awt.Color(255, 175, 74));
+        jPanel51.setLayout(new java.awt.GridLayout(1, 0));
+
+        jLabel9.setFont(new java.awt.Font("Gulim", 0, 18)); // NOI18N
+        jLabel9.setText(" Personality:");
+        jPanel51.add(jLabel9);
+
+        CartPersonalityPanel.add(jPanel51);
+
+        jPanel52.setLayout(new java.awt.GridLayout(1, 2));
+
+        jLabel10.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        jLabel10.setText("  Temperament:");
+        jPanel52.add(jLabel10);
+
+        personalityTemperamentLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        personalityTemperamentLabel.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jPanel52.add(personalityTemperamentLabel);
+
+        CartPersonalityPanel.add(jPanel52);
+
+        jPanel53.setLayout(new java.awt.GridLayout(1, 2));
+
+        jLabel12.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        jLabel12.setText("  Energy Level:");
+        jPanel53.add(jLabel12);
+
+        personalityEnergyLevelLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        personalityEnergyLevelLabel.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jPanel53.add(personalityEnergyLevelLabel);
+
+        CartPersonalityPanel.add(jPanel53);
+
+        itemsPanel.add(CartPersonalityPanel);
+
+        CartTricksPanel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 2, true));
+        CartTricksPanel.setLayout(new java.awt.GridLayout(3, 1));
+
+        jPanel38.setBackground(new java.awt.Color(255, 175, 74));
+        jPanel38.setLayout(new java.awt.GridLayout(1, 0));
+
+        tricksLabel.setFont(new java.awt.Font("Gulim", 0, 18)); // NOI18N
+        tricksLabel.setText(" Skills:");
+        jPanel38.add(tricksLabel);
+
+        CartTricksPanel.add(jPanel38);
+
+        jPanel39.setLayout(new java.awt.GridLayout(1, 0));
+
+        tricksPriceLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        tricksPriceLabel.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        tricksPriceLabel.setText("$0.00");
+        jPanel39.add(tricksPriceLabel);
+
+        CartTricksPanel.add(jPanel39);
+
+        itemsPanel.add(CartTricksPanel);
+
+        cartScrollPanel.setViewportView(itemsPanel);
+
+        cartPanel.add(cartScrollPanel, java.awt.BorderLayout.CENTER);
+
+        totalPanel.setBackground(new java.awt.Color(52, 85, 102));
+        totalPanel.setPreferredSize(new java.awt.Dimension(150, 70));
+        totalPanel.setLayout(new java.awt.BorderLayout());
+
+        jButton7.setBackground(new java.awt.Color(254, 173, 74));
+        jButton7.setFont(new java.awt.Font("Euphemia UCAS", 0, 18)); // NOI18N
+        jButton7.setText("Checkout");
+        jButton7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton7MouseClicked(evt);
+            }
+        });
+        totalPanel.add(jButton7, java.awt.BorderLayout.PAGE_END);
+
+        jPanel25.setBackground(new java.awt.Color(52, 85, 102));
+
+        totalLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 18)); // NOI18N
+        totalLabel.setForeground(new java.awt.Color(255, 255, 255));
+        totalLabel.setText("Total:");
+        jPanel25.add(totalLabel);
+
+        totalPriceLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 18)); // NOI18N
+        totalPriceLabel.setForeground(new java.awt.Color(255, 255, 255));
+        totalPriceLabel.setText("jLabel3");
+        jPanel25.add(totalPriceLabel);
+
+        totalPanel.add(jPanel25, java.awt.BorderLayout.NORTH);
+
+        cartPanel.add(totalPanel, java.awt.BorderLayout.PAGE_END);
+
+        ChimeraDesignPanel.add(cartPanel, java.awt.BorderLayout.EAST);
+
+        animalPanel.setLayout(new java.awt.CardLayout());
+
+        customizationPanel.setLayout(new java.awt.BorderLayout());
 
         jTabbedPane1.setBackground(new java.awt.Color(255, 255, 255));
         jTabbedPane1.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
@@ -644,7 +940,7 @@ public class Chimera extends javax.swing.JFrame {
 
         tricksjPanel.add(sitPanel);
 
-        stayPanel.setLayout(new java.awt.GridLayout());
+        stayPanel.setLayout(new java.awt.GridLayout(1, 0));
 
         jPanel11.setBackground(new java.awt.Color(166, 166, 166));
         jPanel11.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 25));
@@ -676,7 +972,7 @@ public class Chimera extends javax.swing.JFrame {
 
         tricksjPanel.add(stayPanel);
 
-        comePanel.setLayout(new java.awt.GridLayout());
+        comePanel.setLayout(new java.awt.GridLayout(1, 0));
 
         jPanel15.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 25));
 
@@ -701,7 +997,7 @@ public class Chimera extends javax.swing.JFrame {
 
         tricksjPanel.add(comePanel);
 
-        shakeHandsPanel.setLayout(new java.awt.GridLayout());
+        shakeHandsPanel.setLayout(new java.awt.GridLayout(1, 0));
 
         jPanel17.setBackground(new java.awt.Color(166, 166, 166));
         jPanel17.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 25));
@@ -728,7 +1024,7 @@ public class Chimera extends javax.swing.JFrame {
 
         tricksjPanel.add(shakeHandsPanel);
 
-        playDeadPanel.setLayout(new java.awt.GridLayout());
+        playDeadPanel.setLayout(new java.awt.GridLayout(1, 0));
 
         jPanel19.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 25));
 
@@ -769,7 +1065,7 @@ public class Chimera extends javax.swing.JFrame {
         trainingPanel.add(trainingColumnTitlePanel);
 
         therapyPanel.setBackground(new java.awt.Color(166, 166, 166));
-        therapyPanel.setLayout(new java.awt.GridLayout());
+        therapyPanel.setLayout(new java.awt.GridLayout(1, 0));
 
         jPanel2.setBackground(new java.awt.Color(166, 166, 166));
         jPanel2.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 25));
@@ -796,7 +1092,7 @@ public class Chimera extends javax.swing.JFrame {
 
         trainingPanel.add(therapyPanel);
 
-        agilityPanel.setLayout(new java.awt.GridLayout());
+        agilityPanel.setLayout(new java.awt.GridLayout(1, 0));
 
         jPanel3.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 25));
 
@@ -816,7 +1112,7 @@ public class Chimera extends javax.swing.JFrame {
 
         trainingPanel.add(agilityPanel);
 
-        seeingPanel.setLayout(new java.awt.GridLayout());
+        seeingPanel.setLayout(new java.awt.GridLayout(1, 0));
 
         jPanel5.setBackground(new java.awt.Color(166, 166, 166));
         jPanel5.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 25));
@@ -838,7 +1134,7 @@ public class Chimera extends javax.swing.JFrame {
 
         trainingPanel.add(seeingPanel);
 
-        comfortPanel.setLayout(new java.awt.GridLayout());
+        comfortPanel.setLayout(new java.awt.GridLayout(1, 0));
 
         jPanel7.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 25));
 
@@ -858,7 +1154,7 @@ public class Chimera extends javax.swing.JFrame {
 
         trainingPanel.add(comfortPanel);
 
-        jPanel12.setLayout(new java.awt.GridLayout());
+        jPanel12.setLayout(new java.awt.GridLayout(1, 0));
 
         jPanel21.setBackground(new java.awt.Color(166, 166, 166));
 
@@ -970,242 +1266,357 @@ public class Chimera extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Breed", breedPanel);
 
-        ChimeraDesignPanel.add(jTabbedPane1, java.awt.BorderLayout.CENTER);
+        customizationPanel.add(jTabbedPane1, java.awt.BorderLayout.CENTER);
 
-        cartPanel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(52, 85, 102), 3, true));
-        cartPanel.setPreferredSize(new java.awt.Dimension(215, 280));
-        cartPanel.setLayout(new java.awt.BorderLayout());
+        jPanel54.setBackground(new java.awt.Color(52, 85, 102));
+        jPanel54.setLayout(new java.awt.BorderLayout());
 
-        cartScrollPanel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 2, true));
-        cartScrollPanel.setMaximumSize(new java.awt.Dimension(160, 220));
-        cartScrollPanel.setPreferredSize(new java.awt.Dimension(160, 220));
+        backToEntryButton.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        backToEntryButton.setText("Back");
+        backToEntryButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                backToEntryButtonMouseClicked(evt);
+            }
+        });
+        jPanel54.add(backToEntryButton, java.awt.BorderLayout.WEST);
 
-        itemsPanel.setBackground(new java.awt.Color(255, 255, 255));
-        itemsPanel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 1, true));
-        itemsPanel.setMaximumSize(new java.awt.Dimension(32767, 350));
-        itemsPanel.setMinimumSize(new java.awt.Dimension(130, 350));
-        itemsPanel.setPreferredSize(new java.awt.Dimension(130, 350));
-        itemsPanel.setLayout(new java.awt.GridLayout(5, 0, 0, 5));
+        jPanel55.setBackground(new java.awt.Color(255, 175, 74));
+        jPanel55.setPreferredSize(new java.awt.Dimension(10, 2));
+        jPanel54.add(jPanel55, java.awt.BorderLayout.SOUTH);
 
-        CartHeadPanel.setBackground(new java.awt.Color(255, 255, 255));
-        CartHeadPanel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 2, true));
-        CartHeadPanel.setMaximumSize(new java.awt.Dimension(92, 51));
-        CartHeadPanel.setLayout(new java.awt.GridLayout(3, 1));
+        customizationPanel.add(jPanel54, java.awt.BorderLayout.PAGE_START);
 
-        jPanel29.setBackground(new java.awt.Color(255, 175, 74));
-        jPanel29.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 175, 74), 3, true));
-        jPanel29.setLayout(new java.awt.GridLayout());
+        animalPanel.add(customizationPanel, "card2");
 
-        headLabel.setBackground(new java.awt.Color(255, 175, 74));
-        headLabel.setFont(new java.awt.Font("Gulim", 0, 18)); // NOI18N
-        headLabel.setText(" Head:");
-        jPanel29.add(headLabel);
+        checkoutPanel.setLayout(new java.awt.BorderLayout());
 
-        CartHeadPanel.add(jPanel29);
+        jPanel56.setLayout(new java.awt.BorderLayout());
 
-        jPanel30.setLayout(new java.awt.GridLayout(1, 2));
+        checkoutEntryPanel.setBackground(new java.awt.Color(255, 255, 255));
+        checkoutEntryPanel.setLayout(new java.awt.BorderLayout());
 
-        headChoiceLabel.setBackground(new java.awt.Color(226, 230, 232));
-        headChoiceLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
-        headChoiceLabel.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jPanel30.add(headChoiceLabel);
+        jPanel79.setLayout(new java.awt.GridLayout(4, 1, 0, 5));
 
-        headPriceLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
-        headPriceLabel.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        headPriceLabel.setText("$0.00");
-        jPanel30.add(headPriceLabel);
+        contactInfoPanel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 2, true));
+        contactInfoPanel.setLayout(new java.awt.GridLayout(3, 1));
 
-        CartHeadPanel.add(jPanel30);
+        contactInfoLabelPanel.setBackground(new java.awt.Color(166, 166, 166));
+        contactInfoLabelPanel.setLayout(new java.awt.BorderLayout());
 
-        jPanel31.setLayout(new java.awt.GridLayout(1, 2));
+        contactInfoLabel.setFont(new java.awt.Font("Gulim", 0, 14)); // NOI18N
+        contactInfoLabel.setText("  Contact Info");
+        contactInfoLabelPanel.add(contactInfoLabel, java.awt.BorderLayout.CENTER);
 
-        headBreedTitleLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
-        headBreedTitleLabel.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        headBreedTitleLabel.setText("  Breed:");
-        jPanel31.add(headBreedTitleLabel);
+        contactInfoPanel.add(contactInfoLabelPanel);
 
-        headBreedLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
-        headBreedLabel.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jPanel31.add(headBreedLabel);
+        contactNamePanel.setLayout(new java.awt.BorderLayout());
 
-        CartHeadPanel.add(jPanel31);
+        nameLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        nameLabel.setText("    Name:");
+        contactNamePanel.add(nameLabel, java.awt.BorderLayout.WEST);
 
-        itemsPanel.add(CartHeadPanel);
+        nameInputPanel.setLayout(new java.awt.GridLayout(1, 2));
 
-        CartTorsoPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 2));
-        CartTorsoPanel.setLayout(new java.awt.GridLayout(3, 1));
+        firstNameTextField.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        firstNameTextField.setText("First");
+        firstNameTextField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                firstNameTextFieldActionPerformed(evt);
+            }
+        });
+        nameInputPanel.add(firstNameTextField);
 
-        jPanel32.setBackground(new java.awt.Color(255, 175, 74));
-        jPanel32.setLayout(new java.awt.GridLayout());
+        lastNameTextField.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        lastNameTextField.setText("Last");
+        nameInputPanel.add(lastNameTextField);
 
-        torsoLabel.setFont(new java.awt.Font("Gulim", 0, 18)); // NOI18N
-        torsoLabel.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        torsoLabel.setText(" Torso:");
-        jPanel32.add(torsoLabel);
+        contactNamePanel.add(nameInputPanel, java.awt.BorderLayout.CENTER);
 
-        CartTorsoPanel.add(jPanel32);
+        contactInfoPanel.add(contactNamePanel);
 
-        jPanel33.setLayout(new java.awt.GridLayout(1, 2));
+        contactEmailPanel.setLayout(new java.awt.BorderLayout());
 
-        torsoChoiceLabel.setBackground(new java.awt.Color(255, 255, 255));
-        torsoChoiceLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
-        torsoChoiceLabel.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jPanel33.add(torsoChoiceLabel);
+        contactEmailLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        contactEmailLabel.setText("    E-Mail:");
+        contactEmailPanel.add(contactEmailLabel, java.awt.BorderLayout.WEST);
 
-        torsoPriceLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
-        torsoPriceLabel.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        torsoPriceLabel.setText("$0.00");
-        jPanel33.add(torsoPriceLabel);
+        contactEmailTextField.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        contactEmailPanel.add(contactEmailTextField, java.awt.BorderLayout.CENTER);
 
-        CartTorsoPanel.add(jPanel33);
+        contactInfoPanel.add(contactEmailPanel);
 
-        jPanel34.setLayout(new java.awt.GridLayout(1, 2));
+        jPanel79.add(contactInfoPanel);
 
-        torsoBreedTitleLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
-        torsoBreedTitleLabel.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        torsoBreedTitleLabel.setText("  Breed:");
-        jPanel34.add(torsoBreedTitleLabel);
+        mailingAddressPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 2));
+        mailingAddressPanel.setLayout(new java.awt.GridLayout(3, 1));
 
-        torsoBreedLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
-        torsoBreedLabel.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jPanel34.add(torsoBreedLabel);
+        mailingAddressLabelPanel.setBackground(new java.awt.Color(166, 166, 166));
+        mailingAddressLabelPanel.setLayout(new java.awt.BorderLayout());
 
-        CartTorsoPanel.add(jPanel34);
+        jLabel3.setFont(new java.awt.Font("Gulim", 0, 14)); // NOI18N
+        jLabel3.setText("  Mailing Address");
+        mailingAddressLabelPanel.add(jLabel3, java.awt.BorderLayout.CENTER);
 
-        itemsPanel.add(CartTorsoPanel);
+        mailingAddressPanel.add(mailingAddressLabelPanel);
 
-        CartLegsPanel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 2, true));
-        CartLegsPanel.setLayout(new java.awt.GridLayout(3, 1));
+        jPanel61.setLayout(new java.awt.BorderLayout());
 
-        jPanel35.setBackground(new java.awt.Color(255, 175, 74));
-        jPanel35.setLayout(new java.awt.GridLayout());
+        jLabel4.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        jLabel4.setText("    Street Address:");
+        jPanel61.add(jLabel4, java.awt.BorderLayout.WEST);
 
-        legsLabel.setBackground(new java.awt.Color(206, 88, 79));
-        legsLabel.setFont(new java.awt.Font("Gulim", 0, 18)); // NOI18N
-        legsLabel.setText(" Legs:");
-        jPanel35.add(legsLabel);
+        mailingStreetAddressTextField.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        jPanel61.add(mailingStreetAddressTextField, java.awt.BorderLayout.CENTER);
 
-        CartLegsPanel.add(jPanel35);
+        mailingAddressPanel.add(jPanel61);
 
-        jPanel36.setLayout(new java.awt.GridLayout(1, 2));
+        jPanel60.setLayout(new java.awt.GridLayout(1, 2));
 
-        legsChoiceLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
-        legsChoiceLabel.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jPanel36.add(legsChoiceLabel);
+        jPanel62.setLayout(new java.awt.BorderLayout());
 
-        legsPriceLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
-        legsPriceLabel.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        legsPriceLabel.setText("$0.00");
-        jPanel36.add(legsPriceLabel);
+        jLabel5.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        jLabel5.setText("    City:");
+        jPanel62.add(jLabel5, java.awt.BorderLayout.WEST);
 
-        CartLegsPanel.add(jPanel36);
+        mailingCityTextField.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        jPanel62.add(mailingCityTextField, java.awt.BorderLayout.CENTER);
 
-        jPanel37.setLayout(new java.awt.GridLayout());
+        jPanel60.add(jPanel62);
 
-        legsBreedTitleLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
-        legsBreedTitleLabel.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        legsBreedTitleLabel.setText("  Breed:");
-        jPanel37.add(legsBreedTitleLabel);
+        jPanel63.setLayout(new java.awt.BorderLayout());
 
-        legsBreedLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
-        legsBreedLabel.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jPanel37.add(legsBreedLabel);
+        jPanel64.setLayout(new java.awt.BorderLayout());
 
-        CartLegsPanel.add(jPanel37);
+        jLabel6.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        jLabel6.setText("State");
+        jPanel64.add(jLabel6, java.awt.BorderLayout.WEST);
 
-        itemsPanel.add(CartLegsPanel);
+        mailingStateComboBox.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        mailingStateComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon ", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming" }));
+        jPanel64.add(mailingStateComboBox, java.awt.BorderLayout.CENTER);
 
-        CartPersonalityPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 2));
-        CartPersonalityPanel.setLayout(new java.awt.GridLayout(3, 1));
+        jPanel63.add(jPanel64, java.awt.BorderLayout.WEST);
 
-        jPanel51.setBackground(new java.awt.Color(255, 175, 74));
-        jPanel51.setLayout(new java.awt.GridLayout());
+        jPanel65.setLayout(new java.awt.BorderLayout());
 
-        jLabel9.setFont(new java.awt.Font("Gulim", 0, 18)); // NOI18N
-        jLabel9.setText(" Personality:");
-        jPanel51.add(jLabel9);
+        jLabel7.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        jLabel7.setText("Postal Code");
+        jPanel65.add(jLabel7, java.awt.BorderLayout.WEST);
 
-        CartPersonalityPanel.add(jPanel51);
+        mailingPostalCodeTextField.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        jPanel65.add(mailingPostalCodeTextField, java.awt.BorderLayout.CENTER);
 
-        jPanel52.setLayout(new java.awt.GridLayout(1, 2));
+        jPanel63.add(jPanel65, java.awt.BorderLayout.CENTER);
 
-        jLabel10.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
-        jLabel10.setText("  Temperament:");
-        jPanel52.add(jLabel10);
+        jPanel60.add(jPanel63);
 
-        personalityTemperamentLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
-        personalityTemperamentLabel.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jPanel52.add(personalityTemperamentLabel);
+        mailingAddressPanel.add(jPanel60);
 
-        CartPersonalityPanel.add(jPanel52);
+        jPanel79.add(mailingAddressPanel);
 
-        jPanel53.setLayout(new java.awt.GridLayout(1, 2));
+        billingAddressPanel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 2, true));
+        billingAddressPanel.setLayout(new java.awt.GridLayout(4, 1));
 
-        jLabel12.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
-        jLabel12.setText("  Energy Level:");
-        jPanel53.add(jLabel12);
+        jPanel59.setBackground(new java.awt.Color(166, 166, 166));
+        jPanel59.setLayout(new java.awt.BorderLayout());
 
-        personalityEnergyLevelLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
-        personalityEnergyLevelLabel.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jPanel53.add(personalityEnergyLevelLabel);
+        jLabel8.setFont(new java.awt.Font("Gulim", 0, 14)); // NOI18N
+        jLabel8.setText("  Billing Address");
+        jPanel59.add(jLabel8, java.awt.BorderLayout.CENTER);
 
-        CartPersonalityPanel.add(jPanel53);
+        billingAddressPanel.add(jPanel59);
 
-        itemsPanel.add(CartPersonalityPanel);
+        jPanel66.setLayout(new java.awt.BorderLayout());
 
-        CartTricksPanel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 2, true));
-        CartTricksPanel.setLayout(new java.awt.GridLayout(3, 1));
+        billingMailingCheckBox.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        billingMailingCheckBox.setText("Same as Mailing Address?");
+        jPanel66.add(billingMailingCheckBox, java.awt.BorderLayout.CENTER);
 
-        jPanel38.setBackground(new java.awt.Color(255, 175, 74));
-        jPanel38.setLayout(new java.awt.GridLayout());
+        billingAddressPanel.add(jPanel66);
 
-        tricksLabel.setFont(new java.awt.Font("Gulim", 0, 18)); // NOI18N
-        tricksLabel.setText(" Skills:");
-        jPanel38.add(tricksLabel);
+        jPanel67.setLayout(new java.awt.BorderLayout());
 
-        CartTricksPanel.add(jPanel38);
+        jLabel11.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        jLabel11.setText("    Street Address:");
+        jPanel67.add(jLabel11, java.awt.BorderLayout.WEST);
 
-        jPanel39.setLayout(new java.awt.GridLayout());
+        billingStreetAddressTextField.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        jPanel67.add(billingStreetAddressTextField, java.awt.BorderLayout.CENTER);
 
-        tricksPriceLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
-        tricksPriceLabel.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        tricksPriceLabel.setText("$0.00");
-        jPanel39.add(tricksPriceLabel);
+        billingAddressPanel.add(jPanel67);
 
-        CartTricksPanel.add(jPanel39);
+        jPanel68.setLayout(new java.awt.GridLayout());
 
-        itemsPanel.add(CartTricksPanel);
+        jPanel69.setLayout(new java.awt.BorderLayout());
 
-        cartScrollPanel.setViewportView(itemsPanel);
+        jLabel14.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        jLabel14.setText("    City:");
+        jPanel69.add(jLabel14, java.awt.BorderLayout.WEST);
 
-        cartPanel.add(cartScrollPanel, java.awt.BorderLayout.CENTER);
+        billingCityTextField.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        jPanel69.add(billingCityTextField, java.awt.BorderLayout.CENTER);
 
-        totalPanel.setBackground(new java.awt.Color(52, 85, 102));
-        totalPanel.setPreferredSize(new java.awt.Dimension(150, 70));
-        totalPanel.setLayout(new java.awt.BorderLayout());
+        jPanel68.add(jPanel69);
 
-        jButton7.setBackground(new java.awt.Color(254, 173, 74));
-        jButton7.setFont(new java.awt.Font("Euphemia UCAS", 0, 18)); // NOI18N
-        jButton7.setText("Checkout");
-        totalPanel.add(jButton7, java.awt.BorderLayout.PAGE_END);
+        jPanel70.setLayout(new java.awt.BorderLayout());
 
-        jPanel25.setBackground(new java.awt.Color(52, 85, 102));
+        jPanel71.setLayout(new java.awt.BorderLayout());
 
-        totalLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 18)); // NOI18N
-        totalLabel.setForeground(new java.awt.Color(255, 255, 255));
-        totalLabel.setText("Total:");
-        jPanel25.add(totalLabel);
+        jLabel15.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        jLabel15.setText("State");
+        jPanel71.add(jLabel15, java.awt.BorderLayout.WEST);
 
-        totalPriceLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 18)); // NOI18N
-        totalPriceLabel.setForeground(new java.awt.Color(255, 255, 255));
-        totalPriceLabel.setText("jLabel3");
-        jPanel25.add(totalPriceLabel);
+        billingStateComboBox.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        billingStateComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon ", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming" }));
+        jPanel71.add(billingStateComboBox, java.awt.BorderLayout.CENTER);
 
-        totalPanel.add(jPanel25, java.awt.BorderLayout.NORTH);
+        jPanel70.add(jPanel71, java.awt.BorderLayout.WEST);
 
-        cartPanel.add(totalPanel, java.awt.BorderLayout.PAGE_END);
+        jPanel72.setLayout(new java.awt.BorderLayout());
 
-        ChimeraDesignPanel.add(cartPanel, java.awt.BorderLayout.EAST);
+        jLabel16.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        jLabel16.setText("Postal Code");
+        jPanel72.add(jLabel16, java.awt.BorderLayout.WEST);
+
+        billingPostalCodeTextField.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        jPanel72.add(billingPostalCodeTextField, java.awt.BorderLayout.CENTER);
+
+        jPanel70.add(jPanel72, java.awt.BorderLayout.CENTER);
+
+        jPanel68.add(jPanel70);
+
+        billingAddressPanel.add(jPanel68);
+
+        jPanel79.add(billingAddressPanel);
+
+        paymentPanel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 2, true));
+        paymentPanel.setLayout(new java.awt.GridLayout(4, 1));
+
+        jPanel74.setBackground(new java.awt.Color(166, 166, 166));
+        jPanel74.setLayout(new java.awt.BorderLayout());
+
+        jLabel17.setFont(new java.awt.Font("Gulim", 0, 14)); // NOI18N
+        jLabel17.setText("  Payment");
+        jPanel74.add(jLabel17, java.awt.BorderLayout.CENTER);
+
+        paymentPanel.add(jPanel74);
+
+        paymentButtonGroup.add(jRadioButton2);
+        jRadioButton2.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        jRadioButton2.setText("VISA");
+        jPanel75.add(jRadioButton2);
+
+        paymentButtonGroup.add(jRadioButton4);
+        jRadioButton4.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        jRadioButton4.setText("MasterCard");
+        jPanel75.add(jRadioButton4);
+
+        paymentButtonGroup.add(jRadioButton5);
+        jRadioButton5.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        jRadioButton5.setText("American Express");
+        jPanel75.add(jRadioButton5);
+
+        paymentButtonGroup.add(jRadioButton6);
+        jRadioButton6.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        jRadioButton6.setText("Discover");
+        jPanel75.add(jRadioButton6);
+
+        paymentPanel.add(jPanel75);
+
+        jPanel76.setLayout(new java.awt.BorderLayout());
+
+        jLabel18.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        jLabel18.setText("    Name On Card:");
+        jPanel76.add(jLabel18, java.awt.BorderLayout.WEST);
+
+        nameOnCardTextField.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        jPanel76.add(nameOnCardTextField, java.awt.BorderLayout.CENTER);
+
+        paymentPanel.add(jPanel76);
+
+        jPanel77.setLayout(new java.awt.GridLayout(1, 2));
+
+        jPanel73.setLayout(new java.awt.BorderLayout());
+
+        jLabel19.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        jLabel19.setText("    Card Number");
+        jPanel73.add(jLabel19, java.awt.BorderLayout.WEST);
+
+        cardNumberTextField.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        jPanel73.add(cardNumberTextField, java.awt.BorderLayout.CENTER);
+
+        jPanel77.add(jPanel73);
+
+        jPanel78.setLayout(new java.awt.BorderLayout());
+
+        jLabel20.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        jLabel20.setText("Expiration:");
+        jPanel78.add(jLabel20, java.awt.BorderLayout.WEST);
+
+        jComboBox3.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" }));
+        jPanel78.add(jComboBox3, java.awt.BorderLayout.CENTER);
+
+        cardYearExpireSpinner.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        cardYearExpireSpinner.setModel(new javax.swing.SpinnerListModel(new String[] {"2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025"}));
+        jPanel78.add(cardYearExpireSpinner, java.awt.BorderLayout.EAST);
+
+        jPanel77.add(jPanel78);
+
+        paymentPanel.add(jPanel77);
+
+        jPanel79.add(paymentPanel);
+
+        checkoutEntryPanel.add(jPanel79, java.awt.BorderLayout.CENTER);
+
+        jPanel80.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel80.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 2, true));
+        jPanel80.setLayout(new java.awt.BorderLayout());
+
+        jPanel81.setBackground(new java.awt.Color(255, 175, 74));
+        jPanel81.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 2, true));
+        jPanel81.setLayout(new java.awt.GridLayout(1, 2));
+
+        completeOrderButton.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        completeOrderButton.setText("Complete Order");
+        completeOrderButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                completeOrderButtonMouseClicked(evt);
+            }
+        });
+        jPanel81.add(completeOrderButton);
+
+        jPanel80.add(jPanel81, java.awt.BorderLayout.EAST);
+
+        checkoutEntryPanel.add(jPanel80, java.awt.BorderLayout.SOUTH);
+
+        checkoutEntryScrollPane.setViewportView(checkoutEntryPanel);
+
+        jPanel56.add(checkoutEntryScrollPane, java.awt.BorderLayout.CENTER);
+
+        checkoutPanel.add(jPanel56, java.awt.BorderLayout.CENTER);
+
+        jPanel57.setBackground(new java.awt.Color(52, 85, 102));
+        jPanel57.setLayout(new java.awt.BorderLayout());
+
+        backToAnimalPanelButton.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        backToAnimalPanelButton.setText("Back");
+        backToAnimalPanelButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                backToAnimalPanelButtonMouseClicked(evt);
+            }
+        });
+        jPanel57.add(backToAnimalPanelButton, java.awt.BorderLayout.WEST);
+
+        jPanel58.setBackground(new java.awt.Color(255, 175, 74));
+        jPanel58.setPreferredSize(new java.awt.Dimension(10, 2));
+        jPanel57.add(jPanel58, java.awt.BorderLayout.SOUTH);
+
+        checkoutPanel.add(jPanel57, java.awt.BorderLayout.PAGE_START);
+
+        animalPanel.add(checkoutPanel, "card3");
+
+        ChimeraDesignPanel.add(animalPanel, java.awt.BorderLayout.CENTER);
 
         CardPanel.add(ChimeraDesignPanel, "card2");
 
@@ -1213,10 +1624,6 @@ public class Chimera extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        personalityDialog.dispose();
-    }//GEN-LAST:event_jButton3ActionPerformed
 
     private void ChangeTorsoRightButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ChangeTorsoRightButtonActionPerformed
         // TODO add your handling code here:
@@ -1395,6 +1802,57 @@ public class Chimera extends javax.swing.JFrame {
         personalityEnergyLevelLabel.setText(energyHighLabel.getText());
     }//GEN-LAST:event_jButton13MouseClicked
 
+    private void backToEntryButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_backToEntryButtonMouseClicked
+        Object[] options = {"Yes", "No"};
+        int n = JOptionPane.showOptionDialog(this,
+            "Are you sure you want to go back? You will lose your progress.",
+            "Chimera",
+            JOptionPane.YES_NO_OPTION,
+            JOptionPane.QUESTION_MESSAGE,
+            null,
+            options,
+            options[1]);
+        if (n == 0){
+            CardLayout cl = (CardLayout)(CardPanel.getLayout());
+            cl.previous(CardPanel);
+            jTabbedPane1.setSelectedIndex(0);
+        }
+    }//GEN-LAST:event_backToEntryButtonMouseClicked
+
+    private void backToAnimalPanelButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_backToAnimalPanelButtonMouseClicked
+        CardLayout cl = (CardLayout)(animalPanel.getLayout());
+        cl.previous(animalPanel);
+    }//GEN-LAST:event_backToAnimalPanelButtonMouseClicked
+
+    private void jButton7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton7MouseClicked
+        CardLayout cl = (CardLayout)(animalPanel.getLayout());
+        cl.next(animalPanel);
+    }//GEN-LAST:event_jButton7MouseClicked
+
+    private void firstNameTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_firstNameTextFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_firstNameTextFieldActionPerformed
+
+    private void completeOrderButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_completeOrderButtonMouseClicked
+        Object[] options = {"Finish"};
+        int n = JOptionPane.showOptionDialog(this,
+            "Thank you for ordering a pet from Chimera! Your pet should be "
+                    + "delivered within the next week.",
+            "Chimera",
+            JOptionPane.OK_OPTION,
+            JOptionPane.INFORMATION_MESSAGE,
+            null,
+            options,
+            options[0]);
+        if (n == 0){
+            CardLayout cl = (CardLayout)(animalPanel.getLayout());
+            cl.first(animalPanel);
+            cl = (CardLayout)(CardPanel.getLayout());
+            cl.first(CardPanel);
+            jTabbedPane1.setSelectedIndex(0);
+        }
+    }//GEN-LAST:event_completeOrderButtonMouseClicked
+
     private void switchToDesignPanel(Animal baseAnimal){
         CardLayout cl = (CardLayout)(CardPanel.getLayout());
         cl.next(CardPanel);
@@ -1487,6 +1945,23 @@ public class Chimera extends javax.swing.JFrame {
         totalPriceLabel.setText(formatPriceString(current.price));
     }
     
+    private void resetCheckoutForm(){
+        firstNameTextField.setText("First");
+        lastNameTextField.setText("Last");
+        contactEmailTextField.setText("");
+        mailingStreetAddressTextField.setText("");
+        mailingCityTextField.setText("");
+        mailingPostalCodeTextField.setText("");
+        billingStreetAddressTextField.setText("");
+        billingCityTextField.setText("");
+        billingPostalCodeTextField.setText("");
+        nameOnCardTextField.setText("");
+        cardNumberTextField.setText("");
+        mailingStateComboBox.setSelectedIndex(0);
+        billingStateComboBox.setSelectedIndex(0);
+
+    }
+    
     
     /**
      * @param args the command line arguments
@@ -1561,6 +2036,15 @@ public class Chimera extends javax.swing.JFrame {
     private javax.swing.JCheckBox agilityCheckBox;
     private javax.swing.JPanel agilityPanel;
     private javax.swing.JLabel agilityPriceLabel;
+    private javax.swing.JPanel animalPanel;
+    private javax.swing.JButton backToAnimalPanelButton;
+    private javax.swing.JButton backToEntryButton;
+    private javax.swing.JPanel billingAddressPanel;
+    private javax.swing.JTextField billingCityTextField;
+    private javax.swing.JCheckBox billingMailingCheckBox;
+    private javax.swing.JTextField billingPostalCodeTextField;
+    private javax.swing.JComboBox billingStateComboBox;
+    private javax.swing.JTextField billingStreetAddressTextField;
     private javax.swing.JLabel breedHeadLabel;
     private javax.swing.JPanel breedHeadPanel;
     private javax.swing.JPanel breedHeadSelectPanel;
@@ -1573,20 +2057,34 @@ public class Chimera extends javax.swing.JFrame {
     private javax.swing.JLabel breedTorsoLabel;
     private javax.swing.JPanel breedTorsoPanel;
     private javax.swing.JPanel breedTorsoSelectPanel;
+    private javax.swing.JTextField cardNumberTextField;
+    private javax.swing.JSpinner cardYearExpireSpinner;
     private javax.swing.JPanel cartPanel;
     private javax.swing.JScrollPane cartScrollPanel;
+    private javax.swing.JPanel checkoutEntryPanel;
+    private javax.swing.JScrollPane checkoutEntryScrollPane;
+    private javax.swing.JPanel checkoutPanel;
     private javax.swing.JCheckBox comeCheckBox;
     private javax.swing.JPanel comePanel;
     private javax.swing.JLabel comePriceLabel;
     private javax.swing.JCheckBox comfortCheckBox;
     private javax.swing.JPanel comfortPanel;
     private javax.swing.JLabel comfortPrice;
+    private javax.swing.JButton completeOrderButton;
+    private javax.swing.JLabel contactEmailLabel;
+    private javax.swing.JPanel contactEmailPanel;
+    private javax.swing.JTextField contactEmailTextField;
+    private javax.swing.JLabel contactInfoLabel;
+    private javax.swing.JPanel contactInfoLabelPanel;
+    private javax.swing.JPanel contactInfoPanel;
+    private javax.swing.JPanel contactNamePanel;
+    private javax.swing.JPanel customizationPanel;
     private javax.swing.JPanel designPanel;
     private javax.swing.JLabel docileLabel;
-    private javax.swing.JRadioButton docileRadioButton;
     private javax.swing.JLabel energyHighLabel;
     private javax.swing.JLabel energyLowLabel;
     private javax.swing.JLabel energyMediumLabel;
+    private javax.swing.JTextField firstNameTextField;
     private javax.swing.JLabel headBreedLabel;
     private javax.swing.JLabel headBreedTitleLabel;
     private javax.swing.JLabel headChoiceLabel;
@@ -1599,7 +2097,6 @@ public class Chimera extends javax.swing.JFrame {
     private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
@@ -1607,12 +2104,28 @@ public class Chimera extends javax.swing.JFrame {
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JCheckBox jCheckBox14;
+    private javax.swing.JComboBox jComboBox3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JOptionPane jOptionPane1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
@@ -1661,20 +2174,61 @@ public class Chimera extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel51;
     private javax.swing.JPanel jPanel52;
     private javax.swing.JPanel jPanel53;
+    private javax.swing.JPanel jPanel54;
+    private javax.swing.JPanel jPanel55;
+    private javax.swing.JPanel jPanel56;
+    private javax.swing.JPanel jPanel57;
+    private javax.swing.JPanel jPanel58;
+    private javax.swing.JPanel jPanel59;
     private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel60;
+    private javax.swing.JPanel jPanel61;
+    private javax.swing.JPanel jPanel62;
+    private javax.swing.JPanel jPanel63;
+    private javax.swing.JPanel jPanel64;
+    private javax.swing.JPanel jPanel65;
+    private javax.swing.JPanel jPanel66;
+    private javax.swing.JPanel jPanel67;
+    private javax.swing.JPanel jPanel68;
+    private javax.swing.JPanel jPanel69;
     private javax.swing.JPanel jPanel7;
+    private javax.swing.JPanel jPanel70;
+    private javax.swing.JPanel jPanel71;
+    private javax.swing.JPanel jPanel72;
+    private javax.swing.JPanel jPanel73;
+    private javax.swing.JPanel jPanel74;
+    private javax.swing.JPanel jPanel75;
+    private javax.swing.JPanel jPanel76;
+    private javax.swing.JPanel jPanel77;
+    private javax.swing.JPanel jPanel78;
+    private javax.swing.JPanel jPanel79;
     private javax.swing.JPanel jPanel8;
+    private javax.swing.JPanel jPanel80;
+    private javax.swing.JPanel jPanel81;
     private javax.swing.JPanel jPanel9;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton3;
+    private javax.swing.JRadioButton jRadioButton2;
+    private javax.swing.JRadioButton jRadioButton4;
+    private javax.swing.JRadioButton jRadioButton5;
+    private javax.swing.JRadioButton jRadioButton6;
     private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JTextField lastNameTextField;
     private javax.swing.JLabel legsBreedLabel;
     private javax.swing.JLabel legsBreedTitleLabel;
     private javax.swing.JLabel legsChoiceLabel;
     private javax.swing.JLabel legsLabel;
     private javax.swing.JLabel legsPriceLabel;
+    private javax.swing.JPanel mailingAddressLabelPanel;
+    private javax.swing.JPanel mailingAddressPanel;
+    private javax.swing.JTextField mailingCityTextField;
+    private javax.swing.JTextField mailingPostalCodeTextField;
+    private javax.swing.JComboBox mailingStateComboBox;
+    private javax.swing.JTextField mailingStreetAddressTextField;
+    private javax.swing.JPanel nameInputPanel;
+    private javax.swing.JLabel nameLabel;
+    private javax.swing.JTextField nameOnCardTextField;
+    private javax.swing.ButtonGroup paymentButtonGroup;
+    private javax.swing.JPanel paymentPanel;
     private javax.swing.ButtonGroup personalityButtonGroup;
-    private javax.swing.JDialog personalityDialog;
     private javax.swing.JLabel personalityEnergyLevelLabel;
     private javax.swing.JPanel personalityPanel;
     private javax.swing.JLabel personalityTemperamentLabel;
