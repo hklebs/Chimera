@@ -90,6 +90,30 @@ public class Chimera extends javax.swing.JFrame {
         ChangeTorsoLeftButton = new javax.swing.JButton();
         ChangeLegsLeftButton = new javax.swing.JButton();
         personalityPanel = new javax.swing.JPanel();
+        jPanel40 = new javax.swing.JPanel();
+        jPanel42 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jPanel43 = new javax.swing.JPanel();
+        jButton8 = new javax.swing.JButton();
+        docileLabel = new javax.swing.JLabel();
+        jPanel44 = new javax.swing.JPanel();
+        jButton9 = new javax.swing.JButton();
+        protectiveLabel = new javax.swing.JLabel();
+        jPanel45 = new javax.swing.JPanel();
+        jButton10 = new javax.swing.JButton();
+        aggressiveLabel = new javax.swing.JLabel();
+        jPanel41 = new javax.swing.JPanel();
+        jPanel46 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        jPanel47 = new javax.swing.JPanel();
+        jButton11 = new javax.swing.JButton();
+        energyLowLabel = new javax.swing.JLabel();
+        jPanel48 = new javax.swing.JPanel();
+        jButton12 = new javax.swing.JButton();
+        energyMediumLabel = new javax.swing.JLabel();
+        jPanel49 = new javax.swing.JPanel();
+        jButton13 = new javax.swing.JButton();
+        energyHighLabel = new javax.swing.JLabel();
         skillsPanel = new javax.swing.JPanel();
         tricksjPanel = new javax.swing.JPanel();
         trickColumnTitlePanel = new javax.swing.JPanel();
@@ -149,52 +173,73 @@ public class Chimera extends javax.swing.JFrame {
         jLabel13 = new javax.swing.JLabel();
         breedPanel = new javax.swing.JPanel();
         breedHeadPanel = new javax.swing.JPanel();
-        breedHeadLabel = new javax.swing.JLabel();
         breedHeadSelectPanel = new javax.swing.JPanel();
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
         jPanel24 = new javax.swing.JPanel();
+        jPanel26 = new javax.swing.JPanel();
+        breedHeadLabel = new javax.swing.JLabel();
         breedTorsoPanel = new javax.swing.JPanel();
-        breedTorsoLabel = new javax.swing.JLabel();
         breedTorsoSelectPanel = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
         jPanel23 = new javax.swing.JPanel();
         jButton4 = new javax.swing.JButton();
+        jPanel27 = new javax.swing.JPanel();
+        breedTorsoLabel = new javax.swing.JLabel();
         breedLegsPanel = new javax.swing.JPanel();
-        breedLegsLabel = new javax.swing.JLabel();
         breedLegsSelectPanel = new javax.swing.JPanel();
         breedLegsLeftButton = new javax.swing.JButton();
         jPanel13 = new javax.swing.JPanel();
         breedLegsRightButton = new javax.swing.JButton();
+        jPanel28 = new javax.swing.JPanel();
+        breedLegsLabel = new javax.swing.JLabel();
         cartPanel = new javax.swing.JPanel();
         cartScrollPanel = new javax.swing.JScrollPane();
         itemsPanel = new javax.swing.JPanel();
         CartHeadPanel = new javax.swing.JPanel();
+        jPanel29 = new javax.swing.JPanel();
         headLabel = new javax.swing.JLabel();
-        headSpaceFiller = new javax.swing.JLabel();
+        jPanel30 = new javax.swing.JPanel();
         headChoiceLabel = new javax.swing.JLabel();
         headPriceLabel = new javax.swing.JLabel();
+        jPanel31 = new javax.swing.JPanel();
         headBreedTitleLabel = new javax.swing.JLabel();
         headBreedLabel = new javax.swing.JLabel();
         CartTorsoPanel = new javax.swing.JPanel();
+        jPanel32 = new javax.swing.JPanel();
         torsoLabel = new javax.swing.JLabel();
-        torsoSpaceFiller = new javax.swing.JLabel();
+        jPanel33 = new javax.swing.JPanel();
         torsoChoiceLabel = new javax.swing.JLabel();
         torsoPriceLabel = new javax.swing.JLabel();
+        jPanel34 = new javax.swing.JPanel();
         torsoBreedTitleLabel = new javax.swing.JLabel();
         torsoBreedLabel = new javax.swing.JLabel();
         CartLegsPanel = new javax.swing.JPanel();
+        jPanel35 = new javax.swing.JPanel();
         legsLabel = new javax.swing.JLabel();
-        legsSpaceFiller = new javax.swing.JLabel();
+        jPanel36 = new javax.swing.JPanel();
         legsChoiceLabel = new javax.swing.JLabel();
         legsPriceLabel = new javax.swing.JLabel();
+        jPanel37 = new javax.swing.JPanel();
         legsBreedTitleLabel = new javax.swing.JLabel();
         legsBreedLabel = new javax.swing.JLabel();
+        CartPersonalityPanel = new javax.swing.JPanel();
+        jPanel51 = new javax.swing.JPanel();
+        jLabel9 = new javax.swing.JLabel();
+        jPanel52 = new javax.swing.JPanel();
+        jLabel10 = new javax.swing.JLabel();
+        personalityTemperamentLabel = new javax.swing.JLabel();
+        jPanel53 = new javax.swing.JPanel();
+        jLabel12 = new javax.swing.JLabel();
+        personalityEnergyLevelLabel = new javax.swing.JLabel();
         CartTricksPanel = new javax.swing.JPanel();
+        jPanel38 = new javax.swing.JPanel();
         tricksLabel = new javax.swing.JLabel();
+        jPanel39 = new javax.swing.JPanel();
         tricksPriceLabel = new javax.swing.JLabel();
-        tricksListPanel = new javax.swing.JPanel();
         totalPanel = new javax.swing.JPanel();
+        jButton7 = new javax.swing.JButton();
+        jPanel25 = new javax.swing.JPanel();
         totalLabel = new javax.swing.JLabel();
         totalPriceLabel = new javax.swing.JLabel();
 
@@ -232,28 +277,43 @@ public class Chimera extends javax.swing.JFrame {
 
         CardPanel.setLayout(new java.awt.CardLayout());
 
+        ChimeraEntryPanel.setBackground(new java.awt.Color(255, 255, 255));
         ChimeraEntryPanel.setLayout(new java.awt.GridLayout(2, 1));
 
         ChimeraWelcomePanel.setLayout(new java.awt.GridLayout(2, 1));
 
-        ChimeraNameLabel.setFont(new java.awt.Font("Comic Sans MS", 0, 48)); // NOI18N
-        ChimeraNameLabel.setText("Chimera");
+        ChimeraLogoPanel.setBackground(new java.awt.Color(52, 85, 102));
+        ChimeraLogoPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 5, 45));
+
+        ChimeraNameLabel.setBackground(new java.awt.Color(255, 255, 255));
+        ChimeraNameLabel.setFont(new java.awt.Font("Gulim", 0, 60)); // NOI18N
+        ChimeraNameLabel.setForeground(new java.awt.Color(255, 255, 255));
+        ChimeraNameLabel.setText("C h i m e r a");
         ChimeraLogoPanel.add(ChimeraNameLabel);
 
         ChimeraWelcomePanel.add(ChimeraLogoPanel);
 
-        ChimeraChoosePanel.setLayout(new java.awt.GridLayout(2, 1));
+        ChimeraChoosePanel.setLayout(new java.awt.BorderLayout());
+
+        BufferPanel.setBackground(new java.awt.Color(255, 175, 74));
+        BufferPanel.setPreferredSize(new java.awt.Dimension(138, 5));
+        BufferPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 5, 12));
 
         BufferLabel.setText("----------------");
         BufferPanel.add(BufferLabel);
 
-        ChimeraChoosePanel.add(BufferPanel);
+        ChimeraChoosePanel.add(BufferPanel, java.awt.BorderLayout.NORTH);
 
-        ChooseLabel.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
+        ChooseTextPanel.setBackground(new java.awt.Color(255, 255, 255));
+        ChooseTextPanel.setPreferredSize(new java.awt.Dimension(200, 100));
+        ChooseTextPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 10, 100));
+
+        ChooseLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 14)); // NOI18N
         ChooseLabel.setText("Choose Your Base Animal:");
+        ChooseLabel.setPreferredSize(new java.awt.Dimension(180, 25));
         ChooseTextPanel.add(ChooseLabel);
 
-        ChimeraChoosePanel.add(ChooseTextPanel);
+        ChimeraChoosePanel.add(ChooseTextPanel, java.awt.BorderLayout.CENTER);
 
         ChimeraWelcomePanel.add(ChimeraChoosePanel);
 
@@ -305,23 +365,34 @@ public class Chimera extends javax.swing.JFrame {
 
         CardPanel.add(ChimeraEntryPanel, "card3");
 
+        ChimeraDesignPanel.setBackground(new java.awt.Color(255, 255, 255));
         ChimeraDesignPanel.setLayout(new java.awt.BorderLayout());
 
+        jTabbedPane1.setBackground(new java.awt.Color(255, 255, 255));
+        jTabbedPane1.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
         jTabbedPane1.setPreferredSize(new java.awt.Dimension(400, 202));
 
+        designPanel.setBackground(new java.awt.Color(255, 255, 255));
         designPanel.setLayout(new java.awt.BorderLayout());
 
+        AnimalViewPanel.setBackground(new java.awt.Color(255, 255, 255));
         AnimalViewPanel.setLayout(new java.awt.GridLayout(3, 1));
+
+        AnimalViewHeadPanel.setBackground(new java.awt.Color(255, 255, 255));
 
         AnimalViewHeadLabel.setText("Dog");
         AnimalViewHeadPanel.add(AnimalViewHeadLabel);
 
         AnimalViewPanel.add(AnimalViewHeadPanel);
 
+        AnimalViewTorsoPanel.setBackground(new java.awt.Color(255, 255, 255));
+
         AnimalViewTorsoLabel.setText("Dog");
         AnimalViewTorsoPanel.add(AnimalViewTorsoLabel);
 
         AnimalViewPanel.add(AnimalViewTorsoPanel);
+
+        AnimalViewLegsPanel.setBackground(new java.awt.Color(255, 255, 255));
 
         AnimalViewLegsLabel.setText("Dog");
         AnimalViewLegsPanel.add(AnimalViewLegsLabel);
@@ -330,6 +401,7 @@ public class Chimera extends javax.swing.JFrame {
 
         designPanel.add(AnimalViewPanel, java.awt.BorderLayout.CENTER);
 
+        ChangeAnimalRightPanel.setBackground(new java.awt.Color(255, 255, 255));
         ChangeAnimalRightPanel.setLayout(new java.awt.GridLayout(3, 1));
 
         ChangeHeadRightButton.setText("---->");
@@ -363,8 +435,10 @@ public class Chimera extends javax.swing.JFrame {
 
         designPanel.add(ChangeAnimalRightPanel, java.awt.BorderLayout.LINE_END);
 
+        ChangeAnimalLeftPanel.setBackground(new java.awt.Color(255, 255, 255));
         ChangeAnimalLeftPanel.setLayout(new java.awt.GridLayout(3, 1));
 
+        ChangeHeadLeftButton.setBackground(new java.awt.Color(255, 255, 255));
         ChangeHeadLeftButton.setText("<----");
         ChangeHeadLeftButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -393,20 +467,163 @@ public class Chimera extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Design", designPanel);
 
-        personalityPanel.setLayout(new java.awt.BorderLayout());
+        personalityPanel.setLayout(new java.awt.GridLayout(1, 2));
+
+        jPanel40.setLayout(new java.awt.GridLayout(4, 1));
+
+        jPanel42.setBackground(new java.awt.Color(52, 85, 102));
+        jPanel42.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 5, 40));
+
+        jLabel1.setFont(new java.awt.Font("Gulim", 0, 36)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("Temperament");
+        jPanel42.add(jLabel1);
+
+        jPanel40.add(jPanel42);
+
+        jPanel43.setLayout(new java.awt.BorderLayout());
+
+        jButton8.setPreferredSize(new java.awt.Dimension(20, 29));
+        jButton8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton8MouseClicked(evt);
+            }
+        });
+        jPanel43.add(jButton8, java.awt.BorderLayout.WEST);
+
+        docileLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 24)); // NOI18N
+        docileLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        docileLabel.setText("Docile");
+        jPanel43.add(docileLabel, java.awt.BorderLayout.CENTER);
+
+        jPanel40.add(jPanel43);
+
+        jPanel44.setBackground(new java.awt.Color(166, 166, 166));
+        jPanel44.setLayout(new java.awt.BorderLayout());
+
+        jButton9.setPreferredSize(new java.awt.Dimension(20, 29));
+        jButton9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton9MouseClicked(evt);
+            }
+        });
+        jPanel44.add(jButton9, java.awt.BorderLayout.WEST);
+
+        protectiveLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 24)); // NOI18N
+        protectiveLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        protectiveLabel.setText("Protective");
+        jPanel44.add(protectiveLabel, java.awt.BorderLayout.CENTER);
+
+        jPanel40.add(jPanel44);
+
+        jPanel45.setLayout(new java.awt.BorderLayout());
+
+        jButton10.setPreferredSize(new java.awt.Dimension(20, 29));
+        jButton10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton10MouseClicked(evt);
+            }
+        });
+        jPanel45.add(jButton10, java.awt.BorderLayout.WEST);
+
+        aggressiveLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 24)); // NOI18N
+        aggressiveLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        aggressiveLabel.setText("Aggressive");
+        jPanel45.add(aggressiveLabel, java.awt.BorderLayout.CENTER);
+
+        jPanel40.add(jPanel45);
+
+        personalityPanel.add(jPanel40);
+
+        jPanel41.setLayout(new java.awt.GridLayout(4, 1));
+
+        jPanel46.setBackground(new java.awt.Color(52, 85, 102));
+        jPanel46.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 5, 40));
+
+        jLabel2.setFont(new java.awt.Font("Gulim", 0, 36)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("Energy Level");
+        jPanel46.add(jLabel2);
+
+        jPanel41.add(jPanel46);
+
+        jPanel47.setBackground(new java.awt.Color(166, 166, 166));
+        jPanel47.setLayout(new java.awt.BorderLayout());
+
+        jButton11.setPreferredSize(new java.awt.Dimension(20, 29));
+        jButton11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton11MouseClicked(evt);
+            }
+        });
+        jPanel47.add(jButton11, java.awt.BorderLayout.WEST);
+
+        energyLowLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 24)); // NOI18N
+        energyLowLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        energyLowLabel.setText("Low");
+        jPanel47.add(energyLowLabel, java.awt.BorderLayout.CENTER);
+
+        jPanel41.add(jPanel47);
+
+        jPanel48.setLayout(new java.awt.BorderLayout());
+
+        jButton12.setPreferredSize(new java.awt.Dimension(20, 29));
+        jButton12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton12MouseClicked(evt);
+            }
+        });
+        jPanel48.add(jButton12, java.awt.BorderLayout.WEST);
+
+        energyMediumLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 24)); // NOI18N
+        energyMediumLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        energyMediumLabel.setText("Medium");
+        jPanel48.add(energyMediumLabel, java.awt.BorderLayout.CENTER);
+
+        jPanel41.add(jPanel48);
+
+        jPanel49.setBackground(new java.awt.Color(166, 166, 166));
+        jPanel49.setLayout(new java.awt.BorderLayout());
+
+        jButton13.setPreferredSize(new java.awt.Dimension(20, 29));
+        jButton13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton13MouseClicked(evt);
+            }
+        });
+        jPanel49.add(jButton13, java.awt.BorderLayout.WEST);
+
+        energyHighLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 24)); // NOI18N
+        energyHighLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        energyHighLabel.setText("High");
+        jPanel49.add(energyHighLabel, java.awt.BorderLayout.CENTER);
+
+        jPanel41.add(jPanel49);
+
+        personalityPanel.add(jPanel41);
+
         jTabbedPane1.addTab("Personality", personalityPanel);
 
         skillsPanel.setLayout(new java.awt.GridLayout(1, 2));
 
         tricksjPanel.setLayout(new java.awt.GridLayout(6, 1));
 
+        trickColumnTitlePanel.setBackground(new java.awt.Color(52, 85, 102));
+        trickColumnTitlePanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 5, 20));
+
+        trickColumnLabel.setFont(new java.awt.Font("Gulim", 0, 36)); // NOI18N
+        trickColumnLabel.setForeground(new java.awt.Color(255, 255, 255));
         trickColumnLabel.setText("Tricks");
         trickColumnTitlePanel.add(trickColumnLabel);
 
         tricksjPanel.add(trickColumnTitlePanel);
 
+        sitPanel.setBackground(new java.awt.Color(226, 226, 226));
         sitPanel.setLayout(new java.awt.GridLayout(1, 2));
 
+        jPanel9.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 25));
+
+        sitCheckBox.setFont(new java.awt.Font("Euphemia UCAS", 0, 24)); // NOI18N
         sitCheckBox.setText("Sit");
         sitCheckBox.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -417,6 +634,9 @@ public class Chimera extends javax.swing.JFrame {
 
         sitPanel.add(jPanel9);
 
+        jPanel10.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.RIGHT, 5, 25));
+
+        sitPriceLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 24)); // NOI18N
         sitPriceLabel.setText("$15.00");
         jPanel10.add(sitPriceLabel);
 
@@ -426,6 +646,10 @@ public class Chimera extends javax.swing.JFrame {
 
         stayPanel.setLayout(new java.awt.GridLayout());
 
+        jPanel11.setBackground(new java.awt.Color(166, 166, 166));
+        jPanel11.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 25));
+
+        stayCheckBox.setFont(new java.awt.Font("Euphemia UCAS", 0, 24)); // NOI18N
         stayCheckBox.setText("Stay");
         stayCheckBox.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -441,6 +665,10 @@ public class Chimera extends javax.swing.JFrame {
 
         stayPanel.add(jPanel11);
 
+        jPanel14.setBackground(new java.awt.Color(166, 166, 166));
+        jPanel14.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.RIGHT, 5, 25));
+
+        stayPriceLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 24)); // NOI18N
         stayPriceLabel.setText("$15.00");
         jPanel14.add(stayPriceLabel);
 
@@ -450,6 +678,9 @@ public class Chimera extends javax.swing.JFrame {
 
         comePanel.setLayout(new java.awt.GridLayout());
 
+        jPanel15.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 25));
+
+        comeCheckBox.setFont(new java.awt.Font("Euphemia UCAS", 0, 24)); // NOI18N
         comeCheckBox.setText("Come");
         comeCheckBox.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -460,6 +691,9 @@ public class Chimera extends javax.swing.JFrame {
 
         comePanel.add(jPanel15);
 
+        jPanel16.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.RIGHT, 5, 25));
+
+        comePriceLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 24)); // NOI18N
         comePriceLabel.setText("$20.00");
         jPanel16.add(comePriceLabel);
 
@@ -469,6 +703,10 @@ public class Chimera extends javax.swing.JFrame {
 
         shakeHandsPanel.setLayout(new java.awt.GridLayout());
 
+        jPanel17.setBackground(new java.awt.Color(166, 166, 166));
+        jPanel17.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 25));
+
+        shakeHandsCheckBox.setFont(new java.awt.Font("Euphemia UCAS", 0, 24)); // NOI18N
         shakeHandsCheckBox.setText("Shake Hands");
         shakeHandsCheckBox.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -479,6 +717,10 @@ public class Chimera extends javax.swing.JFrame {
 
         shakeHandsPanel.add(jPanel17);
 
+        jPanel18.setBackground(new java.awt.Color(166, 166, 166));
+        jPanel18.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.RIGHT, 5, 25));
+
+        shakeHandsPriceLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 24)); // NOI18N
         shakeHandsPriceLabel.setText("$25.00");
         jPanel18.add(shakeHandsPriceLabel);
 
@@ -488,6 +730,9 @@ public class Chimera extends javax.swing.JFrame {
 
         playDeadPanel.setLayout(new java.awt.GridLayout());
 
+        jPanel19.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 25));
+
+        playDeadCheckBox.setFont(new java.awt.Font("Euphemia UCAS", 0, 24)); // NOI18N
         playDeadCheckBox.setText("Play Dead");
         playDeadCheckBox.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -498,6 +743,9 @@ public class Chimera extends javax.swing.JFrame {
 
         playDeadPanel.add(jPanel19);
 
+        jPanel20.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.RIGHT, 5, 25));
+
+        playDeadPriceLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 24)); // NOI18N
         playDeadPriceLabel.setText("$30.00");
         jPanel20.add(playDeadPriceLabel);
 
@@ -509,13 +757,24 @@ public class Chimera extends javax.swing.JFrame {
 
         trainingPanel.setLayout(new java.awt.GridLayout(6, 1));
 
+        trainingColumnTitlePanel.setBackground(new java.awt.Color(52, 85, 102));
+        trainingColumnTitlePanel.setForeground(new java.awt.Color(255, 255, 255));
+        trainingColumnTitlePanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 5, 20));
+
+        trainingColumnLabel.setFont(new java.awt.Font("Gulim", 0, 36)); // NOI18N
+        trainingColumnLabel.setForeground(new java.awt.Color(255, 255, 255));
         trainingColumnLabel.setText("Training");
         trainingColumnTitlePanel.add(trainingColumnLabel);
 
         trainingPanel.add(trainingColumnTitlePanel);
 
+        therapyPanel.setBackground(new java.awt.Color(166, 166, 166));
         therapyPanel.setLayout(new java.awt.GridLayout());
 
+        jPanel2.setBackground(new java.awt.Color(166, 166, 166));
+        jPanel2.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 25));
+
+        therapyCheckBox.setFont(new java.awt.Font("Euphemia UCAS", 0, 24)); // NOI18N
         therapyCheckBox.setText("Therapy");
         therapyCheckBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -526,6 +785,10 @@ public class Chimera extends javax.swing.JFrame {
 
         therapyPanel.add(jPanel2);
 
+        jPanel1.setBackground(new java.awt.Color(166, 166, 166));
+        jPanel1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.RIGHT, 5, 25));
+
+        therapyPriceLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 24)); // NOI18N
         therapyPriceLabel.setText("$100.00");
         jPanel1.add(therapyPriceLabel);
 
@@ -535,11 +798,17 @@ public class Chimera extends javax.swing.JFrame {
 
         agilityPanel.setLayout(new java.awt.GridLayout());
 
+        jPanel3.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 25));
+
+        agilityCheckBox.setFont(new java.awt.Font("Euphemia UCAS", 0, 24)); // NOI18N
         agilityCheckBox.setText("Agility");
         jPanel3.add(agilityCheckBox);
 
         agilityPanel.add(jPanel3);
 
+        jPanel4.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.RIGHT, 5, 25));
+
+        agilityPriceLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 24)); // NOI18N
         agilityPriceLabel.setText("$80.00");
         jPanel4.add(agilityPriceLabel);
 
@@ -549,11 +818,19 @@ public class Chimera extends javax.swing.JFrame {
 
         seeingPanel.setLayout(new java.awt.GridLayout());
 
+        jPanel5.setBackground(new java.awt.Color(166, 166, 166));
+        jPanel5.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 25));
+
+        seeingCheckBox.setFont(new java.awt.Font("Euphemia UCAS", 0, 24)); // NOI18N
         seeingCheckBox.setText("Seeing");
         jPanel5.add(seeingCheckBox);
 
         seeingPanel.add(jPanel5);
 
+        jPanel6.setBackground(new java.awt.Color(166, 166, 166));
+        jPanel6.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.RIGHT, 5, 25));
+
+        seeingPriceLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 24)); // NOI18N
         seeingPriceLabel.setText("$100.00");
         jPanel6.add(seeingPriceLabel);
 
@@ -563,11 +840,17 @@ public class Chimera extends javax.swing.JFrame {
 
         comfortPanel.setLayout(new java.awt.GridLayout());
 
+        jPanel7.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 25));
+
+        comfortCheckBox.setFont(new java.awt.Font("Euphemia UCAS", 0, 24)); // NOI18N
         comfortCheckBox.setText("Comfort");
         jPanel7.add(comfortCheckBox);
 
         comfortPanel.add(jPanel7);
 
+        jPanel8.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.RIGHT, 5, 25));
+
+        comfortPrice.setFont(new java.awt.Font("Euphemia UCAS", 0, 24)); // NOI18N
         comfortPrice.setText("$50.00");
         jPanel8.add(comfortPrice);
 
@@ -577,11 +860,17 @@ public class Chimera extends javax.swing.JFrame {
 
         jPanel12.setLayout(new java.awt.GridLayout());
 
+        jPanel21.setBackground(new java.awt.Color(166, 166, 166));
+
+        jCheckBox14.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
         jCheckBox14.setText("jCheckBox14");
         jPanel21.add(jCheckBox14);
 
         jPanel12.add(jPanel21);
 
+        jPanel22.setBackground(new java.awt.Color(166, 166, 166));
+
+        jLabel13.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
         jLabel13.setText("jLabel13");
         jPanel22.add(jLabel13);
 
@@ -597,9 +886,6 @@ public class Chimera extends javax.swing.JFrame {
 
         breedHeadPanel.setLayout(new java.awt.BorderLayout());
 
-        breedHeadLabel.setText("Head:    ");
-        breedHeadPanel.add(breedHeadLabel, java.awt.BorderLayout.WEST);
-
         breedHeadSelectPanel.setLayout(new java.awt.BorderLayout());
 
         jButton5.setPreferredSize(new java.awt.Dimension(50, 29));
@@ -611,12 +897,20 @@ public class Chimera extends javax.swing.JFrame {
 
         breedHeadPanel.add(breedHeadSelectPanel, java.awt.BorderLayout.CENTER);
 
+        jPanel26.setBackground(new java.awt.Color(52, 85, 102));
+        jPanel26.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 5, 70));
+
+        breedHeadLabel.setBackground(new java.awt.Color(100, 36, 26));
+        breedHeadLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 23)); // NOI18N
+        breedHeadLabel.setForeground(new java.awt.Color(255, 255, 255));
+        breedHeadLabel.setText("  Head: ");
+        jPanel26.add(breedHeadLabel);
+
+        breedHeadPanel.add(jPanel26, java.awt.BorderLayout.WEST);
+
         breedPanel.add(breedHeadPanel);
 
         breedTorsoPanel.setLayout(new java.awt.BorderLayout());
-
-        breedTorsoLabel.setText("Torso:   ");
-        breedTorsoPanel.add(breedTorsoLabel, java.awt.BorderLayout.WEST);
 
         breedTorsoSelectPanel.setLayout(new java.awt.BorderLayout());
 
@@ -634,13 +928,20 @@ public class Chimera extends javax.swing.JFrame {
 
         breedTorsoPanel.add(breedTorsoSelectPanel, java.awt.BorderLayout.CENTER);
 
+        jPanel27.setBackground(new java.awt.Color(52, 85, 102));
+        jPanel27.setPreferredSize(new java.awt.Dimension(108, 170));
+        jPanel27.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 5, 70));
+
+        breedTorsoLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 22)); // NOI18N
+        breedTorsoLabel.setForeground(new java.awt.Color(255, 255, 255));
+        breedTorsoLabel.setText("  Torso: ");
+        jPanel27.add(breedTorsoLabel);
+
+        breedTorsoPanel.add(jPanel27, java.awt.BorderLayout.WEST);
+
         breedPanel.add(breedTorsoPanel);
 
         breedLegsPanel.setLayout(new java.awt.BorderLayout());
-
-        breedLegsLabel.setText("Legs:     ");
-        breedLegsPanel.add(breedLegsLabel, java.awt.BorderLayout.WEST);
-        breedLegsLabel.getAccessibleContext().setAccessibleName("Legs:    ");
 
         breedLegsSelectPanel.setLayout(new java.awt.BorderLayout());
 
@@ -653,81 +954,225 @@ public class Chimera extends javax.swing.JFrame {
 
         breedLegsPanel.add(breedLegsSelectPanel, java.awt.BorderLayout.CENTER);
 
+        jPanel28.setBackground(new java.awt.Color(52, 85, 102));
+        jPanel28.setPreferredSize(new java.awt.Dimension(108, 170));
+        jPanel28.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 5, 70));
+
+        breedLegsLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 22)); // NOI18N
+        breedLegsLabel.setForeground(new java.awt.Color(255, 255, 255));
+        breedLegsLabel.setText("  Legs:  ");
+        jPanel28.add(breedLegsLabel);
+        breedLegsLabel.getAccessibleContext().setAccessibleName("Legs:    ");
+
+        breedLegsPanel.add(jPanel28, java.awt.BorderLayout.WEST);
+
         breedPanel.add(breedLegsPanel);
 
         jTabbedPane1.addTab("Breed", breedPanel);
 
         ChimeraDesignPanel.add(jTabbedPane1, java.awt.BorderLayout.CENTER);
 
-        cartPanel.setPreferredSize(new java.awt.Dimension(130, 280));
+        cartPanel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(52, 85, 102), 3, true));
+        cartPanel.setPreferredSize(new java.awt.Dimension(215, 280));
         cartPanel.setLayout(new java.awt.BorderLayout());
 
-        cartScrollPanel.setPreferredSize(new java.awt.Dimension(150, 279));
+        cartScrollPanel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 2, true));
+        cartScrollPanel.setMaximumSize(new java.awt.Dimension(160, 220));
+        cartScrollPanel.setPreferredSize(new java.awt.Dimension(160, 220));
 
+        itemsPanel.setBackground(new java.awt.Color(255, 255, 255));
+        itemsPanel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 1, true));
+        itemsPanel.setMaximumSize(new java.awt.Dimension(32767, 350));
+        itemsPanel.setMinimumSize(new java.awt.Dimension(130, 350));
+        itemsPanel.setPreferredSize(new java.awt.Dimension(130, 350));
         itemsPanel.setLayout(new java.awt.GridLayout(5, 0, 0, 5));
 
-        CartHeadPanel.setLayout(new java.awt.GridLayout(3, 2));
+        CartHeadPanel.setBackground(new java.awt.Color(255, 255, 255));
+        CartHeadPanel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 2, true));
+        CartHeadPanel.setMaximumSize(new java.awt.Dimension(92, 51));
+        CartHeadPanel.setLayout(new java.awt.GridLayout(3, 1));
 
-        headLabel.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        headLabel.setText("Head:");
-        CartHeadPanel.add(headLabel);
-        CartHeadPanel.add(headSpaceFiller);
-        CartHeadPanel.add(headChoiceLabel);
+        jPanel29.setBackground(new java.awt.Color(255, 175, 74));
+        jPanel29.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 175, 74), 3, true));
+        jPanel29.setLayout(new java.awt.GridLayout());
 
+        headLabel.setBackground(new java.awt.Color(255, 175, 74));
+        headLabel.setFont(new java.awt.Font("Gulim", 0, 18)); // NOI18N
+        headLabel.setText(" Head:");
+        jPanel29.add(headLabel);
+
+        CartHeadPanel.add(jPanel29);
+
+        jPanel30.setLayout(new java.awt.GridLayout(1, 2));
+
+        headChoiceLabel.setBackground(new java.awt.Color(226, 230, 232));
+        headChoiceLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        headChoiceLabel.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jPanel30.add(headChoiceLabel);
+
+        headPriceLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        headPriceLabel.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         headPriceLabel.setText("$0.00");
-        CartHeadPanel.add(headPriceLabel);
+        jPanel30.add(headPriceLabel);
 
+        CartHeadPanel.add(jPanel30);
+
+        jPanel31.setLayout(new java.awt.GridLayout(1, 2));
+
+        headBreedTitleLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        headBreedTitleLabel.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         headBreedTitleLabel.setText("  Breed:");
-        CartHeadPanel.add(headBreedTitleLabel);
-        CartHeadPanel.add(headBreedLabel);
+        jPanel31.add(headBreedTitleLabel);
+
+        headBreedLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        headBreedLabel.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jPanel31.add(headBreedLabel);
+
+        CartHeadPanel.add(jPanel31);
 
         itemsPanel.add(CartHeadPanel);
 
-        CartTorsoPanel.setLayout(new java.awt.GridLayout(3, 2));
+        CartTorsoPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 2));
+        CartTorsoPanel.setLayout(new java.awt.GridLayout(3, 1));
 
-        torsoLabel.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        torsoLabel.setText("Torso:");
-        CartTorsoPanel.add(torsoLabel);
-        CartTorsoPanel.add(torsoSpaceFiller);
-        CartTorsoPanel.add(torsoChoiceLabel);
+        jPanel32.setBackground(new java.awt.Color(255, 175, 74));
+        jPanel32.setLayout(new java.awt.GridLayout());
 
+        torsoLabel.setFont(new java.awt.Font("Gulim", 0, 18)); // NOI18N
+        torsoLabel.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        torsoLabel.setText(" Torso:");
+        jPanel32.add(torsoLabel);
+
+        CartTorsoPanel.add(jPanel32);
+
+        jPanel33.setLayout(new java.awt.GridLayout(1, 2));
+
+        torsoChoiceLabel.setBackground(new java.awt.Color(255, 255, 255));
+        torsoChoiceLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        torsoChoiceLabel.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jPanel33.add(torsoChoiceLabel);
+
+        torsoPriceLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        torsoPriceLabel.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         torsoPriceLabel.setText("$0.00");
-        CartTorsoPanel.add(torsoPriceLabel);
+        jPanel33.add(torsoPriceLabel);
 
+        CartTorsoPanel.add(jPanel33);
+
+        jPanel34.setLayout(new java.awt.GridLayout(1, 2));
+
+        torsoBreedTitleLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        torsoBreedTitleLabel.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         torsoBreedTitleLabel.setText("  Breed:");
-        CartTorsoPanel.add(torsoBreedTitleLabel);
-        CartTorsoPanel.add(torsoBreedLabel);
+        jPanel34.add(torsoBreedTitleLabel);
+
+        torsoBreedLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        torsoBreedLabel.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jPanel34.add(torsoBreedLabel);
+
+        CartTorsoPanel.add(jPanel34);
 
         itemsPanel.add(CartTorsoPanel);
 
-        CartLegsPanel.setLayout(new java.awt.GridLayout(3, 2));
+        CartLegsPanel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 2, true));
+        CartLegsPanel.setLayout(new java.awt.GridLayout(3, 1));
 
-        legsLabel.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        legsLabel.setText("Legs:");
-        CartLegsPanel.add(legsLabel);
-        CartLegsPanel.add(legsSpaceFiller);
-        CartLegsPanel.add(legsChoiceLabel);
+        jPanel35.setBackground(new java.awt.Color(255, 175, 74));
+        jPanel35.setLayout(new java.awt.GridLayout());
 
+        legsLabel.setBackground(new java.awt.Color(206, 88, 79));
+        legsLabel.setFont(new java.awt.Font("Gulim", 0, 18)); // NOI18N
+        legsLabel.setText(" Legs:");
+        jPanel35.add(legsLabel);
+
+        CartLegsPanel.add(jPanel35);
+
+        jPanel36.setLayout(new java.awt.GridLayout(1, 2));
+
+        legsChoiceLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        legsChoiceLabel.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jPanel36.add(legsChoiceLabel);
+
+        legsPriceLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        legsPriceLabel.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         legsPriceLabel.setText("$0.00");
-        CartLegsPanel.add(legsPriceLabel);
+        jPanel36.add(legsPriceLabel);
 
+        CartLegsPanel.add(jPanel36);
+
+        jPanel37.setLayout(new java.awt.GridLayout());
+
+        legsBreedTitleLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        legsBreedTitleLabel.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         legsBreedTitleLabel.setText("  Breed:");
-        CartLegsPanel.add(legsBreedTitleLabel);
-        CartLegsPanel.add(legsBreedLabel);
+        jPanel37.add(legsBreedTitleLabel);
+
+        legsBreedLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        legsBreedLabel.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jPanel37.add(legsBreedLabel);
+
+        CartLegsPanel.add(jPanel37);
 
         itemsPanel.add(CartLegsPanel);
 
-        CartTricksPanel.setLayout(new java.awt.GridLayout(2, 2));
+        CartPersonalityPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 2));
+        CartPersonalityPanel.setLayout(new java.awt.GridLayout(3, 1));
 
-        tricksLabel.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        tricksLabel.setText("Skills:");
-        CartTricksPanel.add(tricksLabel);
+        jPanel51.setBackground(new java.awt.Color(255, 175, 74));
+        jPanel51.setLayout(new java.awt.GridLayout());
 
+        jLabel9.setFont(new java.awt.Font("Gulim", 0, 18)); // NOI18N
+        jLabel9.setText(" Personality:");
+        jPanel51.add(jLabel9);
+
+        CartPersonalityPanel.add(jPanel51);
+
+        jPanel52.setLayout(new java.awt.GridLayout(1, 2));
+
+        jLabel10.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        jLabel10.setText("  Temperament:");
+        jPanel52.add(jLabel10);
+
+        personalityTemperamentLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        personalityTemperamentLabel.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jPanel52.add(personalityTemperamentLabel);
+
+        CartPersonalityPanel.add(jPanel52);
+
+        jPanel53.setLayout(new java.awt.GridLayout(1, 2));
+
+        jLabel12.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        jLabel12.setText("  Energy Level:");
+        jPanel53.add(jLabel12);
+
+        personalityEnergyLevelLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        personalityEnergyLevelLabel.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jPanel53.add(personalityEnergyLevelLabel);
+
+        CartPersonalityPanel.add(jPanel53);
+
+        itemsPanel.add(CartPersonalityPanel);
+
+        CartTricksPanel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 2, true));
+        CartTricksPanel.setLayout(new java.awt.GridLayout(3, 1));
+
+        jPanel38.setBackground(new java.awt.Color(255, 175, 74));
+        jPanel38.setLayout(new java.awt.GridLayout());
+
+        tricksLabel.setFont(new java.awt.Font("Gulim", 0, 18)); // NOI18N
+        tricksLabel.setText(" Skills:");
+        jPanel38.add(tricksLabel);
+
+        CartTricksPanel.add(jPanel38);
+
+        jPanel39.setLayout(new java.awt.GridLayout());
+
+        tricksPriceLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        tricksPriceLabel.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         tricksPriceLabel.setText("$0.00");
-        CartTricksPanel.add(tricksPriceLabel);
+        jPanel39.add(tricksPriceLabel);
 
-        tricksListPanel.setLayout(new java.awt.GridLayout(10, 1));
-        CartTricksPanel.add(tricksListPanel);
+        CartTricksPanel.add(jPanel39);
 
         itemsPanel.add(CartTricksPanel);
 
@@ -735,13 +1180,28 @@ public class Chimera extends javax.swing.JFrame {
 
         cartPanel.add(cartScrollPanel, java.awt.BorderLayout.CENTER);
 
-        totalPanel.setPreferredSize(new java.awt.Dimension(150, 30));
+        totalPanel.setBackground(new java.awt.Color(52, 85, 102));
+        totalPanel.setPreferredSize(new java.awt.Dimension(150, 70));
+        totalPanel.setLayout(new java.awt.BorderLayout());
 
+        jButton7.setBackground(new java.awt.Color(254, 173, 74));
+        jButton7.setFont(new java.awt.Font("Euphemia UCAS", 0, 18)); // NOI18N
+        jButton7.setText("Checkout");
+        totalPanel.add(jButton7, java.awt.BorderLayout.PAGE_END);
+
+        jPanel25.setBackground(new java.awt.Color(52, 85, 102));
+
+        totalLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 18)); // NOI18N
+        totalLabel.setForeground(new java.awt.Color(255, 255, 255));
         totalLabel.setText("Total:");
-        totalPanel.add(totalLabel);
+        jPanel25.add(totalLabel);
 
+        totalPriceLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 18)); // NOI18N
+        totalPriceLabel.setForeground(new java.awt.Color(255, 255, 255));
         totalPriceLabel.setText("jLabel3");
-        totalPanel.add(totalPriceLabel);
+        jPanel25.add(totalPriceLabel);
+
+        totalPanel.add(jPanel25, java.awt.BorderLayout.NORTH);
 
         cartPanel.add(totalPanel, java.awt.BorderLayout.PAGE_END);
 
@@ -786,7 +1246,7 @@ public class Chimera extends javax.swing.JFrame {
         Animal animal = this.cycleAnimals(current.head, "Backwards");
         current.head = animal;
         AnimalViewHeadLabel.setText(animal.name);
-        headChoiceLabel.setText(animal.name);
+        headChoiceLabel.setText("  " + animal.name);
         headPriceLabel.setText(formatPriceString(animal.headPrice));
         headBreedLabel.setText(animal.breed);
         this.setTotal();
@@ -796,7 +1256,7 @@ public class Chimera extends javax.swing.JFrame {
         Animal animal = this.cycleAnimals(current.torso, "Backwards");
         current.torso = animal;
         AnimalViewTorsoLabel.setText(animal.name);
-        torsoChoiceLabel.setText(animal.name);
+        torsoChoiceLabel.setText("  " + animal.name);
         torsoPriceLabel.setText(formatPriceString(animal.torsoPrice));
         torsoBreedLabel.setText(animal.breed);
         this.setTotal();
@@ -806,7 +1266,7 @@ public class Chimera extends javax.swing.JFrame {
         Animal animal = this.cycleAnimals(current.legs, "Backwards");
         current.legs = animal;
         AnimalViewLegsLabel.setText(animal.name);
-        legsChoiceLabel.setText(animal.name);
+        legsChoiceLabel.setText("  " + animal.name);
         legsPriceLabel.setText(formatPriceString(animal.legsPrice));
         legsBreedLabel.setText(animal.breed);
         this.setTotal();
@@ -816,7 +1276,7 @@ public class Chimera extends javax.swing.JFrame {
         Animal animal = this.cycleAnimals(current.head, "Forwards");
         current.head = animal;
         AnimalViewHeadLabel.setText(animal.name);
-        headChoiceLabel.setText(animal.name);
+        headChoiceLabel.setText("  " + animal.name);
         headPriceLabel.setText(formatPriceString(animal.headPrice));
         headBreedLabel.setText(animal.breed);
         this.setTotal();
@@ -826,7 +1286,7 @@ public class Chimera extends javax.swing.JFrame {
         Animal animal = this.cycleAnimals(current.torso, "Forwards");
         current.torso = animal;
         AnimalViewTorsoLabel.setText(animal.name);
-        torsoChoiceLabel.setText(animal.name);
+        torsoChoiceLabel.setText("  " + animal.name);
         torsoPriceLabel.setText(formatPriceString(animal.torsoPrice));
         torsoBreedLabel.setText(animal.breed);
         this.setTotal();
@@ -836,7 +1296,7 @@ public class Chimera extends javax.swing.JFrame {
         Animal animal = this.cycleAnimals(current.legs, "Forwards");
         current.legs = animal;
         AnimalViewLegsLabel.setText(animal.name);
-        legsChoiceLabel.setText(animal.name);
+        legsChoiceLabel.setText("  " + animal.name);
         legsPriceLabel.setText(formatPriceString(animal.legsPrice));
         legsBreedLabel.setText(animal.breed);
         this.setTotal();
@@ -911,6 +1371,30 @@ public class Chimera extends javax.swing.JFrame {
         this.setTotal();
     }//GEN-LAST:event_playDeadCheckBoxMouseClicked
 
+    private void jButton8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton8MouseClicked
+        personalityTemperamentLabel.setText(docileLabel.getText());
+    }//GEN-LAST:event_jButton8MouseClicked
+
+    private void jButton9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton9MouseClicked
+        personalityTemperamentLabel.setText(protectiveLabel.getText());
+    }//GEN-LAST:event_jButton9MouseClicked
+
+    private void jButton10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton10MouseClicked
+        personalityTemperamentLabel.setText(aggressiveLabel.getText());
+    }//GEN-LAST:event_jButton10MouseClicked
+
+    private void jButton11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton11MouseClicked
+        personalityEnergyLevelLabel.setText(energyLowLabel.getText());
+    }//GEN-LAST:event_jButton11MouseClicked
+
+    private void jButton12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton12MouseClicked
+        personalityEnergyLevelLabel.setText(energyMediumLabel.getText());
+    }//GEN-LAST:event_jButton12MouseClicked
+
+    private void jButton13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton13MouseClicked
+        personalityEnergyLevelLabel.setText(energyHighLabel.getText());
+    }//GEN-LAST:event_jButton13MouseClicked
+
     private void switchToDesignPanel(Animal baseAnimal){
         CardLayout cl = (CardLayout)(CardPanel.getLayout());
         cl.next(CardPanel);
@@ -922,15 +1406,17 @@ public class Chimera extends javax.swing.JFrame {
         AnimalViewHeadLabel.setText(current.head.name);
         AnimalViewTorsoLabel.setText(current.torso.name);
         AnimalViewLegsLabel.setText(current.legs.name);
-        headChoiceLabel.setText(current.head.name);
+        headChoiceLabel.setText("  " + current.head.name);
         headPriceLabel.setText(formatPriceString(current.head.headPrice));
-        torsoChoiceLabel.setText(current.torso.name);
+        torsoChoiceLabel.setText("  " + current.torso.name);
         torsoPriceLabel.setText(formatPriceString(current.torso.torsoPrice));
-        legsChoiceLabel.setText(current.legs.name);
+        legsChoiceLabel.setText("  " + current.legs.name);
         legsPriceLabel.setText(formatPriceString(current.legs.legsPrice));
         headBreedLabel.setText(current.head.breed);
         torsoBreedLabel.setText(current.torso.breed);
         legsBreedLabel.setText(current.legs.breed);
+        personalityTemperamentLabel.setText(docileLabel.getText());
+        personalityEnergyLevelLabel.setText(energyMediumLabel.getText());
         this.setTotal();
     }
     
@@ -1007,27 +1493,23 @@ public class Chimera extends javax.swing.JFrame {
      */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
         try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Chimera.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Chimera.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Chimera.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Chimera.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+                // Set System L&F
+            UIManager.setLookAndFeel(
+            UIManager.getSystemLookAndFeelClassName());
+        } 
+        catch (UnsupportedLookAndFeelException e) {
+           // handle exception
         }
-        //</editor-fold>
+        catch (ClassNotFoundException e) {
+           // handle exception
+        }
+        catch (InstantiationException e) {
+           // handle exception
+        }
+        catch (IllegalAccessException e) {
+           // handle exception
+        }
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -1052,6 +1534,7 @@ public class Chimera extends javax.swing.JFrame {
     private javax.swing.JPanel CardPanel;
     private javax.swing.JPanel CartHeadPanel;
     private javax.swing.JPanel CartLegsPanel;
+    private javax.swing.JPanel CartPersonalityPanel;
     private javax.swing.JPanel CartTorsoPanel;
     private javax.swing.JPanel CartTricksPanel;
     private javax.swing.JButton CatButton;
@@ -1074,6 +1557,7 @@ public class Chimera extends javax.swing.JFrame {
     private javax.swing.JButton DogButton;
     private javax.swing.JButton ElephantButton;
     private javax.swing.JButton RabbitButton;
+    private javax.swing.JLabel aggressiveLabel;
     private javax.swing.JCheckBox agilityCheckBox;
     private javax.swing.JPanel agilityPanel;
     private javax.swing.JLabel agilityPriceLabel;
@@ -1098,22 +1582,37 @@ public class Chimera extends javax.swing.JFrame {
     private javax.swing.JPanel comfortPanel;
     private javax.swing.JLabel comfortPrice;
     private javax.swing.JPanel designPanel;
+    private javax.swing.JLabel docileLabel;
     private javax.swing.JRadioButton docileRadioButton;
+    private javax.swing.JLabel energyHighLabel;
+    private javax.swing.JLabel energyLowLabel;
+    private javax.swing.JLabel energyMediumLabel;
     private javax.swing.JLabel headBreedLabel;
     private javax.swing.JLabel headBreedTitleLabel;
     private javax.swing.JLabel headChoiceLabel;
     private javax.swing.JLabel headLabel;
     private javax.swing.JLabel headPriceLabel;
-    private javax.swing.JLabel headSpaceFiller;
     private javax.swing.JPanel itemsPanel;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton11;
+    private javax.swing.JButton jButton12;
+    private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
     private javax.swing.JCheckBox jCheckBox14;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
@@ -1131,9 +1630,37 @@ public class Chimera extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel22;
     private javax.swing.JPanel jPanel23;
     private javax.swing.JPanel jPanel24;
+    private javax.swing.JPanel jPanel25;
+    private javax.swing.JPanel jPanel26;
+    private javax.swing.JPanel jPanel27;
+    private javax.swing.JPanel jPanel28;
+    private javax.swing.JPanel jPanel29;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel30;
+    private javax.swing.JPanel jPanel31;
+    private javax.swing.JPanel jPanel32;
+    private javax.swing.JPanel jPanel33;
+    private javax.swing.JPanel jPanel34;
+    private javax.swing.JPanel jPanel35;
+    private javax.swing.JPanel jPanel36;
+    private javax.swing.JPanel jPanel37;
+    private javax.swing.JPanel jPanel38;
+    private javax.swing.JPanel jPanel39;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel40;
+    private javax.swing.JPanel jPanel41;
+    private javax.swing.JPanel jPanel42;
+    private javax.swing.JPanel jPanel43;
+    private javax.swing.JPanel jPanel44;
+    private javax.swing.JPanel jPanel45;
+    private javax.swing.JPanel jPanel46;
+    private javax.swing.JPanel jPanel47;
+    private javax.swing.JPanel jPanel48;
+    private javax.swing.JPanel jPanel49;
     private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel51;
+    private javax.swing.JPanel jPanel52;
+    private javax.swing.JPanel jPanel53;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
@@ -1146,13 +1673,15 @@ public class Chimera extends javax.swing.JFrame {
     private javax.swing.JLabel legsChoiceLabel;
     private javax.swing.JLabel legsLabel;
     private javax.swing.JLabel legsPriceLabel;
-    private javax.swing.JLabel legsSpaceFiller;
     private javax.swing.ButtonGroup personalityButtonGroup;
     private javax.swing.JDialog personalityDialog;
+    private javax.swing.JLabel personalityEnergyLevelLabel;
     private javax.swing.JPanel personalityPanel;
+    private javax.swing.JLabel personalityTemperamentLabel;
     private javax.swing.JCheckBox playDeadCheckBox;
     private javax.swing.JPanel playDeadPanel;
     private javax.swing.JLabel playDeadPriceLabel;
+    private javax.swing.JLabel protectiveLabel;
     private javax.swing.JCheckBox seeingCheckBox;
     private javax.swing.JPanel seeingPanel;
     private javax.swing.JLabel seeingPriceLabel;
@@ -1174,7 +1703,6 @@ public class Chimera extends javax.swing.JFrame {
     private javax.swing.JLabel torsoChoiceLabel;
     private javax.swing.JLabel torsoLabel;
     private javax.swing.JLabel torsoPriceLabel;
-    private javax.swing.JLabel torsoSpaceFiller;
     private javax.swing.JLabel totalLabel;
     private javax.swing.JPanel totalPanel;
     private javax.swing.JLabel totalPriceLabel;
@@ -1184,7 +1712,6 @@ public class Chimera extends javax.swing.JFrame {
     private javax.swing.JLabel trickColumnLabel;
     private javax.swing.JPanel trickColumnTitlePanel;
     private javax.swing.JLabel tricksLabel;
-    private javax.swing.JPanel tricksListPanel;
     private javax.swing.JLabel tricksPriceLabel;
     private javax.swing.JPanel tricksjPanel;
     // End of variables declaration//GEN-END:variables
@@ -1235,7 +1762,7 @@ public class Chimera extends javax.swing.JFrame {
         public void addSkill(String skillName, int price, String descr){
             Skill skill = new Skill(skillName, price, descr, new JLabel(skillName));
             this.skills.add(skill);
-            tricksListPanel.add(skill.label);
+            //tricksListPanel.add(skill.label);
             tricksPriceLabel.setText(formatPriceString(computeSkillsTotal()));
         }
         
@@ -1245,7 +1772,7 @@ public class Chimera extends javax.swing.JFrame {
                     Skill skill = this.skills.get(i);
                     if (skill.name.equals(skillName)){
                         this.skills.remove(i);
-                        tricksListPanel.remove(skill.label);
+                        //tricksListPanel.remove(skill.label);
                         tricksPriceLabel.setText(formatPriceString(computeSkillsTotal()));
                         break;
                     }
