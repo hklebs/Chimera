@@ -6,6 +6,7 @@
 import java.awt.*;
 import java.util.ArrayList;
 import javax.swing.*;
+import javax.swing.border.Border;
 /**
  *
  * @author Hudson and Bryan
@@ -22,13 +23,17 @@ public class Chimera extends javax.swing.JFrame {
     
     // Animals
     Animal goldenRetriever = new Animal("Dog", "Golden Retriever", 15, 25, 10);
-    Animal beagle = new Animal("Dog", "Beagle", 20, 20, 15);
+    Animal beagle = new Animal("Dog", "Beagle", 20, 20, 10);
     Animal siamese = new Animal("Cat", "Siamese", 13, 15, 10);
     Animal calico = new Animal("Cat", "Calico", 14, 17, 12);
     Animal rabbit = new Animal("Rabbit", "Bunny", 10, 10, 8);
     Animal elephant = new Animal("Elephant", "African", 100, 120, 90);
-    Animal blackBear = new Animal("Bear", "Black Bear", 80, 100, 80);
+    Animal brownBear = new Animal("Bear", "Brown Bear", 80, 100, 80);
     Animal polarBear = new Animal("Bear", "Polar Bear", 90, 110, 90);
+    
+    Animal dogBreedHead = goldenRetriever;
+    Animal dogBreedTorso = goldenRetriever;
+    Animal dogBreedLegs = goldenRetriever;
     
     // current state
     ChimeraCreation current = 
@@ -38,6 +43,9 @@ public class Chimera extends javax.swing.JFrame {
                                 "Docile",
                                 "Medium",
                                 new ArrayList<Skill>());
+    
+    Border defaultBorder = BorderFactory.createLineBorder(new Color(240,240,240), 5);
+    Border selectedBorder = BorderFactory.createLineBorder(new Color(255,175,74), 5);
     
     /**
      * This method is called from within the constructor to initialize the form.
@@ -61,6 +69,7 @@ public class Chimera extends javax.swing.JFrame {
         BufferPanel = new javax.swing.JPanel();
         BufferLabel = new javax.swing.JLabel();
         ChooseTextPanel = new javax.swing.JPanel();
+        jLabel33 = new javax.swing.JLabel();
         ChooseLabel = new javax.swing.JLabel();
         BaseAnimalChoicePanel = new javax.swing.JPanel();
         DogButton = new javax.swing.JButton();
@@ -123,11 +132,8 @@ public class Chimera extends javax.swing.JFrame {
         jTabbedPane1 = new javax.swing.JTabbedPane();
         designPanel = new javax.swing.JPanel();
         AnimalViewPanel = new javax.swing.JPanel();
-        AnimalViewHeadPanel = new javax.swing.JPanel();
         AnimalViewHeadLabel = new javax.swing.JLabel();
-        AnimalViewTorsoPanel = new javax.swing.JPanel();
         AnimalViewTorsoLabel = new javax.swing.JLabel();
-        AnimalViewLegsPanel = new javax.swing.JPanel();
         AnimalViewLegsLabel = new javax.swing.JLabel();
         ChangeAnimalRightPanel = new javax.swing.JPanel();
         ChangeHeadRightButton = new javax.swing.JButton();
@@ -138,30 +144,18 @@ public class Chimera extends javax.swing.JFrame {
         ChangeTorsoLeftButton = new javax.swing.JButton();
         ChangeLegsLeftButton = new javax.swing.JButton();
         personalityPanel = new javax.swing.JPanel();
-        jPanel40 = new javax.swing.JPanel();
-        jPanel42 = new javax.swing.JPanel();
+        temperamentPanel = new javax.swing.JPanel();
+        temperamentTitlePanel = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jPanel43 = new javax.swing.JPanel();
-        jButton8 = new javax.swing.JButton();
-        docileLabel = new javax.swing.JLabel();
-        jPanel44 = new javax.swing.JPanel();
-        jButton9 = new javax.swing.JButton();
-        protectiveLabel = new javax.swing.JLabel();
-        jPanel45 = new javax.swing.JPanel();
-        jButton10 = new javax.swing.JButton();
-        aggressiveLabel = new javax.swing.JLabel();
-        jPanel41 = new javax.swing.JPanel();
-        jPanel46 = new javax.swing.JPanel();
+        docileButton = new javax.swing.JButton();
+        protectiveButton = new javax.swing.JButton();
+        aggressiveButton = new javax.swing.JButton();
+        energyPanel = new javax.swing.JPanel();
+        energyTitlePanel = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jPanel47 = new javax.swing.JPanel();
-        jButton11 = new javax.swing.JButton();
-        energyLowLabel = new javax.swing.JLabel();
-        jPanel48 = new javax.swing.JPanel();
-        jButton12 = new javax.swing.JButton();
-        energyMediumLabel = new javax.swing.JLabel();
-        jPanel49 = new javax.swing.JPanel();
-        jButton13 = new javax.swing.JButton();
-        energyHighLabel = new javax.swing.JLabel();
+        lowEnergyButton = new javax.swing.JButton();
+        mediumEnergyButton = new javax.swing.JButton();
+        highEnergyButton = new javax.swing.JButton();
         skillsPanel = new javax.swing.JPanel();
         tricksjPanel = new javax.swing.JPanel();
         trickColumnTitlePanel = new javax.swing.JPanel();
@@ -213,37 +207,51 @@ public class Chimera extends javax.swing.JFrame {
         jPanel7 = new javax.swing.JPanel();
         comfortCheckBox = new javax.swing.JCheckBox();
         jPanel8 = new javax.swing.JPanel();
-        comfortPrice = new javax.swing.JLabel();
+        comfortPriceLabel = new javax.swing.JLabel();
         jPanel12 = new javax.swing.JPanel();
         jPanel21 = new javax.swing.JPanel();
-        jCheckBox14 = new javax.swing.JCheckBox();
         jPanel22 = new javax.swing.JPanel();
-        jLabel13 = new javax.swing.JLabel();
         breedPanel = new javax.swing.JPanel();
         breedHeadPanel = new javax.swing.JPanel();
         breedHeadSelectPanel = new javax.swing.JPanel();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jPanel24 = new javax.swing.JPanel();
-        jPanel26 = new javax.swing.JPanel();
+        breedHeadListPanel = new javax.swing.JPanel();
+        breedHeadNoneLabel = new javax.swing.JLabel();
+        breedHeadGoldenRetriever = new javax.swing.JPanel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        breedHeadBeagle = new javax.swing.JPanel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        breedHeadTitlePanel = new javax.swing.JPanel();
         breedHeadLabel = new javax.swing.JLabel();
         breedTorsoPanel = new javax.swing.JPanel();
         breedTorsoSelectPanel = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jPanel23 = new javax.swing.JPanel();
-        jButton4 = new javax.swing.JButton();
-        jPanel27 = new javax.swing.JPanel();
+        breedTorsoListPanel = new javax.swing.JPanel();
+        breedTorsoNoneLabel = new javax.swing.JLabel();
+        breedTorsoGoldenRetriever = new javax.swing.JPanel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        breedTorsoBeagle = new javax.swing.JPanel();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        breedTorsoTitlePanel = new javax.swing.JPanel();
         breedTorsoLabel = new javax.swing.JLabel();
         breedLegsPanel = new javax.swing.JPanel();
         breedLegsSelectPanel = new javax.swing.JPanel();
-        breedLegsLeftButton = new javax.swing.JButton();
-        jPanel13 = new javax.swing.JPanel();
-        breedLegsRightButton = new javax.swing.JButton();
-        jPanel28 = new javax.swing.JPanel();
+        breedLegsListPanel = new javax.swing.JPanel();
+        breedLegsNoneLabel = new javax.swing.JLabel();
+        breedLegsGoldenRetriever = new javax.swing.JPanel();
+        jLabel30 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        breedLegsBeagle = new javax.swing.JPanel();
+        jLabel28 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        breedLegsTitlePanel = new javax.swing.JPanel();
         breedLegsLabel = new javax.swing.JLabel();
-        jPanel54 = new javax.swing.JPanel();
+        headerPanel = new javax.swing.JPanel();
         backToEntryButton = new javax.swing.JButton();
         jPanel55 = new javax.swing.JPanel();
+        jLabel32 = new javax.swing.JLabel();
         checkoutPanel = new javax.swing.JPanel();
         jPanel56 = new javax.swing.JPanel();
         checkoutEntryScrollPane = new javax.swing.JScrollPane();
@@ -325,7 +333,7 @@ public class Chimera extends javax.swing.JFrame {
         jButton2.setText("jButton2");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(980, 616));
+        setPreferredSize(new java.awt.Dimension(1045, 650));
 
         CardPanel.setLayout(new java.awt.CardLayout());
 
@@ -358,9 +366,16 @@ public class Chimera extends javax.swing.JFrame {
 
         ChooseTextPanel.setBackground(new java.awt.Color(255, 255, 255));
         ChooseTextPanel.setPreferredSize(new java.awt.Dimension(200, 100));
-        ChooseTextPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 10, 100));
+        ChooseTextPanel.setLayout(new java.awt.GridLayout(2, 1));
+
+        jLabel33.setFont(ChooseLabel.getFont());
+        jLabel33.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel33.setText("Welcome to Chimera, here you can create the pet you have always wanted.");
+        jLabel33.setToolTipText("");
+        ChooseTextPanel.add(jLabel33);
 
         ChooseLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 14)); // NOI18N
+        ChooseLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ChooseLabel.setText("Choose Your Base Animal:");
         ChooseLabel.setPreferredSize(new java.awt.Dimension(180, 25));
         ChooseTextPanel.add(ChooseLabel);
@@ -373,7 +388,7 @@ public class Chimera extends javax.swing.JFrame {
 
         BaseAnimalChoicePanel.setLayout(new java.awt.GridLayout(1, 5));
 
-        DogButton.setText("Dog");
+        DogButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/intro/Golden Retriever.png"))); // NOI18N
         DogButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 DogButtonMouseClicked(evt);
@@ -381,7 +396,7 @@ public class Chimera extends javax.swing.JFrame {
         });
         BaseAnimalChoicePanel.add(DogButton);
 
-        CatButton.setText("Cat");
+        CatButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/intro/Calico.png"))); // NOI18N
         CatButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 CatButtonMouseClicked(evt);
@@ -389,7 +404,7 @@ public class Chimera extends javax.swing.JFrame {
         });
         BaseAnimalChoicePanel.add(CatButton);
 
-        RabbitButton.setText("Rabbit");
+        RabbitButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/intro/Bunny.png"))); // NOI18N
         RabbitButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 RabbitButtonMouseClicked(evt);
@@ -397,7 +412,7 @@ public class Chimera extends javax.swing.JFrame {
         });
         BaseAnimalChoicePanel.add(RabbitButton);
 
-        ElephantButton.setText("Elephant");
+        ElephantButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/intro/African.png"))); // NOI18N
         ElephantButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ElephantButtonMouseClicked(evt);
@@ -405,7 +420,7 @@ public class Chimera extends javax.swing.JFrame {
         });
         BaseAnimalChoicePanel.add(ElephantButton);
 
-        BearButton.setText("Bear");
+        BearButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/intro/Brown Bear.png"))); // NOI18N
         BearButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 BearButtonMouseClicked(evt);
@@ -651,7 +666,7 @@ public class Chimera extends javax.swing.JFrame {
 
         totalPriceLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 18)); // NOI18N
         totalPriceLabel.setForeground(new java.awt.Color(255, 255, 255));
-        totalPriceLabel.setText("jLabel3");
+        totalPriceLabel.setText("$0.00");
         jPanel25.add(totalPriceLabel);
 
         totalPanel.add(jPanel25, java.awt.BorderLayout.NORTH);
@@ -667,64 +682,76 @@ public class Chimera extends javax.swing.JFrame {
         jTabbedPane1.setBackground(new java.awt.Color(255, 255, 255));
         jTabbedPane1.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
         jTabbedPane1.setPreferredSize(new java.awt.Dimension(400, 202));
+        jTabbedPane1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTabbedPane1MouseClicked(evt);
+            }
+        });
 
         designPanel.setBackground(new java.awt.Color(255, 255, 255));
         designPanel.setLayout(new java.awt.BorderLayout());
 
         AnimalViewPanel.setBackground(new java.awt.Color(255, 255, 255));
-        AnimalViewPanel.setLayout(new java.awt.GridLayout(3, 1));
+        AnimalViewPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        AnimalViewHeadPanel.setBackground(new java.awt.Color(255, 255, 255));
+        AnimalViewHeadLabel.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        AnimalViewHeadLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/head/Golden Retriever.png"))); // NOI18N
+        AnimalViewHeadLabel.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        AnimalViewPanel.add(AnimalViewHeadLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 700, 560));
 
-        AnimalViewHeadLabel.setText("Dog");
-        AnimalViewHeadPanel.add(AnimalViewHeadLabel);
+        AnimalViewTorsoLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/torso/Golden Retriever.png"))); // NOI18N
+        AnimalViewPanel.add(AnimalViewTorsoLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 3, 710, 560));
 
-        AnimalViewPanel.add(AnimalViewHeadPanel);
-
-        AnimalViewTorsoPanel.setBackground(new java.awt.Color(255, 255, 255));
-
-        AnimalViewTorsoLabel.setText("Dog");
-        AnimalViewTorsoPanel.add(AnimalViewTorsoLabel);
-
-        AnimalViewPanel.add(AnimalViewTorsoPanel);
-
-        AnimalViewLegsPanel.setBackground(new java.awt.Color(255, 255, 255));
-
-        AnimalViewLegsLabel.setText("Dog");
-        AnimalViewLegsPanel.add(AnimalViewLegsLabel);
-
-        AnimalViewPanel.add(AnimalViewLegsPanel);
+        AnimalViewLegsLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/legs/Golden Retriever.png"))); // NOI18N
+        AnimalViewPanel.add(AnimalViewLegsLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 710, 570));
 
         designPanel.add(AnimalViewPanel, java.awt.BorderLayout.CENTER);
 
         ChangeAnimalRightPanel.setBackground(new java.awt.Color(255, 255, 255));
         ChangeAnimalRightPanel.setLayout(new java.awt.GridLayout(3, 1));
 
-        ChangeHeadRightButton.setText("---->");
+        ChangeHeadRightButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/right.png"))); // NOI18N
+        ChangeHeadRightButton.setBorder(null);
         ChangeHeadRightButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                ChangeHeadRightButtonMouseExited(evt);
+            }
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ChangeHeadRightButtonMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                ChangeHeadRightButtonMouseEntered(evt);
             }
         });
         ChangeAnimalRightPanel.add(ChangeHeadRightButton);
 
-        ChangeTorsoRightButton.setText("---->");
+        ChangeTorsoRightButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/right.png"))); // NOI18N
+        ChangeTorsoRightButton.setBorder(null);
         ChangeTorsoRightButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                ChangeTorsoRightButtonMouseExited(evt);
+            }
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ChangeTorsoRightButtonMouseClicked(evt);
             }
-        });
-        ChangeTorsoRightButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ChangeTorsoRightButtonActionPerformed(evt);
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                ChangeTorsoRightButtonMouseEntered(evt);
             }
         });
         ChangeAnimalRightPanel.add(ChangeTorsoRightButton);
 
-        ChangeLegsRightButton.setText("---->");
+        ChangeLegsRightButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/right.png"))); // NOI18N
+        ChangeLegsRightButton.setToolTipText("");
+        ChangeLegsRightButton.setBorder(null);
         ChangeLegsRightButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                ChangeLegsRightButtonMouseExited(evt);
+            }
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ChangeLegsRightButtonMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                ChangeLegsRightButtonMouseEntered(evt);
             }
         });
         ChangeAnimalRightPanel.add(ChangeLegsRightButton);
@@ -735,170 +762,154 @@ public class Chimera extends javax.swing.JFrame {
         ChangeAnimalLeftPanel.setLayout(new java.awt.GridLayout(3, 1));
 
         ChangeHeadLeftButton.setBackground(new java.awt.Color(255, 255, 255));
-        ChangeHeadLeftButton.setText("<----");
+        ChangeHeadLeftButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/left.png"))); // NOI18N
+        ChangeHeadLeftButton.setBorder(null);
         ChangeHeadLeftButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ChangeHeadLeftButtonMouseClicked(evt);
             }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                ChangeHeadLeftButtonMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                ChangeHeadLeftButtonMouseExited(evt);
+            }
         });
         ChangeAnimalLeftPanel.add(ChangeHeadLeftButton);
 
-        ChangeTorsoLeftButton.setText("<----");
+        ChangeTorsoLeftButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/left.png"))); // NOI18N
+        ChangeTorsoLeftButton.setToolTipText("");
+        ChangeTorsoLeftButton.setBorder(null);
         ChangeTorsoLeftButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                ChangeTorsoLeftButtonMouseExited(evt);
+            }
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ChangeTorsoLeftButtonMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                ChangeTorsoLeftButtonMouseEntered(evt);
             }
         });
         ChangeAnimalLeftPanel.add(ChangeTorsoLeftButton);
 
-        ChangeLegsLeftButton.setText("<----");
+        ChangeLegsLeftButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/left.png"))); // NOI18N
+        ChangeLegsLeftButton.setBorder(null);
         ChangeLegsLeftButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                ChangeLegsLeftButtonMouseExited(evt);
+            }
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ChangeLegsLeftButtonMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                ChangeLegsLeftButtonMouseEntered(evt);
             }
         });
         ChangeAnimalLeftPanel.add(ChangeLegsLeftButton);
 
         designPanel.add(ChangeAnimalLeftPanel, java.awt.BorderLayout.LINE_START);
 
-        jTabbedPane1.addTab("Design", designPanel);
+        jTabbedPane1.addTab("                  Design                  ", designPanel);
 
         personalityPanel.setLayout(new java.awt.GridLayout(1, 2));
 
-        jPanel40.setLayout(new java.awt.GridLayout(4, 1));
+        temperamentPanel.setLayout(new java.awt.GridLayout(4, 1));
 
-        jPanel42.setBackground(new java.awt.Color(52, 85, 102));
-        jPanel42.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 5, 40));
+        temperamentTitlePanel.setBackground(new java.awt.Color(52, 85, 102));
+        temperamentTitlePanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 5, 40));
 
         jLabel1.setFont(new java.awt.Font("Gulim", 0, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Temperament");
-        jPanel42.add(jLabel1);
+        temperamentTitlePanel.add(jLabel1);
 
-        jPanel40.add(jPanel42);
+        temperamentPanel.add(temperamentTitlePanel);
 
-        jPanel43.setLayout(new java.awt.BorderLayout());
-
-        jButton8.setPreferredSize(new java.awt.Dimension(20, 29));
-        jButton8.addMouseListener(new java.awt.event.MouseAdapter() {
+        docileButton.setFont(new java.awt.Font("Euphemia", 0, 24)); // NOI18N
+        docileButton.setText("Docile");
+        docileButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(240, 240, 240), 5));
+        docileButton.setPreferredSize(new java.awt.Dimension(20, 29));
+        docileButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton8MouseClicked(evt);
+                docileButtonMouseClicked(evt);
             }
         });
-        jPanel43.add(jButton8, java.awt.BorderLayout.WEST);
+        temperamentPanel.add(docileButton);
 
-        docileLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 24)); // NOI18N
-        docileLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        docileLabel.setText("Docile");
-        jPanel43.add(docileLabel, java.awt.BorderLayout.CENTER);
-
-        jPanel40.add(jPanel43);
-
-        jPanel44.setBackground(new java.awt.Color(166, 166, 166));
-        jPanel44.setLayout(new java.awt.BorderLayout());
-
-        jButton9.setPreferredSize(new java.awt.Dimension(20, 29));
-        jButton9.addMouseListener(new java.awt.event.MouseAdapter() {
+        protectiveButton.setBackground(new java.awt.Color(255, 175, 74));
+        protectiveButton.setFont(new java.awt.Font("Euphemia", 0, 24)); // NOI18N
+        protectiveButton.setText("Protective");
+        protectiveButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 175, 74), 5));
+        protectiveButton.setPreferredSize(new java.awt.Dimension(20, 29));
+        protectiveButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton9MouseClicked(evt);
+                protectiveButtonMouseClicked(evt);
             }
         });
-        jPanel44.add(jButton9, java.awt.BorderLayout.WEST);
+        temperamentPanel.add(protectiveButton);
 
-        protectiveLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 24)); // NOI18N
-        protectiveLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        protectiveLabel.setText("Protective");
-        jPanel44.add(protectiveLabel, java.awt.BorderLayout.CENTER);
-
-        jPanel40.add(jPanel44);
-
-        jPanel45.setLayout(new java.awt.BorderLayout());
-
-        jButton10.setPreferredSize(new java.awt.Dimension(20, 29));
-        jButton10.addMouseListener(new java.awt.event.MouseAdapter() {
+        aggressiveButton.setFont(new java.awt.Font("Euphemia", 0, 24)); // NOI18N
+        aggressiveButton.setText("Aggressive");
+        aggressiveButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(240, 240, 240), 5));
+        aggressiveButton.setPreferredSize(new java.awt.Dimension(20, 29));
+        aggressiveButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton10MouseClicked(evt);
+                aggressiveButtonMouseClicked(evt);
             }
         });
-        jPanel45.add(jButton10, java.awt.BorderLayout.WEST);
+        temperamentPanel.add(aggressiveButton);
 
-        aggressiveLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 24)); // NOI18N
-        aggressiveLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        aggressiveLabel.setText("Aggressive");
-        jPanel45.add(aggressiveLabel, java.awt.BorderLayout.CENTER);
+        personalityPanel.add(temperamentPanel);
 
-        jPanel40.add(jPanel45);
+        energyPanel.setLayout(new java.awt.GridLayout(4, 1));
 
-        personalityPanel.add(jPanel40);
-
-        jPanel41.setLayout(new java.awt.GridLayout(4, 1));
-
-        jPanel46.setBackground(new java.awt.Color(52, 85, 102));
-        jPanel46.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 5, 40));
+        energyTitlePanel.setBackground(new java.awt.Color(52, 85, 102));
+        energyTitlePanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 5, 40));
 
         jLabel2.setFont(new java.awt.Font("Gulim", 0, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Energy Level");
-        jPanel46.add(jLabel2);
+        energyTitlePanel.add(jLabel2);
 
-        jPanel41.add(jPanel46);
+        energyPanel.add(energyTitlePanel);
 
-        jPanel47.setBackground(new java.awt.Color(166, 166, 166));
-        jPanel47.setLayout(new java.awt.BorderLayout());
-
-        jButton11.setPreferredSize(new java.awt.Dimension(20, 29));
-        jButton11.addMouseListener(new java.awt.event.MouseAdapter() {
+        lowEnergyButton.setFont(new java.awt.Font("Euphemia", 0, 24)); // NOI18N
+        lowEnergyButton.setText("Low");
+        lowEnergyButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(240, 240, 240), 5));
+        lowEnergyButton.setPreferredSize(new java.awt.Dimension(20, 29));
+        lowEnergyButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton11MouseClicked(evt);
+                lowEnergyButtonMouseClicked(evt);
             }
         });
-        jPanel47.add(jButton11, java.awt.BorderLayout.WEST);
+        energyPanel.add(lowEnergyButton);
 
-        energyLowLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 24)); // NOI18N
-        energyLowLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        energyLowLabel.setText("Low");
-        jPanel47.add(energyLowLabel, java.awt.BorderLayout.CENTER);
-
-        jPanel41.add(jPanel47);
-
-        jPanel48.setLayout(new java.awt.BorderLayout());
-
-        jButton12.setPreferredSize(new java.awt.Dimension(20, 29));
-        jButton12.addMouseListener(new java.awt.event.MouseAdapter() {
+        mediumEnergyButton.setFont(new java.awt.Font("Euphemia", 0, 24)); // NOI18N
+        mediumEnergyButton.setText("Medium");
+        mediumEnergyButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 175, 74), 5));
+        mediumEnergyButton.setPreferredSize(new java.awt.Dimension(20, 29));
+        mediumEnergyButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton12MouseClicked(evt);
+                mediumEnergyButtonMouseClicked(evt);
             }
         });
-        jPanel48.add(jButton12, java.awt.BorderLayout.WEST);
+        energyPanel.add(mediumEnergyButton);
 
-        energyMediumLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 24)); // NOI18N
-        energyMediumLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        energyMediumLabel.setText("Medium");
-        jPanel48.add(energyMediumLabel, java.awt.BorderLayout.CENTER);
-
-        jPanel41.add(jPanel48);
-
-        jPanel49.setBackground(new java.awt.Color(166, 166, 166));
-        jPanel49.setLayout(new java.awt.BorderLayout());
-
-        jButton13.setPreferredSize(new java.awt.Dimension(20, 29));
-        jButton13.addMouseListener(new java.awt.event.MouseAdapter() {
+        highEnergyButton.setFont(new java.awt.Font("Euphemia", 0, 24)); // NOI18N
+        highEnergyButton.setText("High");
+        highEnergyButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(240, 240, 240), 5));
+        highEnergyButton.setPreferredSize(new java.awt.Dimension(20, 29));
+        highEnergyButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton13MouseClicked(evt);
+                highEnergyButtonMouseClicked(evt);
             }
         });
-        jPanel49.add(jButton13, java.awt.BorderLayout.WEST);
+        energyPanel.add(highEnergyButton);
 
-        energyHighLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 24)); // NOI18N
-        energyHighLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        energyHighLabel.setText("High");
-        jPanel49.add(energyHighLabel, java.awt.BorderLayout.CENTER);
+        personalityPanel.add(energyPanel);
 
-        jPanel41.add(jPanel49);
-
-        personalityPanel.add(jPanel41);
-
-        jTabbedPane1.addTab("Personality", personalityPanel);
+        jTabbedPane1.addTab("                Personality                ", personalityPanel);
 
         skillsPanel.setLayout(new java.awt.GridLayout(1, 2));
 
@@ -945,16 +956,12 @@ public class Chimera extends javax.swing.JFrame {
         jPanel11.setBackground(new java.awt.Color(166, 166, 166));
         jPanel11.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 25));
 
+        stayCheckBox.setBackground(new java.awt.Color(166, 166, 166));
         stayCheckBox.setFont(new java.awt.Font("Euphemia UCAS", 0, 24)); // NOI18N
         stayCheckBox.setText("Stay");
         stayCheckBox.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 stayCheckBoxMouseClicked(evt);
-            }
-        });
-        stayCheckBox.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                stayCheckBoxActionPerformed(evt);
             }
         });
         jPanel11.add(stayCheckBox);
@@ -1002,6 +1009,7 @@ public class Chimera extends javax.swing.JFrame {
         jPanel17.setBackground(new java.awt.Color(166, 166, 166));
         jPanel17.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 25));
 
+        shakeHandsCheckBox.setBackground(new java.awt.Color(166, 166, 166));
         shakeHandsCheckBox.setFont(new java.awt.Font("Euphemia UCAS", 0, 24)); // NOI18N
         shakeHandsCheckBox.setText("Shake Hands");
         shakeHandsCheckBox.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1070,11 +1078,12 @@ public class Chimera extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(166, 166, 166));
         jPanel2.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 25));
 
+        therapyCheckBox.setBackground(new java.awt.Color(166, 166, 166));
         therapyCheckBox.setFont(new java.awt.Font("Euphemia UCAS", 0, 24)); // NOI18N
         therapyCheckBox.setText("Therapy");
-        therapyCheckBox.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                therapyCheckBoxActionPerformed(evt);
+        therapyCheckBox.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                therapyCheckBoxMouseClicked(evt);
             }
         });
         jPanel2.add(therapyCheckBox);
@@ -1098,6 +1107,11 @@ public class Chimera extends javax.swing.JFrame {
 
         agilityCheckBox.setFont(new java.awt.Font("Euphemia UCAS", 0, 24)); // NOI18N
         agilityCheckBox.setText("Agility");
+        agilityCheckBox.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                agilityCheckBoxMouseClicked(evt);
+            }
+        });
         jPanel3.add(agilityCheckBox);
 
         agilityPanel.add(jPanel3);
@@ -1117,8 +1131,14 @@ public class Chimera extends javax.swing.JFrame {
         jPanel5.setBackground(new java.awt.Color(166, 166, 166));
         jPanel5.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 25));
 
+        seeingCheckBox.setBackground(new java.awt.Color(166, 166, 166));
         seeingCheckBox.setFont(new java.awt.Font("Euphemia UCAS", 0, 24)); // NOI18N
         seeingCheckBox.setText("Seeing");
+        seeingCheckBox.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                seeingCheckBoxMouseClicked(evt);
+            }
+        });
         jPanel5.add(seeingCheckBox);
 
         seeingPanel.add(jPanel5);
@@ -1140,15 +1160,20 @@ public class Chimera extends javax.swing.JFrame {
 
         comfortCheckBox.setFont(new java.awt.Font("Euphemia UCAS", 0, 24)); // NOI18N
         comfortCheckBox.setText("Comfort");
+        comfortCheckBox.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                comfortCheckBoxMouseClicked(evt);
+            }
+        });
         jPanel7.add(comfortCheckBox);
 
         comfortPanel.add(jPanel7);
 
         jPanel8.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.RIGHT, 5, 25));
 
-        comfortPrice.setFont(new java.awt.Font("Euphemia UCAS", 0, 24)); // NOI18N
-        comfortPrice.setText("$50.00");
-        jPanel8.add(comfortPrice);
+        comfortPriceLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 24)); // NOI18N
+        comfortPriceLabel.setText("$50.00");
+        jPanel8.add(comfortPriceLabel);
 
         comfortPanel.add(jPanel8);
 
@@ -1157,26 +1182,16 @@ public class Chimera extends javax.swing.JFrame {
         jPanel12.setLayout(new java.awt.GridLayout(1, 0));
 
         jPanel21.setBackground(new java.awt.Color(166, 166, 166));
-
-        jCheckBox14.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
-        jCheckBox14.setText("jCheckBox14");
-        jPanel21.add(jCheckBox14);
-
         jPanel12.add(jPanel21);
 
         jPanel22.setBackground(new java.awt.Color(166, 166, 166));
-
-        jLabel13.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
-        jLabel13.setText("jLabel13");
-        jPanel22.add(jLabel13);
-
         jPanel12.add(jPanel22);
 
         trainingPanel.add(jPanel12);
 
         skillsPanel.add(trainingPanel);
 
-        jTabbedPane1.addTab("Skills", skillsPanel);
+        jTabbedPane1.addTab("                   Skills                   ", skillsPanel);
 
         breedPanel.setLayout(new java.awt.GridLayout(3, 1));
 
@@ -1184,25 +1199,67 @@ public class Chimera extends javax.swing.JFrame {
 
         breedHeadSelectPanel.setLayout(new java.awt.BorderLayout());
 
-        jButton5.setPreferredSize(new java.awt.Dimension(50, 29));
-        breedHeadSelectPanel.add(jButton5, java.awt.BorderLayout.WEST);
+        breedHeadListPanel.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        breedHeadListPanel.setLayout(new java.awt.GridLayout());
 
-        jButton6.setPreferredSize(new java.awt.Dimension(50, 29));
-        breedHeadSelectPanel.add(jButton6, java.awt.BorderLayout.EAST);
-        breedHeadSelectPanel.add(jPanel24, java.awt.BorderLayout.CENTER);
+        breedHeadNoneLabel.setFont(new java.awt.Font("Euphemia", 0, 24)); // NOI18N
+        breedHeadNoneLabel.setText("None Available");
+        breedHeadNoneLabel.setToolTipText("");
+        breedHeadListPanel.add(breedHeadNoneLabel);
+
+        breedHeadGoldenRetriever.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 175, 74), 5));
+        breedHeadGoldenRetriever.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                breedHeadGoldenRetrieverMouseClicked(evt);
+            }
+        });
+        breedHeadGoldenRetriever.setLayout(new java.awt.BorderLayout());
+
+        jLabel13.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel13.setText("Golden Retriever");
+        breedHeadGoldenRetriever.add(jLabel13, java.awt.BorderLayout.SOUTH);
+
+        jLabel21.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/breed/Golden Retriever.png"))); // NOI18N
+        breedHeadGoldenRetriever.add(jLabel21, java.awt.BorderLayout.CENTER);
+
+        breedHeadListPanel.add(breedHeadGoldenRetriever);
+
+        breedHeadBeagle.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(240, 240, 240), 5));
+        breedHeadBeagle.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                breedHeadBeagleMouseClicked(evt);
+            }
+        });
+        breedHeadBeagle.setLayout(new java.awt.BorderLayout());
+
+        jLabel22.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel22.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel22.setText("Beagle");
+        breedHeadBeagle.add(jLabel22, java.awt.BorderLayout.SOUTH);
+
+        jLabel23.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/breed/Beagle.png"))); // NOI18N
+        breedHeadBeagle.add(jLabel23, java.awt.BorderLayout.CENTER);
+
+        breedHeadListPanel.add(breedHeadBeagle);
+
+        breedHeadSelectPanel.add(breedHeadListPanel, java.awt.BorderLayout.CENTER);
 
         breedHeadPanel.add(breedHeadSelectPanel, java.awt.BorderLayout.CENTER);
 
-        jPanel26.setBackground(new java.awt.Color(52, 85, 102));
-        jPanel26.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 5, 70));
+        breedHeadTitlePanel.setBackground(new java.awt.Color(52, 85, 102));
+        breedHeadTitlePanel.setPreferredSize(new java.awt.Dimension(108, 170));
+        breedHeadTitlePanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 5, 70));
 
         breedHeadLabel.setBackground(new java.awt.Color(100, 36, 26));
         breedHeadLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 23)); // NOI18N
         breedHeadLabel.setForeground(new java.awt.Color(255, 255, 255));
-        breedHeadLabel.setText("  Head: ");
-        jPanel26.add(breedHeadLabel);
+        breedHeadLabel.setText("   Head:   ");
+        breedHeadTitlePanel.add(breedHeadLabel);
 
-        breedHeadPanel.add(jPanel26, java.awt.BorderLayout.WEST);
+        breedHeadPanel.add(breedHeadTitlePanel, java.awt.BorderLayout.WEST);
 
         breedPanel.add(breedHeadPanel);
 
@@ -1210,30 +1267,66 @@ public class Chimera extends javax.swing.JFrame {
 
         breedTorsoSelectPanel.setLayout(new java.awt.BorderLayout());
 
-        jButton1.setPreferredSize(new java.awt.Dimension(50, 29));
-        breedTorsoSelectPanel.add(jButton1, java.awt.BorderLayout.WEST);
-        breedTorsoSelectPanel.add(jPanel23, java.awt.BorderLayout.CENTER);
+        breedTorsoListPanel.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        breedTorsoListPanel.setLayout(new java.awt.GridLayout());
 
-        jButton4.setPreferredSize(new java.awt.Dimension(50, 29));
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+        breedTorsoNoneLabel.setFont(new java.awt.Font("Euphemia", 0, 24)); // NOI18N
+        breedTorsoNoneLabel.setText("None Available");
+        breedTorsoNoneLabel.setToolTipText("");
+        breedTorsoListPanel.add(breedTorsoNoneLabel);
+
+        breedTorsoGoldenRetriever.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 175, 74), 5));
+        breedTorsoGoldenRetriever.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                breedTorsoGoldenRetrieverMouseClicked(evt);
             }
         });
-        breedTorsoSelectPanel.add(jButton4, java.awt.BorderLayout.EAST);
+        breedTorsoGoldenRetriever.setLayout(new java.awt.BorderLayout());
+
+        jLabel26.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel26.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel26.setText("Golden Retriever");
+        breedTorsoGoldenRetriever.add(jLabel26, java.awt.BorderLayout.SOUTH);
+
+        jLabel27.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/breed/Golden Retriever.png"))); // NOI18N
+        breedTorsoGoldenRetriever.add(jLabel27, java.awt.BorderLayout.CENTER);
+
+        breedTorsoListPanel.add(breedTorsoGoldenRetriever);
+
+        breedTorsoBeagle.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(240, 240, 240), 5));
+        breedTorsoBeagle.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                breedTorsoBeagleMouseClicked(evt);
+            }
+        });
+        breedTorsoBeagle.setLayout(new java.awt.BorderLayout());
+
+        jLabel24.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel24.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel24.setText("Beagle");
+        breedTorsoBeagle.add(jLabel24, java.awt.BorderLayout.SOUTH);
+
+        jLabel25.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/breed/Beagle.png"))); // NOI18N
+        breedTorsoBeagle.add(jLabel25, java.awt.BorderLayout.CENTER);
+
+        breedTorsoListPanel.add(breedTorsoBeagle);
+
+        breedTorsoSelectPanel.add(breedTorsoListPanel, java.awt.BorderLayout.CENTER);
 
         breedTorsoPanel.add(breedTorsoSelectPanel, java.awt.BorderLayout.CENTER);
 
-        jPanel27.setBackground(new java.awt.Color(52, 85, 102));
-        jPanel27.setPreferredSize(new java.awt.Dimension(108, 170));
-        jPanel27.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 5, 70));
+        breedTorsoTitlePanel.setBackground(new java.awt.Color(52, 85, 102));
+        breedTorsoTitlePanel.setPreferredSize(new java.awt.Dimension(108, 170));
+        breedTorsoTitlePanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 5, 70));
 
         breedTorsoLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 22)); // NOI18N
         breedTorsoLabel.setForeground(new java.awt.Color(255, 255, 255));
         breedTorsoLabel.setText("  Torso: ");
-        jPanel27.add(breedTorsoLabel);
+        breedTorsoTitlePanel.add(breedTorsoLabel);
 
-        breedTorsoPanel.add(jPanel27, java.awt.BorderLayout.WEST);
+        breedTorsoPanel.add(breedTorsoTitlePanel, java.awt.BorderLayout.WEST);
 
         breedPanel.add(breedTorsoPanel);
 
@@ -1241,50 +1334,98 @@ public class Chimera extends javax.swing.JFrame {
 
         breedLegsSelectPanel.setLayout(new java.awt.BorderLayout());
 
-        breedLegsLeftButton.setPreferredSize(new java.awt.Dimension(50, 29));
-        breedLegsSelectPanel.add(breedLegsLeftButton, java.awt.BorderLayout.WEST);
-        breedLegsSelectPanel.add(jPanel13, java.awt.BorderLayout.CENTER);
+        breedLegsListPanel.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        breedLegsListPanel.setLayout(new java.awt.GridLayout());
 
-        breedLegsRightButton.setPreferredSize(new java.awt.Dimension(50, 29));
-        breedLegsSelectPanel.add(breedLegsRightButton, java.awt.BorderLayout.EAST);
+        breedLegsNoneLabel.setFont(new java.awt.Font("Euphemia", 0, 24)); // NOI18N
+        breedLegsNoneLabel.setText("None Available");
+        breedLegsNoneLabel.setToolTipText("");
+        breedLegsListPanel.add(breedLegsNoneLabel);
+
+        breedLegsGoldenRetriever.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 175, 74), 5));
+        breedLegsGoldenRetriever.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                breedLegsGoldenRetrieverMouseClicked(evt);
+            }
+        });
+        breedLegsGoldenRetriever.setLayout(new java.awt.BorderLayout());
+
+        jLabel30.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel30.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel30.setText("Golden Retriever");
+        breedLegsGoldenRetriever.add(jLabel30, java.awt.BorderLayout.SOUTH);
+
+        jLabel31.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/breed/Golden Retriever.png"))); // NOI18N
+        breedLegsGoldenRetriever.add(jLabel31, java.awt.BorderLayout.CENTER);
+
+        breedLegsListPanel.add(breedLegsGoldenRetriever);
+
+        breedLegsBeagle.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(240, 240, 240), 5));
+        breedLegsBeagle.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                breedLegsBeagleMouseClicked(evt);
+            }
+        });
+        breedLegsBeagle.setLayout(new java.awt.BorderLayout());
+
+        jLabel28.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel28.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel28.setText("Beagle");
+        breedLegsBeagle.add(jLabel28, java.awt.BorderLayout.SOUTH);
+
+        jLabel29.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/breed/Beagle.png"))); // NOI18N
+        breedLegsBeagle.add(jLabel29, java.awt.BorderLayout.CENTER);
+
+        breedLegsListPanel.add(breedLegsBeagle);
+
+        breedLegsSelectPanel.add(breedLegsListPanel, java.awt.BorderLayout.CENTER);
 
         breedLegsPanel.add(breedLegsSelectPanel, java.awt.BorderLayout.CENTER);
 
-        jPanel28.setBackground(new java.awt.Color(52, 85, 102));
-        jPanel28.setPreferredSize(new java.awt.Dimension(108, 170));
-        jPanel28.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 5, 70));
+        breedLegsTitlePanel.setBackground(new java.awt.Color(52, 85, 102));
+        breedLegsTitlePanel.setPreferredSize(new java.awt.Dimension(108, 170));
+        breedLegsTitlePanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 5, 70));
 
         breedLegsLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 22)); // NOI18N
         breedLegsLabel.setForeground(new java.awt.Color(255, 255, 255));
         breedLegsLabel.setText("  Legs:  ");
-        jPanel28.add(breedLegsLabel);
+        breedLegsTitlePanel.add(breedLegsLabel);
         breedLegsLabel.getAccessibleContext().setAccessibleName("Legs:    ");
 
-        breedLegsPanel.add(jPanel28, java.awt.BorderLayout.WEST);
+        breedLegsPanel.add(breedLegsTitlePanel, java.awt.BorderLayout.WEST);
 
         breedPanel.add(breedLegsPanel);
 
-        jTabbedPane1.addTab("Breed", breedPanel);
+        jTabbedPane1.addTab("                   Breed                   ", breedPanel);
 
         customizationPanel.add(jTabbedPane1, java.awt.BorderLayout.CENTER);
 
-        jPanel54.setBackground(new java.awt.Color(52, 85, 102));
-        jPanel54.setLayout(new java.awt.BorderLayout());
+        headerPanel.setBackground(new java.awt.Color(52, 85, 102));
+        headerPanel.setPreferredSize(new java.awt.Dimension(67, 23));
+        headerPanel.setLayout(new java.awt.BorderLayout());
 
         backToEntryButton.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
-        backToEntryButton.setText("Back");
+        backToEntryButton.setText("Home");
         backToEntryButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 backToEntryButtonMouseClicked(evt);
             }
         });
-        jPanel54.add(backToEntryButton, java.awt.BorderLayout.WEST);
+        headerPanel.add(backToEntryButton, java.awt.BorderLayout.WEST);
 
         jPanel55.setBackground(new java.awt.Color(255, 175, 74));
         jPanel55.setPreferredSize(new java.awt.Dimension(10, 2));
-        jPanel54.add(jPanel55, java.awt.BorderLayout.SOUTH);
+        headerPanel.add(jPanel55, java.awt.BorderLayout.SOUTH);
 
-        customizationPanel.add(jPanel54, java.awt.BorderLayout.PAGE_START);
+        jLabel32.setFont(new java.awt.Font("Euphemia", 0, 13)); // NOI18N
+        jLabel32.setForeground(new java.awt.Color(240, 240, 240));
+        jLabel32.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel32.setText("Chimera - Custom Pets");
+        headerPanel.add(jLabel32, java.awt.BorderLayout.CENTER);
+
+        customizationPanel.add(headerPanel, java.awt.BorderLayout.PAGE_START);
 
         animalPanel.add(customizationPanel, "card2");
 
@@ -1445,7 +1586,7 @@ public class Chimera extends javax.swing.JFrame {
 
         billingAddressPanel.add(jPanel67);
 
-        jPanel68.setLayout(new java.awt.GridLayout());
+        jPanel68.setLayout(new java.awt.GridLayout(1, 0));
 
         jPanel69.setLayout(new java.awt.BorderLayout());
 
@@ -1597,6 +1738,8 @@ public class Chimera extends javax.swing.JFrame {
         checkoutPanel.add(jPanel56, java.awt.BorderLayout.CENTER);
 
         jPanel57.setBackground(new java.awt.Color(52, 85, 102));
+        jPanel57.setPreferredSize(new java.awt.Dimension(63, 23));
+        jPanel57.setVerifyInputWhenFocusTarget(false);
         jPanel57.setLayout(new java.awt.BorderLayout());
 
         backToAnimalPanelButton.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
@@ -1625,10 +1768,6 @@ public class Chimera extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void ChangeTorsoRightButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ChangeTorsoRightButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ChangeTorsoRightButtonActionPerformed
-
     private void DogButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DogButtonMouseClicked
         this.switchToDesignPanel(goldenRetriever);
     }//GEN-LAST:event_DogButtonMouseClicked
@@ -1646,76 +1785,44 @@ public class Chimera extends javax.swing.JFrame {
     }//GEN-LAST:event_ElephantButtonMouseClicked
 
     private void BearButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BearButtonMouseClicked
-        this.switchToDesignPanel(blackBear);
+        this.switchToDesignPanel(brownBear);
     }//GEN-LAST:event_BearButtonMouseClicked
 
     private void ChangeHeadLeftButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ChangeHeadLeftButtonMouseClicked
-        Animal animal = this.cycleAnimals(current.head, "Backwards");
+        Animal animal = this.cycleAnimals(current.head, "Backwards", "head");
         current.head = animal;
-        AnimalViewHeadLabel.setText(animal.name);
-        headChoiceLabel.setText("  " + animal.name);
-        headPriceLabel.setText(formatPriceString(animal.headPrice));
-        headBreedLabel.setText(animal.breed);
-        this.setTotal();
+        updateHead();
     }//GEN-LAST:event_ChangeHeadLeftButtonMouseClicked
 
     private void ChangeTorsoLeftButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ChangeTorsoLeftButtonMouseClicked
-        Animal animal = this.cycleAnimals(current.torso, "Backwards");
+        Animal animal = this.cycleAnimals(current.torso, "Backwards", "torso");
         current.torso = animal;
-        AnimalViewTorsoLabel.setText(animal.name);
-        torsoChoiceLabel.setText("  " + animal.name);
-        torsoPriceLabel.setText(formatPriceString(animal.torsoPrice));
-        torsoBreedLabel.setText(animal.breed);
-        this.setTotal();
+        updateTorso();
     }//GEN-LAST:event_ChangeTorsoLeftButtonMouseClicked
 
     private void ChangeLegsLeftButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ChangeLegsLeftButtonMouseClicked
-        Animal animal = this.cycleAnimals(current.legs, "Backwards");
+        Animal animal = this.cycleAnimals(current.legs, "Backwards", "legs");
         current.legs = animal;
-        AnimalViewLegsLabel.setText(animal.name);
-        legsChoiceLabel.setText("  " + animal.name);
-        legsPriceLabel.setText(formatPriceString(animal.legsPrice));
-        legsBreedLabel.setText(animal.breed);
-        this.setTotal();
+        updateLegs();
     }//GEN-LAST:event_ChangeLegsLeftButtonMouseClicked
 
     private void ChangeHeadRightButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ChangeHeadRightButtonMouseClicked
-        Animal animal = this.cycleAnimals(current.head, "Forwards");
+        Animal animal = this.cycleAnimals(current.head, "Forwards", "head");
         current.head = animal;
-        AnimalViewHeadLabel.setText(animal.name);
-        headChoiceLabel.setText("  " + animal.name);
-        headPriceLabel.setText(formatPriceString(animal.headPrice));
-        headBreedLabel.setText(animal.breed);
-        this.setTotal();
+        updateHead();
     }//GEN-LAST:event_ChangeHeadRightButtonMouseClicked
 
     private void ChangeTorsoRightButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ChangeTorsoRightButtonMouseClicked
-        Animal animal = this.cycleAnimals(current.torso, "Forwards");
+        Animal animal = this.cycleAnimals(current.torso, "Forwards", "torso");
         current.torso = animal;
-        AnimalViewTorsoLabel.setText(animal.name);
-        torsoChoiceLabel.setText("  " + animal.name);
-        torsoPriceLabel.setText(formatPriceString(animal.torsoPrice));
-        torsoBreedLabel.setText(animal.breed);
-        this.setTotal();
+        updateTorso();
     }//GEN-LAST:event_ChangeTorsoRightButtonMouseClicked
 
     private void ChangeLegsRightButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ChangeLegsRightButtonMouseClicked
-        Animal animal = this.cycleAnimals(current.legs, "Forwards");
+        Animal animal = this.cycleAnimals(current.legs, "Forwards", "legs");
         current.legs = animal;
-        AnimalViewLegsLabel.setText(animal.name);
-        legsChoiceLabel.setText("  " + animal.name);
-        legsPriceLabel.setText(formatPriceString(animal.legsPrice));
-        legsBreedLabel.setText(animal.breed);
-        this.setTotal();
+        updateLegs();
     }//GEN-LAST:event_ChangeLegsRightButtonMouseClicked
-
-    private void stayCheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_stayCheckBoxActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_stayCheckBoxActionPerformed
-
-    private void therapyCheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_therapyCheckBoxActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_therapyCheckBoxActionPerformed
 
     private void sitCheckBoxMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_sitCheckBoxMouseClicked
 
@@ -1728,10 +1835,6 @@ public class Chimera extends javax.swing.JFrame {
         }
         this.setTotal();
     }//GEN-LAST:event_sitCheckBoxMouseClicked
-
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
 
     private void stayCheckBoxMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_stayCheckBoxMouseClicked
         if (stayCheckBox.isSelected()){
@@ -1778,29 +1881,40 @@ public class Chimera extends javax.swing.JFrame {
         this.setTotal();
     }//GEN-LAST:event_playDeadCheckBoxMouseClicked
 
-    private void jButton8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton8MouseClicked
-        personalityTemperamentLabel.setText(docileLabel.getText());
-    }//GEN-LAST:event_jButton8MouseClicked
+    private void docileButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_docileButtonMouseClicked
+        docileButton.setBorder(selectedBorder);
+        protectiveButton.setBorder(defaultBorder);
+        aggressiveButton.setBorder(defaultBorder);
+        personalityTemperamentLabel.setText(docileButton.getText());
+    }//GEN-LAST:event_docileButtonMouseClicked
 
-    private void jButton9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton9MouseClicked
-        personalityTemperamentLabel.setText(protectiveLabel.getText());
-    }//GEN-LAST:event_jButton9MouseClicked
+    private void aggressiveButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_aggressiveButtonMouseClicked
+        docileButton.setBorder(defaultBorder);
+        protectiveButton.setBorder(defaultBorder);
+        aggressiveButton.setBorder(selectedBorder);
+        personalityTemperamentLabel.setText(aggressiveButton.getText());
+    }//GEN-LAST:event_aggressiveButtonMouseClicked
 
-    private void jButton10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton10MouseClicked
-        personalityTemperamentLabel.setText(aggressiveLabel.getText());
-    }//GEN-LAST:event_jButton10MouseClicked
+    private void lowEnergyButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lowEnergyButtonMouseClicked
+        lowEnergyButton.setBorder(selectedBorder);
+        mediumEnergyButton.setBorder(defaultBorder);
+        highEnergyButton.setBorder(defaultBorder);
+        personalityEnergyLevelLabel.setText(lowEnergyButton.getText());
+    }//GEN-LAST:event_lowEnergyButtonMouseClicked
 
-    private void jButton11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton11MouseClicked
-        personalityEnergyLevelLabel.setText(energyLowLabel.getText());
-    }//GEN-LAST:event_jButton11MouseClicked
+    private void mediumEnergyButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_mediumEnergyButtonMouseClicked
+        lowEnergyButton.setBorder(defaultBorder);
+        mediumEnergyButton.setBorder(selectedBorder);
+        highEnergyButton.setBorder(defaultBorder);
+        personalityEnergyLevelLabel.setText(mediumEnergyButton.getText());
+    }//GEN-LAST:event_mediumEnergyButtonMouseClicked
 
-    private void jButton12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton12MouseClicked
-        personalityEnergyLevelLabel.setText(energyMediumLabel.getText());
-    }//GEN-LAST:event_jButton12MouseClicked
-
-    private void jButton13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton13MouseClicked
-        personalityEnergyLevelLabel.setText(energyHighLabel.getText());
-    }//GEN-LAST:event_jButton13MouseClicked
+    private void highEnergyButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_highEnergyButtonMouseClicked
+        lowEnergyButton.setBorder(defaultBorder);
+        mediumEnergyButton.setBorder(defaultBorder);
+        highEnergyButton.setBorder(selectedBorder);
+        personalityEnergyLevelLabel.setText(highEnergyButton.getText());
+    }//GEN-LAST:event_highEnergyButtonMouseClicked
 
     private void backToEntryButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_backToEntryButtonMouseClicked
         Object[] options = {"Yes", "No"};
@@ -1816,6 +1930,10 @@ public class Chimera extends javax.swing.JFrame {
             CardLayout cl = (CardLayout)(CardPanel.getLayout());
             cl.previous(CardPanel);
             jTabbedPane1.setSelectedIndex(0);
+            
+            dogBreedHead = goldenRetriever;
+            dogBreedTorso = goldenRetriever;
+            dogBreedLegs = goldenRetriever;
         }
     }//GEN-LAST:event_backToEntryButtonMouseClicked
 
@@ -1853,6 +1971,193 @@ public class Chimera extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_completeOrderButtonMouseClicked
 
+    private void ChangeHeadLeftButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ChangeHeadLeftButtonMouseEntered
+        ChangeHeadLeftButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("leftAlt.png")));
+    }//GEN-LAST:event_ChangeHeadLeftButtonMouseEntered
+
+    private void ChangeHeadLeftButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ChangeHeadLeftButtonMouseExited
+        ChangeHeadLeftButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("left.png")));
+    }//GEN-LAST:event_ChangeHeadLeftButtonMouseExited
+
+    private void ChangeTorsoLeftButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ChangeTorsoLeftButtonMouseEntered
+        ChangeTorsoLeftButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("leftAlt.png")));
+    }//GEN-LAST:event_ChangeTorsoLeftButtonMouseEntered
+
+    private void ChangeTorsoLeftButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ChangeTorsoLeftButtonMouseExited
+        ChangeTorsoLeftButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("left.png")));
+    }//GEN-LAST:event_ChangeTorsoLeftButtonMouseExited
+
+    private void ChangeLegsLeftButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ChangeLegsLeftButtonMouseEntered
+        ChangeLegsLeftButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("leftAlt.png")));
+    }//GEN-LAST:event_ChangeLegsLeftButtonMouseEntered
+
+    private void ChangeLegsLeftButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ChangeLegsLeftButtonMouseExited
+        ChangeLegsLeftButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("left.png")));
+    }//GEN-LAST:event_ChangeLegsLeftButtonMouseExited
+
+    private void ChangeHeadRightButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ChangeHeadRightButtonMouseEntered
+        ChangeHeadRightButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("rightAlt.png")));
+    }//GEN-LAST:event_ChangeHeadRightButtonMouseEntered
+
+    private void ChangeHeadRightButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ChangeHeadRightButtonMouseExited
+        ChangeHeadRightButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("right.png")));
+    }//GEN-LAST:event_ChangeHeadRightButtonMouseExited
+
+    private void ChangeTorsoRightButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ChangeTorsoRightButtonMouseEntered
+        ChangeTorsoRightButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("rightAlt.png")));
+    }//GEN-LAST:event_ChangeTorsoRightButtonMouseEntered
+
+    private void ChangeTorsoRightButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ChangeTorsoRightButtonMouseExited
+        ChangeTorsoRightButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("right.png")));
+    }//GEN-LAST:event_ChangeTorsoRightButtonMouseExited
+
+    private void ChangeLegsRightButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ChangeLegsRightButtonMouseEntered
+        ChangeLegsRightButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("rightAlt.png")));
+    }//GEN-LAST:event_ChangeLegsRightButtonMouseEntered
+
+    private void ChangeLegsRightButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ChangeLegsRightButtonMouseExited
+        ChangeLegsRightButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("right.png")));
+    }//GEN-LAST:event_ChangeLegsRightButtonMouseExited
+
+    private void therapyCheckBoxMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_therapyCheckBoxMouseClicked
+        if (therapyCheckBox.isSelected()){
+            String descr = "This will teach your pet therapy training.";
+            current.addSkill(therapyCheckBox.getText(), 
+                             priceStringToInt(therapyPriceLabel.getText()), descr);
+        } else {
+            current.deleteSkill(therapyCheckBox.getText());
+        }
+        this.setTotal();
+    }//GEN-LAST:event_therapyCheckBoxMouseClicked
+
+    private void agilityCheckBoxMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_agilityCheckBoxMouseClicked
+        if (agilityCheckBox.isSelected()){
+            String descr = "This skill will teach your pet agility training.";
+            current.addSkill(agilityCheckBox.getText(), 
+                             priceStringToInt(agilityPriceLabel.getText()), descr);
+        } else {
+            current.deleteSkill(agilityCheckBox.getText());
+        }
+        this.setTotal();
+    }//GEN-LAST:event_agilityCheckBoxMouseClicked
+
+    private void seeingCheckBoxMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_seeingCheckBoxMouseClicked
+        if (seeingCheckBox.isSelected()){
+            String descr = "This skill will teach your pet seeing eye training.";
+            current.addSkill(seeingCheckBox.getText(), 
+                             priceStringToInt(seeingPriceLabel.getText()), descr);
+        } else {
+            current.deleteSkill(seeingCheckBox.getText());
+        }
+        this.setTotal();
+    }//GEN-LAST:event_seeingCheckBoxMouseClicked
+
+    private void comfortCheckBoxMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_comfortCheckBoxMouseClicked
+        if (comfortCheckBox.isSelected()){
+            String descr = "This skill will teach your pet comfort training.";
+            current.addSkill(comfortCheckBox.getText(), 
+                             priceStringToInt(comfortPriceLabel.getText()), descr);
+        } else {
+            current.deleteSkill(comfortCheckBox.getText());
+        }
+        this.setTotal();
+    }//GEN-LAST:event_comfortCheckBoxMouseClicked
+
+    private void protectiveButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_protectiveButtonMouseClicked
+        docileButton.setBorder(defaultBorder);
+        protectiveButton.setBorder(selectedBorder);
+        aggressiveButton.setBorder(defaultBorder);
+        personalityTemperamentLabel.setText(protectiveButton.getText());
+    }//GEN-LAST:event_protectiveButtonMouseClicked
+
+    private void jTabbedPane1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTabbedPane1MouseClicked
+        updateBreedScreen();
+    }//GEN-LAST:event_jTabbedPane1MouseClicked
+
+    private void updateBreedScreen() {
+        if(current.head.name.equals("Dog")){
+            breedHeadListPanel.remove(breedHeadNoneLabel);
+            breedHeadListPanel.add(breedHeadGoldenRetriever);
+            breedHeadListPanel.add(breedHeadBeagle);
+            breedHeadListPanel.repaint();
+        }
+        else{
+            breedHeadListPanel.removeAll();
+            breedHeadListPanel.add(breedHeadNoneLabel);
+            breedHeadListPanel.repaint();
+        }
+        if(current.torso.name.equals("Dog")){
+            breedTorsoListPanel.remove(breedTorsoNoneLabel);
+            breedTorsoListPanel.add(breedTorsoGoldenRetriever);
+            breedTorsoListPanel.add(breedTorsoBeagle);
+            breedTorsoListPanel.repaint();
+        }
+        else{
+            breedTorsoListPanel.removeAll();
+            breedTorsoListPanel.add(breedTorsoNoneLabel);
+            breedTorsoListPanel.repaint();
+        }
+        if(current.legs.name.equals("Dog")){
+            breedLegsListPanel.remove(breedLegsNoneLabel);
+            breedLegsListPanel.add(breedLegsGoldenRetriever);
+            breedLegsListPanel.add(breedLegsBeagle);
+            breedLegsListPanel.repaint();
+        }
+        else{
+            breedLegsListPanel.removeAll();
+            breedLegsListPanel.add(breedLegsNoneLabel);
+            breedLegsListPanel.repaint();
+        }
+    }
+    
+    private void breedHeadGoldenRetrieverMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_breedHeadGoldenRetrieverMouseClicked
+        breedHeadGoldenRetriever.setBorder(selectedBorder);
+        breedHeadBeagle.setBorder(defaultBorder);
+        current.head = goldenRetriever;
+        dogBreedHead = goldenRetriever;
+        updateHead();
+    }//GEN-LAST:event_breedHeadGoldenRetrieverMouseClicked
+
+    private void breedHeadBeagleMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_breedHeadBeagleMouseClicked
+        breedHeadGoldenRetriever.setBorder(defaultBorder);
+        breedHeadBeagle.setBorder(selectedBorder);
+        current.head = beagle;
+        dogBreedHead = beagle;
+        updateHead();
+    }//GEN-LAST:event_breedHeadBeagleMouseClicked
+
+    private void breedTorsoBeagleMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_breedTorsoBeagleMouseClicked
+        breedTorsoGoldenRetriever.setBorder(defaultBorder);
+        breedTorsoBeagle.setBorder(selectedBorder);
+        current.torso = beagle;
+        dogBreedTorso = beagle;
+        updateTorso();
+    }//GEN-LAST:event_breedTorsoBeagleMouseClicked
+
+    private void breedTorsoGoldenRetrieverMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_breedTorsoGoldenRetrieverMouseClicked
+        breedTorsoGoldenRetriever.setBorder(selectedBorder);
+        breedTorsoBeagle.setBorder(defaultBorder);
+        current.torso = goldenRetriever;
+        dogBreedTorso = goldenRetriever;
+        updateTorso();
+    }//GEN-LAST:event_breedTorsoGoldenRetrieverMouseClicked
+
+    private void breedLegsBeagleMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_breedLegsBeagleMouseClicked
+        breedLegsGoldenRetriever.setBorder(defaultBorder);
+        breedLegsBeagle.setBorder(selectedBorder);
+        current.legs = beagle;
+        dogBreedLegs = beagle;
+        updateLegs();
+    }//GEN-LAST:event_breedLegsBeagleMouseClicked
+
+    private void breedLegsGoldenRetrieverMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_breedLegsGoldenRetrieverMouseClicked
+        breedLegsGoldenRetriever.setBorder(selectedBorder);
+        breedLegsBeagle.setBorder(defaultBorder);
+        current.legs = goldenRetriever;
+        dogBreedLegs = goldenRetriever;
+        updateLegs();
+    }//GEN-LAST:event_breedLegsGoldenRetrieverMouseClicked
+
     private void switchToDesignPanel(Animal baseAnimal){
         CardLayout cl = (CardLayout)(CardPanel.getLayout());
         cl.next(CardPanel);
@@ -1861,9 +2166,13 @@ public class Chimera extends javax.swing.JFrame {
         current.torso = baseAnimal;
         current.legs = baseAnimal;
         
-        AnimalViewHeadLabel.setText(current.head.name);
-        AnimalViewTorsoLabel.setText(current.torso.name);
-        AnimalViewLegsLabel.setText(current.legs.name);
+        String imageLoc = "/head/" + baseAnimal.breed + ".png";
+        AnimalViewHeadLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource(imageLoc)));
+        imageLoc = "/torso/" + baseAnimal.breed + ".png";
+        AnimalViewTorsoLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource(imageLoc)));
+        imageLoc = "/legs/" + baseAnimal.breed + ".png";
+        AnimalViewLegsLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource(imageLoc)));
+        
         headChoiceLabel.setText("  " + current.head.name);
         headPriceLabel.setText(formatPriceString(current.head.headPrice));
         torsoChoiceLabel.setText("  " + current.torso.name);
@@ -1873,15 +2182,24 @@ public class Chimera extends javax.swing.JFrame {
         headBreedLabel.setText(current.head.breed);
         torsoBreedLabel.setText(current.torso.breed);
         legsBreedLabel.setText(current.legs.breed);
-        personalityTemperamentLabel.setText(docileLabel.getText());
-        personalityEnergyLevelLabel.setText(energyMediumLabel.getText());
+        
+        docileButton.setBorder(defaultBorder);
+        protectiveButton.setBorder(selectedBorder);
+        aggressiveButton.setBorder(defaultBorder);
+        personalityTemperamentLabel.setText(protectiveButton.getText());
+        
+        lowEnergyButton.setBorder(defaultBorder);
+        mediumEnergyButton.setBorder(selectedBorder);
+        highEnergyButton.setBorder(defaultBorder);
+        personalityEnergyLevelLabel.setText(mediumEnergyButton.getText());
         this.setTotal();
+        updateBreedScreen();
     }
     
     // Decides which animal is next in rotation
     // This should probably change from nested switch statements and use 
     // a doubly linked list or something
-    private Animal cycleAnimals(Animal current, String direction){
+    private Animal cycleAnimals(Animal current, String direction, String part){
         
         Animal result = goldenRetriever;
         
@@ -1897,19 +2215,29 @@ public class Chimera extends javax.swing.JFrame {
                     result = elephant;
                     break;
                 case "Elephant":
-                    result = blackBear;
+                    result = brownBear;
                     break;
                 case "Bear":
-                    result = goldenRetriever;
+                    if(part.equals("head"))
+                        result = dogBreedHead;
+                    else if(part.equals("torso"))
+                        result = dogBreedTorso;
+                    else
+                        result = dogBreedLegs;
                     break;
             }
         } else if (direction.equals("Backwards")){
             switch (current.name){
                 case "Dog":
-                    result = blackBear;
+                    result = brownBear;
                     break;
                 case "Cat":
-                    result = goldenRetriever;
+                    if(part.equals("head"))
+                        result = dogBreedHead;
+                    else if(part.equals("torso"))
+                        result = dogBreedTorso;
+                    else
+                        result = dogBreedLegs;
                     break;
                 case "Rabbit":
                     result = calico;
@@ -1923,6 +2251,7 @@ public class Chimera extends javax.swing.JFrame {
             } 
         }
         
+        updateBreedScreen();
         return result;
         
     }
@@ -1996,12 +2325,9 @@ public class Chimera extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel AnimalViewHeadLabel;
-    private javax.swing.JPanel AnimalViewHeadPanel;
     private javax.swing.JLabel AnimalViewLegsLabel;
-    private javax.swing.JPanel AnimalViewLegsPanel;
     private javax.swing.JPanel AnimalViewPanel;
     private javax.swing.JLabel AnimalViewTorsoLabel;
-    private javax.swing.JPanel AnimalViewTorsoPanel;
     private javax.swing.JPanel BaseAnimalChoicePanel;
     private javax.swing.JButton BearButton;
     private javax.swing.JLabel BufferLabel;
@@ -2032,7 +2358,7 @@ public class Chimera extends javax.swing.JFrame {
     private javax.swing.JButton DogButton;
     private javax.swing.JButton ElephantButton;
     private javax.swing.JButton RabbitButton;
-    private javax.swing.JLabel aggressiveLabel;
+    private javax.swing.JButton aggressiveButton;
     private javax.swing.JCheckBox agilityCheckBox;
     private javax.swing.JPanel agilityPanel;
     private javax.swing.JLabel agilityPriceLabel;
@@ -2045,18 +2371,31 @@ public class Chimera extends javax.swing.JFrame {
     private javax.swing.JTextField billingPostalCodeTextField;
     private javax.swing.JComboBox billingStateComboBox;
     private javax.swing.JTextField billingStreetAddressTextField;
+    private javax.swing.JPanel breedHeadBeagle;
+    private javax.swing.JPanel breedHeadGoldenRetriever;
     private javax.swing.JLabel breedHeadLabel;
+    private javax.swing.JPanel breedHeadListPanel;
+    private javax.swing.JLabel breedHeadNoneLabel;
     private javax.swing.JPanel breedHeadPanel;
     private javax.swing.JPanel breedHeadSelectPanel;
+    private javax.swing.JPanel breedHeadTitlePanel;
+    private javax.swing.JPanel breedLegsBeagle;
+    private javax.swing.JPanel breedLegsGoldenRetriever;
     private javax.swing.JLabel breedLegsLabel;
-    private javax.swing.JButton breedLegsLeftButton;
+    private javax.swing.JPanel breedLegsListPanel;
+    private javax.swing.JLabel breedLegsNoneLabel;
     private javax.swing.JPanel breedLegsPanel;
-    private javax.swing.JButton breedLegsRightButton;
     private javax.swing.JPanel breedLegsSelectPanel;
+    private javax.swing.JPanel breedLegsTitlePanel;
     private javax.swing.JPanel breedPanel;
+    private javax.swing.JPanel breedTorsoBeagle;
+    private javax.swing.JPanel breedTorsoGoldenRetriever;
     private javax.swing.JLabel breedTorsoLabel;
+    private javax.swing.JPanel breedTorsoListPanel;
+    private javax.swing.JLabel breedTorsoNoneLabel;
     private javax.swing.JPanel breedTorsoPanel;
     private javax.swing.JPanel breedTorsoSelectPanel;
+    private javax.swing.JPanel breedTorsoTitlePanel;
     private javax.swing.JTextField cardNumberTextField;
     private javax.swing.JSpinner cardYearExpireSpinner;
     private javax.swing.JPanel cartPanel;
@@ -2069,7 +2408,7 @@ public class Chimera extends javax.swing.JFrame {
     private javax.swing.JLabel comePriceLabel;
     private javax.swing.JCheckBox comfortCheckBox;
     private javax.swing.JPanel comfortPanel;
-    private javax.swing.JLabel comfortPrice;
+    private javax.swing.JLabel comfortPriceLabel;
     private javax.swing.JButton completeOrderButton;
     private javax.swing.JLabel contactEmailLabel;
     private javax.swing.JPanel contactEmailPanel;
@@ -2080,30 +2419,20 @@ public class Chimera extends javax.swing.JFrame {
     private javax.swing.JPanel contactNamePanel;
     private javax.swing.JPanel customizationPanel;
     private javax.swing.JPanel designPanel;
-    private javax.swing.JLabel docileLabel;
-    private javax.swing.JLabel energyHighLabel;
-    private javax.swing.JLabel energyLowLabel;
-    private javax.swing.JLabel energyMediumLabel;
+    private javax.swing.JButton docileButton;
+    private javax.swing.JPanel energyPanel;
+    private javax.swing.JPanel energyTitlePanel;
     private javax.swing.JTextField firstNameTextField;
     private javax.swing.JLabel headBreedLabel;
     private javax.swing.JLabel headBreedTitleLabel;
     private javax.swing.JLabel headChoiceLabel;
     private javax.swing.JLabel headLabel;
     private javax.swing.JLabel headPriceLabel;
+    private javax.swing.JPanel headerPanel;
+    private javax.swing.JButton highEnergyButton;
     private javax.swing.JPanel itemsPanel;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
-    private javax.swing.JCheckBox jCheckBox14;
     private javax.swing.JComboBox jComboBox3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -2118,7 +2447,20 @@ public class Chimera extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -2130,7 +2472,6 @@ public class Chimera extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel12;
-    private javax.swing.JPanel jPanel13;
     private javax.swing.JPanel jPanel14;
     private javax.swing.JPanel jPanel15;
     private javax.swing.JPanel jPanel16;
@@ -2141,12 +2482,7 @@ public class Chimera extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel20;
     private javax.swing.JPanel jPanel21;
     private javax.swing.JPanel jPanel22;
-    private javax.swing.JPanel jPanel23;
-    private javax.swing.JPanel jPanel24;
     private javax.swing.JPanel jPanel25;
-    private javax.swing.JPanel jPanel26;
-    private javax.swing.JPanel jPanel27;
-    private javax.swing.JPanel jPanel28;
     private javax.swing.JPanel jPanel29;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel30;
@@ -2160,21 +2496,10 @@ public class Chimera extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel38;
     private javax.swing.JPanel jPanel39;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel40;
-    private javax.swing.JPanel jPanel41;
-    private javax.swing.JPanel jPanel42;
-    private javax.swing.JPanel jPanel43;
-    private javax.swing.JPanel jPanel44;
-    private javax.swing.JPanel jPanel45;
-    private javax.swing.JPanel jPanel46;
-    private javax.swing.JPanel jPanel47;
-    private javax.swing.JPanel jPanel48;
-    private javax.swing.JPanel jPanel49;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel51;
     private javax.swing.JPanel jPanel52;
     private javax.swing.JPanel jPanel53;
-    private javax.swing.JPanel jPanel54;
     private javax.swing.JPanel jPanel55;
     private javax.swing.JPanel jPanel56;
     private javax.swing.JPanel jPanel57;
@@ -2217,12 +2542,14 @@ public class Chimera extends javax.swing.JFrame {
     private javax.swing.JLabel legsChoiceLabel;
     private javax.swing.JLabel legsLabel;
     private javax.swing.JLabel legsPriceLabel;
+    private javax.swing.JButton lowEnergyButton;
     private javax.swing.JPanel mailingAddressLabelPanel;
     private javax.swing.JPanel mailingAddressPanel;
     private javax.swing.JTextField mailingCityTextField;
     private javax.swing.JTextField mailingPostalCodeTextField;
     private javax.swing.JComboBox mailingStateComboBox;
     private javax.swing.JTextField mailingStreetAddressTextField;
+    private javax.swing.JButton mediumEnergyButton;
     private javax.swing.JPanel nameInputPanel;
     private javax.swing.JLabel nameLabel;
     private javax.swing.JTextField nameOnCardTextField;
@@ -2235,7 +2562,7 @@ public class Chimera extends javax.swing.JFrame {
     private javax.swing.JCheckBox playDeadCheckBox;
     private javax.swing.JPanel playDeadPanel;
     private javax.swing.JLabel playDeadPriceLabel;
-    private javax.swing.JLabel protectiveLabel;
+    private javax.swing.JButton protectiveButton;
     private javax.swing.JCheckBox seeingCheckBox;
     private javax.swing.JPanel seeingPanel;
     private javax.swing.JLabel seeingPriceLabel;
@@ -2249,6 +2576,8 @@ public class Chimera extends javax.swing.JFrame {
     private javax.swing.JCheckBox stayCheckBox;
     private javax.swing.JPanel stayPanel;
     private javax.swing.JLabel stayPriceLabel;
+    private javax.swing.JPanel temperamentPanel;
+    private javax.swing.JPanel temperamentTitlePanel;
     private javax.swing.JCheckBox therapyCheckBox;
     private javax.swing.JPanel therapyPanel;
     private javax.swing.JLabel therapyPriceLabel;
@@ -2358,6 +2687,37 @@ public class Chimera extends javax.swing.JFrame {
         
     }
     
+    private void updateLegs(){
+        Animal animal = current.legs;
+        
+        String imageLoc = "/legs/" + animal.breed + ".png";
+        AnimalViewLegsLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource(imageLoc)));
+        legsChoiceLabel.setText("  " + animal.name);
+        legsPriceLabel.setText(formatPriceString(animal.legsPrice));
+        legsBreedLabel.setText(animal.breed);
+        this.setTotal();
+    }
+    
+    private void updateTorso() {
+        Animal animal = current.torso;
+        String imageLoc = "/torso/" + animal.breed + ".png";
+        AnimalViewTorsoLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource(imageLoc)));
+        torsoChoiceLabel.setText("  " + animal.name);
+        torsoPriceLabel.setText(formatPriceString(animal.torsoPrice));
+        torsoBreedLabel.setText(animal.breed);
+        this.setTotal();
+    }
+    
+    private void updateHead() {
+        Animal animal = current.head;
+        String imageLoc = "/head/" + animal.breed + ".png";
+        AnimalViewHeadLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource(imageLoc)));
+        headChoiceLabel.setText("  " + animal.name);
+        headPriceLabel.setText(formatPriceString(animal.headPrice));
+        headBreedLabel.setText(animal.breed);
+        this.setTotal();
+    }
+                 
     // represents a skill that a Chimera Creation can have
     private class Skill{
         
