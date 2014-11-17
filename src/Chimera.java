@@ -4,6 +4,8 @@
  * and open the template in the editor.
  */
 import java.awt.*;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
 import java.util.ArrayList;
 import javax.swing.*;
 import javax.swing.border.Border;
@@ -1201,7 +1203,7 @@ public class Chimera extends javax.swing.JFrame {
         breedHeadSelectPanel.setLayout(new java.awt.BorderLayout());
 
         breedHeadListPanel.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        breedHeadListPanel.setLayout(new java.awt.GridLayout());
+        breedHeadListPanel.setLayout(new java.awt.GridLayout(1, 0));
 
         breedHeadNoneLabel.setFont(new java.awt.Font("Euphemia", 0, 24)); // NOI18N
         breedHeadNoneLabel.setText("None Available");
@@ -1269,7 +1271,7 @@ public class Chimera extends javax.swing.JFrame {
         breedTorsoSelectPanel.setLayout(new java.awt.BorderLayout());
 
         breedTorsoListPanel.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        breedTorsoListPanel.setLayout(new java.awt.GridLayout());
+        breedTorsoListPanel.setLayout(new java.awt.GridLayout(1, 0));
 
         breedTorsoNoneLabel.setFont(new java.awt.Font("Euphemia", 0, 24)); // NOI18N
         breedTorsoNoneLabel.setText("None Available");
@@ -1336,7 +1338,7 @@ public class Chimera extends javax.swing.JFrame {
         breedLegsSelectPanel.setLayout(new java.awt.BorderLayout());
 
         breedLegsListPanel.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        breedLegsListPanel.setLayout(new java.awt.GridLayout());
+        breedLegsListPanel.setLayout(new java.awt.GridLayout(1, 0));
 
         breedLegsNoneLabel.setFont(new java.awt.Font("Euphemia", 0, 24)); // NOI18N
         breedLegsNoneLabel.setText("None Available");
@@ -1830,7 +1832,9 @@ public class Chimera extends javax.swing.JFrame {
         if (sitCheckBox.isSelected()){
             String descr = "This skill will teach your pet to sit when told.";
             current.addSkill(sitCheckBox.getText(), 
-                             priceStringToInt(sitPriceLabel.getText()), descr);
+                             priceStringToInt(sitPriceLabel.getText()), 
+                             descr,
+                             sitCheckBox);
         } else {
             current.deleteSkill(sitCheckBox.getText());
         }
@@ -1841,7 +1845,9 @@ public class Chimera extends javax.swing.JFrame {
         if (stayCheckBox.isSelected()){
             String descr = "This skill will teach your pet to stay when told.";
             current.addSkill(stayCheckBox.getText(), 
-                             priceStringToInt(stayPriceLabel.getText()), descr);
+                             priceStringToInt(stayPriceLabel.getText()), 
+                             descr,
+                             stayCheckBox);
         } else {
             current.deleteSkill(stayCheckBox.getText());
         }
@@ -1852,7 +1858,9 @@ public class Chimera extends javax.swing.JFrame {
         if (comeCheckBox.isSelected()){
             String descr = "This skill will teach your pet to come when told.";
             current.addSkill(comeCheckBox.getText(), 
-                             priceStringToInt(comePriceLabel.getText()), descr);
+                             priceStringToInt(comePriceLabel.getText()), 
+                             descr,
+                             comeCheckBox);
         } else {
             current.deleteSkill(comeCheckBox.getText());
         }
@@ -1864,7 +1872,9 @@ public class Chimera extends javax.swing.JFrame {
             String descr = "This skill will teach your pet to shake your "
                     + "hand when told.";
             current.addSkill(shakeHandsCheckBox.getText(), 
-                             priceStringToInt(shakeHandsPriceLabel.getText()), descr);
+                             priceStringToInt(shakeHandsPriceLabel.getText()), 
+                             descr,
+                             shakeHandsCheckBox);
         } else {
             current.deleteSkill(shakeHandsCheckBox.getText());
         }
@@ -1875,7 +1885,9 @@ public class Chimera extends javax.swing.JFrame {
         if (playDeadCheckBox.isSelected()){
             String descr = "This skill will teach your pet to play dead when told.";
             current.addSkill(playDeadCheckBox.getText(), 
-                             priceStringToInt(playDeadPriceLabel.getText()), descr);
+                             priceStringToInt(playDeadPriceLabel.getText()), 
+                             descr,
+                             playDeadCheckBox);
         } else {
             current.deleteSkill(playDeadCheckBox.getText());
         }
@@ -1969,6 +1981,7 @@ public class Chimera extends javax.swing.JFrame {
             cl = (CardLayout)(CardPanel.getLayout());
             cl.first(CardPanel);
             jTabbedPane1.setSelectedIndex(0);
+            resetSkills();
         }
     }//GEN-LAST:event_completeOrderButtonMouseClicked
 
@@ -2024,7 +2037,9 @@ public class Chimera extends javax.swing.JFrame {
         if (therapyCheckBox.isSelected()){
             String descr = "This will teach your pet therapy training.";
             current.addSkill(therapyCheckBox.getText(), 
-                             priceStringToInt(therapyPriceLabel.getText()), descr);
+                             priceStringToInt(therapyPriceLabel.getText()), 
+                             descr,
+                             therapyCheckBox);
         } else {
             current.deleteSkill(therapyCheckBox.getText());
         }
@@ -2035,7 +2050,9 @@ public class Chimera extends javax.swing.JFrame {
         if (agilityCheckBox.isSelected()){
             String descr = "This skill will teach your pet agility training.";
             current.addSkill(agilityCheckBox.getText(), 
-                             priceStringToInt(agilityPriceLabel.getText()), descr);
+                             priceStringToInt(agilityPriceLabel.getText()), 
+                             descr,
+                             agilityCheckBox);
         } else {
             current.deleteSkill(agilityCheckBox.getText());
         }
@@ -2046,7 +2063,9 @@ public class Chimera extends javax.swing.JFrame {
         if (seeingCheckBox.isSelected()){
             String descr = "This skill will teach your pet seeing eye training.";
             current.addSkill(seeingCheckBox.getText(), 
-                             priceStringToInt(seeingPriceLabel.getText()), descr);
+                             priceStringToInt(seeingPriceLabel.getText()), 
+                             descr,
+                             seeingCheckBox);
         } else {
             current.deleteSkill(seeingCheckBox.getText());
         }
@@ -2057,7 +2076,9 @@ public class Chimera extends javax.swing.JFrame {
         if (comfortCheckBox.isSelected()){
             String descr = "This skill will teach your pet comfort training.";
             current.addSkill(comfortCheckBox.getText(), 
-                             priceStringToInt(comfortPriceLabel.getText()), descr);
+                             priceStringToInt(comfortPriceLabel.getText()), 
+                             descr,
+                             comfortCheckBox);
         } else {
             current.deleteSkill(comfortCheckBox.getText());
         }
@@ -2162,6 +2183,18 @@ public class Chimera extends javax.swing.JFrame {
     private void switchToDesignPanel(Animal baseAnimal){
         CardLayout cl = (CardLayout)(CardPanel.getLayout());
         cl.next(CardPanel);
+        
+        resetCheckoutForm();
+        tricksPriceLabel.setText("$0.00");
+        
+        // current state
+        current = 
+            new ChimeraCreation(goldenRetriever,
+                                goldenRetriever,
+                                goldenRetriever,
+                                "Docile",
+                                "Medium",
+                                new ArrayList<Skill>());
         
         current.head = baseAnimal;
         current.torso = baseAnimal;
@@ -2275,6 +2308,14 @@ public class Chimera extends javax.swing.JFrame {
         totalPriceLabel.setText(formatPriceString(current.price));
     }
     
+    // unchecks all selected skills
+    private void resetSkills(){
+        ArrayList<Skill> skills = current.skills;
+        for (Skill skill : skills) {
+            skill.checkBox.setSelected(false);
+        }
+    }
+    
     private void resetCheckoutForm(){
         firstNameTextField.setText("First");
         lastNameTextField.setText("Last");
@@ -2291,7 +2332,6 @@ public class Chimera extends javax.swing.JFrame {
         billingStateComboBox.setSelectedIndex(0);
 
     }
-    
     
     /**
      * @param args the command line arguments
@@ -2643,8 +2683,10 @@ public class Chimera extends javax.swing.JFrame {
             return total;
         }
         
-        public void addSkill(String skillName, int price, String descr){
-            Skill skill = new Skill(skillName, price, descr, new JLabel(skillName));
+        public void addSkill(String skillName, int price, 
+                             String descr, JCheckBox checkBox){
+            Skill skill = new Skill(skillName, price, descr, 
+                                    new JLabel(skillName), checkBox);
             this.skills.add(skill);
             //tricksListPanel.add(skill.label);
             tricksPriceLabel.setText(formatPriceString(computeSkillsTotal()));
@@ -2726,13 +2768,15 @@ public class Chimera extends javax.swing.JFrame {
         int price;
         String description;
         JLabel label;
+        JCheckBox checkBox;
         
         public Skill(String name, int price, String description,
-                     JLabel label){
+                     JLabel label, JCheckBox checkBox){
             this.name = name;
             this.price = price;
             this.description = description;
             this.label = label;
+            this.checkBox = checkBox;
         }
         
     }
