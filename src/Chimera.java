@@ -9,6 +9,9 @@ import java.awt.event.ItemListener;
 import java.util.ArrayList;
 import javax.swing.*;
 import javax.swing.border.Border;
+import javax.swing.text.SimpleAttributeSet;
+import javax.swing.text.StyleConstants;
+import javax.swing.text.StyledDocument;
 /**
  *
  * @author Hudson and Bryan
@@ -71,7 +74,7 @@ public class Chimera extends javax.swing.JFrame {
         BufferPanel = new javax.swing.JPanel();
         BufferLabel = new javax.swing.JLabel();
         ChooseTextPanel = new javax.swing.JPanel();
-        jLabel33 = new javax.swing.JLabel();
+        chimeraDescriptionTextPane = new javax.swing.JTextPane();
         ChooseLabel = new javax.swing.JLabel();
         BaseAnimalChoicePanel = new javax.swing.JPanel();
         DogButton = new javax.swing.JButton();
@@ -385,11 +388,16 @@ public class Chimera extends javax.swing.JFrame {
         ChooseTextPanel.setPreferredSize(new java.awt.Dimension(200, 100));
         ChooseTextPanel.setLayout(new java.awt.GridLayout(2, 1));
 
-        jLabel33.setFont(ChooseLabel.getFont());
-        jLabel33.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel33.setText("Welcome to Chimera, here you can create the pet you have always wanted.");
-        jLabel33.setToolTipText("");
-        ChooseTextPanel.add(jLabel33);
+        SimpleAttributeSet attribs = new SimpleAttributeSet();
+        StyleConstants.setAlignment(attribs , StyleConstants.ALIGN_CENTER);
+        StyleConstants.setFontFamily(attribs, "Euphemia UCAS");
+        StyleConstants.setFontSize(attribs, 14);
+        chimeraDescriptionTextPane.setParagraphAttributes(attribs,true);
+        chimeraDescriptionTextPane.setEditable(false);
+        chimeraDescriptionTextPane.setBorder(javax.swing.BorderFactory.createEmptyBorder(25, 120, 10, 120));
+        chimeraDescriptionTextPane.setText(" Welcome to Chimera. Here you have the opportunity to build the pet of your dreams.  From choosing its personality to all the tricks and skills it will know.  You have complete control.  Get started below, your new best friend is waiting.");
+        chimeraDescriptionTextPane.setToolTipText("");
+        ChooseTextPanel.add(chimeraDescriptionTextPane);
 
         ChooseLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 14)); // NOI18N
         ChooseLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -2771,6 +2779,7 @@ public class Chimera extends javax.swing.JFrame {
     private javax.swing.JPanel checkoutEntryPanel;
     private javax.swing.JScrollPane checkoutEntryScrollPane;
     private javax.swing.JPanel checkoutPanel;
+    private javax.swing.JTextPane chimeraDescriptionTextPane;
     private javax.swing.JCheckBox comeCheckBox;
     private javax.swing.JPanel comePanel;
     private javax.swing.JLabel comePriceLabel;
@@ -2828,7 +2837,6 @@ public class Chimera extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel32;
-    private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;

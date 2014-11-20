@@ -149,15 +149,20 @@
                         <Property name="rows" type="int" value="2"/>
                       </Layout>
                       <SubComponents>
-                        <Component class="javax.swing.JLabel" name="jLabel33">
+                        <Component class="javax.swing.JTextPane" name="chimeraDescriptionTextPane">
                           <Properties>
-                            <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-                              <Connection component="ChooseLabel" name="font" type="property"/>
+                            <Property name="editable" type="boolean" value="false"/>
+                            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                              <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+                                <EmptyBorder bottom="10" left="120" right="120" top="25"/>
+                              </Border>
                             </Property>
-                            <Property name="horizontalAlignment" type="int" value="0"/>
-                            <Property name="text" type="java.lang.String" value="Welcome to Chimera, here you can create the pet you have always wanted."/>
+                            <Property name="text" type="java.lang.String" value=" Welcome to Chimera. Here you have the opportunity to build the pet of your dreams.  From choosing its personality to all the tricks and skills it will know.  You have complete control.  Get started below, your new best friend is waiting."/>
                             <Property name="toolTipText" type="java.lang.String" value=""/>
                           </Properties>
+                          <AuxValues>
+                            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="SimpleAttributeSet attribs = new SimpleAttributeSet();  &#xa;StyleConstants.setAlignment(attribs , StyleConstants.ALIGN_CENTER);&#xa;StyleConstants.setFontFamily(attribs, &quot;Euphemia UCAS&quot;);&#xa;StyleConstants.setFontSize(attribs, 14);&#xa;chimeraDescriptionTextPane.setParagraphAttributes(attribs,true);"/>
+                          </AuxValues>
                         </Component>
                         <Component class="javax.swing.JLabel" name="ChooseLabel">
                           <Properties>
