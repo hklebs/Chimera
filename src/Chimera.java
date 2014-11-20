@@ -9,7 +9,6 @@ import java.awt.event.ItemListener;
 import java.util.ArrayList;
 import javax.swing.*;
 import javax.swing.border.Border;
-import org.netbeans.lib.awtextra.AbsoluteLayout;
 /**
  *
  * @author Hudson and Bryan
@@ -765,18 +764,18 @@ public class Chimera extends javax.swing.JFrame {
         designPanel.setLayout(new java.awt.BorderLayout());
 
         AnimalViewPanel.setBackground(new java.awt.Color(255, 255, 255));
-        AnimalViewPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        AnimalViewPanel.setLayout(new javax.swing.OverlayLayout(AnimalViewPanel));
 
         AnimalViewHeadLabel.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         AnimalViewHeadLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/head/Golden Retriever.png"))); // NOI18N
         AnimalViewHeadLabel.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-        AnimalViewPanel.add(AnimalViewHeadLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 700, 560));
+        AnimalViewPanel.add(AnimalViewHeadLabel);
 
         AnimalViewTorsoLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/torso/Golden Retriever.png"))); // NOI18N
-        AnimalViewPanel.add(AnimalViewTorsoLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 3, 710, 560));
+        AnimalViewPanel.add(AnimalViewTorsoLabel);
 
         AnimalViewLegsLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/legs/Golden Retriever.png"))); // NOI18N
-        AnimalViewPanel.add(AnimalViewLegsLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 710, 570));
+        AnimalViewPanel.add(AnimalViewLegsLabel);
 
         designPanel.add(AnimalViewPanel, java.awt.BorderLayout.CENTER);
 
