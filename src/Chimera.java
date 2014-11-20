@@ -169,8 +169,14 @@ public class Chimera extends javax.swing.JFrame {
         lowEnergyDescription = new javax.swing.JLabel();
         lowEnergyLabelPanel = new javax.swing.JPanel();
         lowEnergyLabel = new javax.swing.JLabel();
-        mediumEnergyButton = new javax.swing.JButton();
-        highEnergyButton = new javax.swing.JButton();
+        mediumEnergyPanel = new javax.swing.JPanel();
+        mediumEnergyLabelPanel = new javax.swing.JPanel();
+        mediumEnergyLabel = new javax.swing.JLabel();
+        mediumEnergyDescription = new javax.swing.JLabel();
+        highEnergyPanel = new javax.swing.JPanel();
+        highEnergyLabelPanel = new javax.swing.JPanel();
+        highEnergyLabel = new javax.swing.JLabel();
+        highEnergyDescription = new javax.swing.JLabel();
         skillsPanel = new javax.swing.JPanel();
         tricksjPanel = new javax.swing.JPanel();
         trickColumnTitlePanel = new javax.swing.JPanel();
@@ -900,6 +906,8 @@ public class Chimera extends javax.swing.JFrame {
 
         temperamentPanel.add(temperamentTitlePanel);
 
+        docilePanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 2));
+        docilePanel.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         docilePanel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 docilePanelMouseClicked(evt);
@@ -922,6 +930,8 @@ public class Chimera extends javax.swing.JFrame {
 
         temperamentPanel.add(docilePanel);
 
+        protectivePanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 2));
+        protectivePanel.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         protectivePanel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 protectivePanelMouseClicked(evt);
@@ -939,12 +949,12 @@ public class Chimera extends javax.swing.JFrame {
 
         protectiveDescription.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
         protectiveDescription.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        protectiveDescription.setText("<html> A protective Chimera should be expected to:<br><ul><li>Show extreme loyalty to you</li><li>Think all guests are thieves and villains</li></ul></html>");
+        protectiveDescription.setText("<html> A protective Chimera should be expected to show extreme <br>loyalty to you and think all guests are thieves.</html>");
         protectivePanel.add(protectiveDescription, java.awt.BorderLayout.CENTER);
 
         temperamentPanel.add(protectivePanel);
 
-        aggressivePanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(240, 240, 240), 5));
+        aggressivePanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 2));
         aggressivePanel.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         aggressivePanel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -955,7 +965,7 @@ public class Chimera extends javax.swing.JFrame {
 
         aggressiveDescription.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
         aggressiveDescription.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        aggressiveDescription.setText("<html> An aggressive Chimera should be expected to:<br><ul><li>Keep all trespassers away from your property</li><li>Only show you love when you least expect it to</li></ul></html>");
+        aggressiveDescription.setText("<html> An aggressive Chimera should be expected to keep all <br>trespassers away from your property and only show you love <br>when you least expect it to</html><br>");
         aggressivePanel.add(aggressiveDescription, java.awt.BorderLayout.CENTER);
 
         aggressiveLabelPanel.setBackground(new java.awt.Color(166, 166, 166));
@@ -985,6 +995,8 @@ public class Chimera extends javax.swing.JFrame {
 
         energyPanel.add(energyTitlePanel);
 
+        lowEnergyPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 2));
+        lowEnergyPanel.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lowEnergyPanel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lowEnergyPanelMouseClicked(evt);
@@ -994,7 +1006,7 @@ public class Chimera extends javax.swing.JFrame {
 
         lowEnergyDescription.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
         lowEnergyDescription.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lowEnergyDescription.setText("<html> A Chimera with low energy should be expected to love everyone you <br>put in front of it and be scared of loud noises.</html>");
+        lowEnergyDescription.setText("<html> A Chimera with low energy should be expected to <br>sleep. All day.</html>");
         lowEnergyPanel.add(lowEnergyDescription, java.awt.BorderLayout.CENTER);
 
         lowEnergyLabelPanel.setBackground(new java.awt.Color(166, 166, 166));
@@ -1015,29 +1027,53 @@ public class Chimera extends javax.swing.JFrame {
 
         energyPanel.add(lowEnergyPanel);
 
-        mediumEnergyButton.setFont(new java.awt.Font("Euphemia", 0, 24)); // NOI18N
-        mediumEnergyButton.setText("Medium");
-        mediumEnergyButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 175, 74), 5));
-        mediumEnergyButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        mediumEnergyButton.setPreferredSize(new java.awt.Dimension(20, 29));
-        mediumEnergyButton.addMouseListener(new java.awt.event.MouseAdapter() {
+        mediumEnergyPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 2));
+        mediumEnergyPanel.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        mediumEnergyPanel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                mediumEnergyButtonMouseClicked(evt);
+                mediumEnergyPanelMouseClicked(evt);
             }
         });
-        energyPanel.add(mediumEnergyButton);
+        mediumEnergyPanel.setLayout(new java.awt.BorderLayout());
 
-        highEnergyButton.setFont(new java.awt.Font("Euphemia", 0, 24)); // NOI18N
-        highEnergyButton.setText("High");
-        highEnergyButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(240, 240, 240), 5));
-        highEnergyButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        highEnergyButton.setPreferredSize(new java.awt.Dimension(20, 29));
-        highEnergyButton.addMouseListener(new java.awt.event.MouseAdapter() {
+        mediumEnergyLabelPanel.setBackground(new java.awt.Color(166, 166, 166));
+
+        mediumEnergyLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 18)); // NOI18N
+        mediumEnergyLabel.setText("Medium");
+        mediumEnergyLabelPanel.add(mediumEnergyLabel);
+
+        mediumEnergyPanel.add(mediumEnergyLabelPanel, java.awt.BorderLayout.PAGE_START);
+
+        mediumEnergyDescription.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        mediumEnergyDescription.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        mediumEnergyDescription.setText("<html>A Chimera with medium energy should be expected to get <br>excited when you come home and want to play for a <br>little while, but leave you alone once you're tired.</html>");
+        mediumEnergyPanel.add(mediumEnergyDescription, java.awt.BorderLayout.CENTER);
+
+        energyPanel.add(mediumEnergyPanel);
+
+        highEnergyPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 2));
+        highEnergyPanel.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        highEnergyPanel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                highEnergyButtonMouseClicked(evt);
+                highEnergyPanelMouseClicked(evt);
             }
         });
-        energyPanel.add(highEnergyButton);
+        highEnergyPanel.setLayout(new java.awt.BorderLayout());
+
+        highEnergyLabelPanel.setBackground(new java.awt.Color(166, 166, 166));
+
+        highEnergyLabel.setFont(new java.awt.Font("Euphemia UCAS", 0, 18)); // NOI18N
+        highEnergyLabel.setText("High");
+        highEnergyLabelPanel.add(highEnergyLabel);
+
+        highEnergyPanel.add(highEnergyLabelPanel, java.awt.BorderLayout.PAGE_START);
+
+        highEnergyDescription.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
+        highEnergyDescription.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        highEnergyDescription.setText("<html>A Chimera with high energy should be expected to be <br>running around the house day and night.</html>");
+        highEnergyPanel.add(highEnergyDescription, java.awt.BorderLayout.CENTER);
+
+        energyPanel.add(highEnergyPanel);
 
         personalityPanel.add(energyPanel);
 
@@ -2019,20 +2055,6 @@ public class Chimera extends javax.swing.JFrame {
         this.onSelectSkillCheckBox(playDeadCheckBox, playDeadPriceLabel);
     }//GEN-LAST:event_playDeadCheckBoxMouseClicked
 
-    private void mediumEnergyButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_mediumEnergyButtonMouseClicked
-        lowEnergyPanel.setBorder(defaultBorder);
-        mediumEnergyButton.setBorder(selectedBorder);
-        highEnergyButton.setBorder(defaultBorder);
-        personalityEnergyLevelLabel.setText(mediumEnergyButton.getText());
-    }//GEN-LAST:event_mediumEnergyButtonMouseClicked
-
-    private void highEnergyButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_highEnergyButtonMouseClicked
-        lowEnergyPanel.setBorder(defaultBorder);
-        mediumEnergyButton.setBorder(defaultBorder);
-        highEnergyButton.setBorder(selectedBorder);
-        personalityEnergyLevelLabel.setText(highEnergyButton.getText());
-    }//GEN-LAST:event_highEnergyButtonMouseClicked
-
     private void backToEntryButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_backToEntryButtonMouseClicked
         Object[] options = {"Yes", "No"};
         int n = JOptionPane.showOptionDialog(this,
@@ -2421,11 +2443,34 @@ public class Chimera extends javax.swing.JFrame {
     }//GEN-LAST:event_lowEnergyLabelMouseClicked
 
     private void lowEnergyPanelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lowEnergyPanelMouseClicked
+        lowEnergyLabelPanel.setBackground(new Color(255,175,74));
+        mediumEnergyLabelPanel.setBackground(new Color(166,166,166));
+        highEnergyLabelPanel.setBackground(new Color(166,166,166));
         lowEnergyPanel.setBorder(selectedBorder);
-        mediumEnergyButton.setBorder(defaultBorder);
-        highEnergyButton.setBorder(defaultBorder);
+        mediumEnergyPanel.setBorder(defaultBorder);
+        highEnergyPanel.setBorder(defaultBorder);
         personalityEnergyLevelLabel.setText(lowEnergyLabel.getText());
     }//GEN-LAST:event_lowEnergyPanelMouseClicked
+
+    private void mediumEnergyPanelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_mediumEnergyPanelMouseClicked
+        mediumEnergyLabelPanel.setBackground(new Color(255,175,74));
+        lowEnergyLabelPanel.setBackground(new Color(166,166,166));
+        highEnergyLabelPanel.setBackground(new Color(166,166,166));
+        lowEnergyPanel.setBorder(defaultBorder);
+        mediumEnergyPanel.setBorder(selectedBorder);
+        highEnergyPanel.setBorder(defaultBorder);
+        personalityEnergyLevelLabel.setText(mediumEnergyLabel.getText());
+    }//GEN-LAST:event_mediumEnergyPanelMouseClicked
+
+    private void highEnergyPanelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_highEnergyPanelMouseClicked
+        highEnergyLabelPanel.setBackground(new Color(255,175,74));
+        lowEnergyLabelPanel.setBackground(new Color(166,166,166));
+        mediumEnergyLabelPanel.setBackground(new Color(166,166,166));
+        lowEnergyPanel.setBorder(defaultBorder);
+        mediumEnergyPanel.setBorder(defaultBorder);
+        highEnergyPanel.setBorder(selectedBorder);
+        personalityEnergyLevelLabel.setText(highEnergyLabel.getText());
+    }//GEN-LAST:event_highEnergyPanelMouseClicked
     
     private void onSelectSkillCheckBox(JCheckBox checkBox, JLabel label){
         if (checkBox.isSelected()){
@@ -2490,10 +2535,13 @@ public class Chimera extends javax.swing.JFrame {
         aggressivePanel.setBorder(defaultBorder);
         personalityTemperamentLabel.setText(protectiveLabel.getText());
         
+        mediumEnergyLabelPanel.setBackground(new Color(255,175,74));
+        lowEnergyLabelPanel.setBackground(new Color(166,166,166));
+        highEnergyLabelPanel.setBackground(new Color(166,166,166));
         lowEnergyPanel.setBorder(defaultBorder);
-        mediumEnergyButton.setBorder(selectedBorder);
-        highEnergyButton.setBorder(defaultBorder);
-        personalityEnergyLevelLabel.setText(mediumEnergyButton.getText());
+        mediumEnergyPanel.setBorder(selectedBorder);
+        highEnergyPanel.setBorder(defaultBorder);
+        personalityEnergyLevelLabel.setText(mediumEnergyLabel.getText());
         this.setTotal();
         updateBreedScreen();
     }
@@ -2753,7 +2801,10 @@ public class Chimera extends javax.swing.JFrame {
     private javax.swing.JLabel headLabel;
     private javax.swing.JLabel headPriceLabel;
     private javax.swing.JPanel headerPanel;
-    private javax.swing.JButton highEnergyButton;
+    private javax.swing.JLabel highEnergyDescription;
+    private javax.swing.JLabel highEnergyLabel;
+    private javax.swing.JPanel highEnergyLabelPanel;
+    private javax.swing.JPanel highEnergyPanel;
     private javax.swing.JPanel itemsPanel;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton7;
@@ -2863,7 +2914,10 @@ public class Chimera extends javax.swing.JFrame {
     private javax.swing.JTextField mailingPostalCodeTextField;
     private javax.swing.JComboBox mailingStateComboBox;
     private javax.swing.JTextField mailingStreetAddressTextField;
-    private javax.swing.JButton mediumEnergyButton;
+    private javax.swing.JLabel mediumEnergyDescription;
+    private javax.swing.JLabel mediumEnergyLabel;
+    private javax.swing.JPanel mediumEnergyLabelPanel;
+    private javax.swing.JPanel mediumEnergyPanel;
     private javax.swing.JPanel nameInputPanel;
     private javax.swing.JLabel nameLabel;
     private javax.swing.JTextField nameOnCardTextField;
