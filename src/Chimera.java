@@ -2190,7 +2190,7 @@ public class Chimera extends javax.swing.JFrame {
            
         breedHeadTextLabel.repaint();
         breedHeadIconLabel.repaint();
-        breedHeadListPanel.repaint();     
+        breedHeadListPanel.revalidate();     
     
         // Torso
         if(current.torso.name.equals("Dog")){  
@@ -2219,7 +2219,7 @@ public class Chimera extends javax.swing.JFrame {
            
         breedTorsoIconLabel.repaint();
         breedTorsoTextLabel.repaint();
-        breedTorsoListPanel.repaint();
+        breedTorsoListPanel.revalidate();
         
         // Legs
         if(current.legs.name.equals("Dog")){
@@ -2248,7 +2248,7 @@ public class Chimera extends javax.swing.JFrame {
            
         breedLegsIconLabel.repaint();
         breedLegsTextLabel.repaint();
-        breedLegsListPanel.repaint();
+        breedLegsListPanel.revalidate();
     }
     
     private void breedHeadDefaultMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_breedHeadDefaultMouseClicked
@@ -2278,7 +2278,7 @@ public class Chimera extends javax.swing.JFrame {
     }//GEN-LAST:event_breedTorsoBeagleMouseClicked
 
     private void breedTorsoDefaultMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_breedTorsoDefaultMouseClicked
-        if(current.torso.breed.equals("Dog")){
+        if(current.torso.name.equals("Dog")){
             breedTorsoDefault.setBorder(selectedBorder);
             breedTorsoBeagle.setBorder(defaultBorder);
             current.torso = goldenRetriever;
@@ -2296,7 +2296,7 @@ public class Chimera extends javax.swing.JFrame {
     }//GEN-LAST:event_breedLegsBeagleMouseClicked
 
     private void breedLegsDefaultMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_breedLegsDefaultMouseClicked
-        if(current.legs.breed.equals("Dog")){
+        if(current.legs.name.equals("Dog")){
             breedLegsDefault.setBorder(selectedBorder);
             breedLegsBeagle.setBorder(defaultBorder);
             current.legs = goldenRetriever;
