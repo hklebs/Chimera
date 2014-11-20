@@ -230,10 +230,9 @@ public class Chimera extends javax.swing.JFrame {
         breedHeadPanel = new javax.swing.JPanel();
         breedHeadSelectPanel = new javax.swing.JPanel();
         breedHeadListPanel = new javax.swing.JPanel();
-        breedHeadNoneLabel = new javax.swing.JLabel();
-        breedHeadGoldenRetriever = new javax.swing.JPanel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
+        breedHeadDefault = new javax.swing.JPanel();
+        breedHeadTextLabel = new javax.swing.JLabel();
+        breedHeadIconLabel = new javax.swing.JLabel();
         breedHeadBeagle = new javax.swing.JPanel();
         jLabel22 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
@@ -242,10 +241,9 @@ public class Chimera extends javax.swing.JFrame {
         breedTorsoPanel = new javax.swing.JPanel();
         breedTorsoSelectPanel = new javax.swing.JPanel();
         breedTorsoListPanel = new javax.swing.JPanel();
-        breedTorsoNoneLabel = new javax.swing.JLabel();
-        breedTorsoGoldenRetriever = new javax.swing.JPanel();
-        jLabel26 = new javax.swing.JLabel();
-        jLabel27 = new javax.swing.JLabel();
+        breedTorsoDefault = new javax.swing.JPanel();
+        breedTorsoTextLabel = new javax.swing.JLabel();
+        breedTorsoIconLabel = new javax.swing.JLabel();
         breedTorsoBeagle = new javax.swing.JPanel();
         jLabel24 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
@@ -254,10 +252,9 @@ public class Chimera extends javax.swing.JFrame {
         breedLegsPanel = new javax.swing.JPanel();
         breedLegsSelectPanel = new javax.swing.JPanel();
         breedLegsListPanel = new javax.swing.JPanel();
-        breedLegsNoneLabel = new javax.swing.JLabel();
-        breedLegsGoldenRetriever = new javax.swing.JPanel();
-        jLabel30 = new javax.swing.JLabel();
-        jLabel31 = new javax.swing.JLabel();
+        breedLegsDefault = new javax.swing.JPanel();
+        breedLegsTextLabel = new javax.swing.JLabel();
+        breedLegsIconLabel = new javax.swing.JLabel();
         breedLegsBeagle = new javax.swing.JPanel();
         jLabel28 = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
@@ -1394,29 +1391,25 @@ public class Chimera extends javax.swing.JFrame {
         breedHeadListPanel.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         breedHeadListPanel.setLayout(new java.awt.GridLayout(1, 0));
 
-        breedHeadNoneLabel.setFont(new java.awt.Font("Euphemia", 0, 24)); // NOI18N
-        breedHeadNoneLabel.setText("None Available");
-        breedHeadNoneLabel.setToolTipText("");
-        breedHeadListPanel.add(breedHeadNoneLabel);
-
-        breedHeadGoldenRetriever.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 175, 74), 5));
-        breedHeadGoldenRetriever.addMouseListener(new java.awt.event.MouseAdapter() {
+        breedHeadDefault.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 175, 74), 5));
+        breedHeadDefault.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                breedHeadGoldenRetrieverMouseClicked(evt);
+                breedHeadDefaultMouseClicked(evt);
             }
         });
-        breedHeadGoldenRetriever.setLayout(new java.awt.BorderLayout());
+        breedHeadDefault.setLayout(new java.awt.BorderLayout());
 
-        jLabel13.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel13.setText("Golden Retriever");
-        breedHeadGoldenRetriever.add(jLabel13, java.awt.BorderLayout.SOUTH);
+        breedHeadTextLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        breedHeadTextLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        breedHeadTextLabel.setText("Golden Retriever");
+        breedHeadDefault.add(breedHeadTextLabel, java.awt.BorderLayout.SOUTH);
+        breedHeadTextLabel.getAccessibleContext().setAccessibleDescription("");
 
-        jLabel21.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/breed/Golden Retriever.png"))); // NOI18N
-        breedHeadGoldenRetriever.add(jLabel21, java.awt.BorderLayout.CENTER);
+        breedHeadIconLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        breedHeadIconLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/breed/Golden Retriever.png"))); // NOI18N
+        breedHeadDefault.add(breedHeadIconLabel, java.awt.BorderLayout.CENTER);
 
-        breedHeadListPanel.add(breedHeadGoldenRetriever);
+        breedHeadListPanel.add(breedHeadDefault);
 
         breedHeadBeagle.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(240, 240, 240), 5));
         breedHeadBeagle.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1462,29 +1455,24 @@ public class Chimera extends javax.swing.JFrame {
         breedTorsoListPanel.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         breedTorsoListPanel.setLayout(new java.awt.GridLayout(1, 0));
 
-        breedTorsoNoneLabel.setFont(new java.awt.Font("Euphemia", 0, 24)); // NOI18N
-        breedTorsoNoneLabel.setText("None Available");
-        breedTorsoNoneLabel.setToolTipText("");
-        breedTorsoListPanel.add(breedTorsoNoneLabel);
-
-        breedTorsoGoldenRetriever.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 175, 74), 5));
-        breedTorsoGoldenRetriever.addMouseListener(new java.awt.event.MouseAdapter() {
+        breedTorsoDefault.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 175, 74), 5));
+        breedTorsoDefault.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                breedTorsoGoldenRetrieverMouseClicked(evt);
+                breedTorsoDefaultMouseClicked(evt);
             }
         });
-        breedTorsoGoldenRetriever.setLayout(new java.awt.BorderLayout());
+        breedTorsoDefault.setLayout(new java.awt.BorderLayout());
 
-        jLabel26.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel26.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel26.setText("Golden Retriever");
-        breedTorsoGoldenRetriever.add(jLabel26, java.awt.BorderLayout.SOUTH);
+        breedTorsoTextLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        breedTorsoTextLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        breedTorsoTextLabel.setText("Golden Retriever");
+        breedTorsoDefault.add(breedTorsoTextLabel, java.awt.BorderLayout.SOUTH);
 
-        jLabel27.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/breed/Golden Retriever.png"))); // NOI18N
-        breedTorsoGoldenRetriever.add(jLabel27, java.awt.BorderLayout.CENTER);
+        breedTorsoIconLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        breedTorsoIconLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/breed/Golden Retriever.png"))); // NOI18N
+        breedTorsoDefault.add(breedTorsoIconLabel, java.awt.BorderLayout.CENTER);
 
-        breedTorsoListPanel.add(breedTorsoGoldenRetriever);
+        breedTorsoListPanel.add(breedTorsoDefault);
 
         breedTorsoBeagle.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(240, 240, 240), 5));
         breedTorsoBeagle.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1529,29 +1517,24 @@ public class Chimera extends javax.swing.JFrame {
         breedLegsListPanel.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         breedLegsListPanel.setLayout(new java.awt.GridLayout(1, 0));
 
-        breedLegsNoneLabel.setFont(new java.awt.Font("Euphemia", 0, 24)); // NOI18N
-        breedLegsNoneLabel.setText("None Available");
-        breedLegsNoneLabel.setToolTipText("");
-        breedLegsListPanel.add(breedLegsNoneLabel);
-
-        breedLegsGoldenRetriever.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 175, 74), 5));
-        breedLegsGoldenRetriever.addMouseListener(new java.awt.event.MouseAdapter() {
+        breedLegsDefault.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 175, 74), 5));
+        breedLegsDefault.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                breedLegsGoldenRetrieverMouseClicked(evt);
+                breedLegsDefaultMouseClicked(evt);
             }
         });
-        breedLegsGoldenRetriever.setLayout(new java.awt.BorderLayout());
+        breedLegsDefault.setLayout(new java.awt.BorderLayout());
 
-        jLabel30.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel30.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel30.setText("Golden Retriever");
-        breedLegsGoldenRetriever.add(jLabel30, java.awt.BorderLayout.SOUTH);
+        breedLegsTextLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        breedLegsTextLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        breedLegsTextLabel.setText("Golden Retriever");
+        breedLegsDefault.add(breedLegsTextLabel, java.awt.BorderLayout.SOUTH);
 
-        jLabel31.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/breed/Golden Retriever.png"))); // NOI18N
-        breedLegsGoldenRetriever.add(jLabel31, java.awt.BorderLayout.CENTER);
+        breedLegsIconLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        breedLegsIconLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/breed/Golden Retriever.png"))); // NOI18N
+        breedLegsDefault.add(breedLegsIconLabel, java.awt.BorderLayout.CENTER);
 
-        breedLegsListPanel.add(breedLegsGoldenRetriever);
+        breedLegsListPanel.add(breedLegsDefault);
 
         breedLegsBeagle.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(240, 240, 240), 5));
         breedLegsBeagle.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -2175,51 +2158,111 @@ public class Chimera extends javax.swing.JFrame {
     }//GEN-LAST:event_jTabbedPane1MouseClicked
 
     private void updateBreedScreen() {
+        String defaultHeadBreed = current.head.breed;
+        String defaultTorsoBreed = current.torso.breed;
+        String defaultLegsBreed = current.legs.breed;
+        
+        // Head      
         if(current.head.name.equals("Dog")){
-            breedHeadListPanel.remove(breedHeadNoneLabel);
-            breedHeadListPanel.add(breedHeadGoldenRetriever);
+            if(defaultHeadBreed.equals("Beagle")){
+                breedHeadBeagle.setBorder(selectedBorder);
+                breedHeadDefault.setBorder(defaultBorder); 
+            }
+            else{
+                breedHeadBeagle.setBorder(defaultBorder);
+                breedHeadDefault.setBorder(selectedBorder); 
+            }
+            
             breedHeadListPanel.add(breedHeadBeagle);
+            defaultHeadBreed = "Golden Retriever";
+            breedHeadBeagle.repaint();
             breedHeadListPanel.repaint();
         }
-        else{
-            breedHeadListPanel.removeAll();
-            breedHeadListPanel.add(breedHeadNoneLabel);
-            breedHeadListPanel.repaint();
-        }
-        if(current.torso.name.equals("Dog")){
-            breedTorsoListPanel.remove(breedTorsoNoneLabel);
-            breedTorsoListPanel.add(breedTorsoGoldenRetriever);
+        else {
+            breedHeadListPanel.remove(breedHeadBeagle);
+            breedHeadBeagle.repaint();
+            breedHeadDefault.setBorder(selectedBorder); 
+        }                              
+        
+        String breedUrl = "/breed/" + defaultHeadBreed + ".png";
+        breedHeadIconLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource(breedUrl)));
+        breedHeadTextLabel.setText(defaultHeadBreed);
+           
+        breedHeadTextLabel.repaint();
+        breedHeadIconLabel.repaint();
+        breedHeadListPanel.repaint();     
+    
+        // Torso
+        if(current.torso.name.equals("Dog")){  
+            if(defaultTorsoBreed.equals("Beagle")){
+                breedTorsoBeagle.setBorder(selectedBorder);
+                breedTorsoDefault.setBorder(defaultBorder); 
+            }
+            else{
+                breedTorsoBeagle.setBorder(defaultBorder);
+                breedTorsoDefault.setBorder(selectedBorder); 
+            }
             breedTorsoListPanel.add(breedTorsoBeagle);
+            defaultTorsoBreed = "Golden Retriever";
+            breedTorsoBeagle.repaint();
             breedTorsoListPanel.repaint();
         }
-        else{
-            breedTorsoListPanel.removeAll();
-            breedTorsoListPanel.add(breedTorsoNoneLabel);
-            breedTorsoListPanel.repaint();
-        }
+        else {
+            breedTorsoListPanel.remove(breedTorsoBeagle);
+            breedTorsoBeagle.repaint();
+            breedTorsoDefault.setBorder(selectedBorder);
+        }                                          
+        
+        breedUrl = "/breed/" + defaultTorsoBreed + ".png";
+        breedTorsoIconLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource(breedUrl)));
+        breedTorsoTextLabel.setText(defaultTorsoBreed);
+           
+        breedTorsoIconLabel.repaint();
+        breedTorsoTextLabel.repaint();
+        breedTorsoListPanel.repaint();
+        
+        // Legs
         if(current.legs.name.equals("Dog")){
-            breedLegsListPanel.remove(breedLegsNoneLabel);
-            breedLegsListPanel.add(breedLegsGoldenRetriever);
+            if(defaultLegsBreed.equals("Beagle")){
+                breedLegsBeagle.setBorder(selectedBorder);
+                breedLegsDefault.setBorder(defaultBorder); 
+            }
+            else{
+                breedLegsBeagle.setBorder(defaultBorder);
+                breedLegsDefault.setBorder(selectedBorder); 
+            }
             breedLegsListPanel.add(breedLegsBeagle);
+            defaultLegsBreed = "Golden Retriever";
+            breedTorsoBeagle.repaint();
             breedLegsListPanel.repaint();
         }
-        else{
-            breedLegsListPanel.removeAll();
-            breedLegsListPanel.add(breedLegsNoneLabel);
-            breedLegsListPanel.repaint();
-        }
+        else {
+            breedLegsListPanel.remove(breedLegsBeagle);
+            breedLegsBeagle.repaint();
+            breedLegsDefault.setBorder(selectedBorder);    
+        }       
+       
+        breedUrl = "/breed/" + defaultLegsBreed + ".png";
+        breedLegsIconLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource(breedUrl)));
+        breedLegsTextLabel.setText(defaultLegsBreed);
+           
+        breedLegsIconLabel.repaint();
+        breedLegsTextLabel.repaint();
+        breedLegsListPanel.repaint();
     }
     
-    private void breedHeadGoldenRetrieverMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_breedHeadGoldenRetrieverMouseClicked
-        breedHeadGoldenRetriever.setBorder(selectedBorder);
-        breedHeadBeagle.setBorder(defaultBorder);
-        current.head = goldenRetriever;
-        dogBreedHead = goldenRetriever;
-        updateHead();
-    }//GEN-LAST:event_breedHeadGoldenRetrieverMouseClicked
+    private void breedHeadDefaultMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_breedHeadDefaultMouseClicked
+        if(current.head.name.equals("Dog")){
+            breedHeadDefault.setBorder(selectedBorder);
+            breedHeadBeagle.setBorder(defaultBorder);
+            current.head = goldenRetriever;
+            dogBreedHead = goldenRetriever;
+            updateHead();
+        }
+    }//GEN-LAST:event_breedHeadDefaultMouseClicked
 
     private void breedHeadBeagleMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_breedHeadBeagleMouseClicked
-        breedHeadGoldenRetriever.setBorder(defaultBorder);
+        breedHeadDefault.setBorder(defaultBorder);
         breedHeadBeagle.setBorder(selectedBorder);
         current.head = beagle;
         dogBreedHead = beagle;
@@ -2227,36 +2270,40 @@ public class Chimera extends javax.swing.JFrame {
     }//GEN-LAST:event_breedHeadBeagleMouseClicked
 
     private void breedTorsoBeagleMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_breedTorsoBeagleMouseClicked
-        breedTorsoGoldenRetriever.setBorder(defaultBorder);
+        breedTorsoDefault.setBorder(defaultBorder);
         breedTorsoBeagle.setBorder(selectedBorder);
         current.torso = beagle;
         dogBreedTorso = beagle;
         updateTorso();
     }//GEN-LAST:event_breedTorsoBeagleMouseClicked
 
-    private void breedTorsoGoldenRetrieverMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_breedTorsoGoldenRetrieverMouseClicked
-        breedTorsoGoldenRetriever.setBorder(selectedBorder);
-        breedTorsoBeagle.setBorder(defaultBorder);
-        current.torso = goldenRetriever;
-        dogBreedTorso = goldenRetriever;
-        updateTorso();
-    }//GEN-LAST:event_breedTorsoGoldenRetrieverMouseClicked
+    private void breedTorsoDefaultMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_breedTorsoDefaultMouseClicked
+        if(current.torso.breed.equals("Dog")){
+            breedTorsoDefault.setBorder(selectedBorder);
+            breedTorsoBeagle.setBorder(defaultBorder);
+            current.torso = goldenRetriever;
+            dogBreedTorso = goldenRetriever;
+            updateTorso();
+        }
+    }//GEN-LAST:event_breedTorsoDefaultMouseClicked
 
     private void breedLegsBeagleMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_breedLegsBeagleMouseClicked
-        breedLegsGoldenRetriever.setBorder(defaultBorder);
+        breedLegsDefault.setBorder(defaultBorder);
         breedLegsBeagle.setBorder(selectedBorder);
         current.legs = beagle;
         dogBreedLegs = beagle;
         updateLegs();
     }//GEN-LAST:event_breedLegsBeagleMouseClicked
 
-    private void breedLegsGoldenRetrieverMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_breedLegsGoldenRetrieverMouseClicked
-        breedLegsGoldenRetriever.setBorder(selectedBorder);
-        breedLegsBeagle.setBorder(defaultBorder);
-        current.legs = goldenRetriever;
-        dogBreedLegs = goldenRetriever;
-        updateLegs();
-    }//GEN-LAST:event_breedLegsGoldenRetrieverMouseClicked
+    private void breedLegsDefaultMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_breedLegsDefaultMouseClicked
+        if(current.legs.breed.equals("Dog")){
+            breedLegsDefault.setBorder(selectedBorder);
+            breedLegsBeagle.setBorder(defaultBorder);
+            current.legs = goldenRetriever;
+            dogBreedLegs = goldenRetriever;
+            updateLegs();
+        }
+    }//GEN-LAST:event_breedLegsDefaultMouseClicked
 
     private void CartHeadLabelPanelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CartHeadLabelPanelMouseClicked
         this.onClickCartLabelPanel(0);
@@ -2643,29 +2690,32 @@ public class Chimera extends javax.swing.JFrame {
     private javax.swing.JComboBox billingStateComboBox;
     private javax.swing.JTextField billingStreetAddressTextField;
     private javax.swing.JPanel breedHeadBeagle;
-    private javax.swing.JPanel breedHeadGoldenRetriever;
+    private javax.swing.JPanel breedHeadDefault;
+    private javax.swing.JLabel breedHeadIconLabel;
     private javax.swing.JLabel breedHeadLabel;
     private javax.swing.JPanel breedHeadListPanel;
-    private javax.swing.JLabel breedHeadNoneLabel;
     private javax.swing.JPanel breedHeadPanel;
     private javax.swing.JPanel breedHeadSelectPanel;
+    private javax.swing.JLabel breedHeadTextLabel;
     private javax.swing.JPanel breedHeadTitlePanel;
     private javax.swing.JPanel breedLegsBeagle;
-    private javax.swing.JPanel breedLegsGoldenRetriever;
+    private javax.swing.JPanel breedLegsDefault;
+    private javax.swing.JLabel breedLegsIconLabel;
     private javax.swing.JLabel breedLegsLabel;
     private javax.swing.JPanel breedLegsListPanel;
-    private javax.swing.JLabel breedLegsNoneLabel;
     private javax.swing.JPanel breedLegsPanel;
     private javax.swing.JPanel breedLegsSelectPanel;
+    private javax.swing.JLabel breedLegsTextLabel;
     private javax.swing.JPanel breedLegsTitlePanel;
     private javax.swing.JPanel breedPanel;
     private javax.swing.JPanel breedTorsoBeagle;
-    private javax.swing.JPanel breedTorsoGoldenRetriever;
+    private javax.swing.JPanel breedTorsoDefault;
+    private javax.swing.JLabel breedTorsoIconLabel;
     private javax.swing.JLabel breedTorsoLabel;
     private javax.swing.JPanel breedTorsoListPanel;
-    private javax.swing.JLabel breedTorsoNoneLabel;
     private javax.swing.JPanel breedTorsoPanel;
     private javax.swing.JPanel breedTorsoSelectPanel;
+    private javax.swing.JLabel breedTorsoTextLabel;
     private javax.swing.JPanel breedTorsoTitlePanel;
     private javax.swing.JTextField cardNumberTextField;
     private javax.swing.JSpinner cardYearExpireSpinner;
@@ -2712,7 +2762,6 @@ public class Chimera extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
@@ -2721,18 +2770,13 @@ public class Chimera extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel30;
-    private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel4;
