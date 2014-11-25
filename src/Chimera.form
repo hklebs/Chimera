@@ -13,6 +13,8 @@
     </Component>
     <Component class="javax.swing.JOptionPane" name="jOptionPane1">
     </Component>
+    <Component class="javax.swing.JOptionPane" name="jOptionPane2">
+    </Component>
   </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
@@ -3384,6 +3386,9 @@
                                                 </Property>
                                                 <Property name="text" type="java.lang.String" value="Same as Mailing Address?"/>
                                               </Properties>
+                                              <Events>
+                                                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="billingMailingCheckBoxMouseClicked"/>
+                                              </Events>
                                               <Constraints>
                                                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
                                                   <BorderConstraints direction="Center"/>

@@ -65,6 +65,7 @@ public class Chimera extends javax.swing.JFrame {
         personalityButtonGroup = new javax.swing.ButtonGroup();
         paymentButtonGroup = new javax.swing.ButtonGroup();
         jOptionPane1 = new javax.swing.JOptionPane();
+        jOptionPane2 = new javax.swing.JOptionPane();
         CardPanel = new javax.swing.JPanel();
         ChimeraEntryPanel = new javax.swing.JPanel();
         ChimeraWelcomePanel = new javax.swing.JPanel();
@@ -1798,6 +1799,11 @@ public class Chimera extends javax.swing.JFrame {
 
         billingMailingCheckBox.setFont(new java.awt.Font("Euphemia UCAS", 0, 13)); // NOI18N
         billingMailingCheckBox.setText("Same as Mailing Address?");
+        billingMailingCheckBox.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                billingMailingCheckBoxMouseClicked(evt);
+            }
+        });
         jPanel66.add(billingMailingCheckBox, java.awt.BorderLayout.CENTER);
 
         billingAddressPanel.add(jPanel66);
@@ -2107,23 +2113,26 @@ public class Chimera extends javax.swing.JFrame {
     }//GEN-LAST:event_firstNameTextFieldActionPerformed
 
     private void completeOrderButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_completeOrderButtonMouseClicked
-        Object[] options = {"Finish"};
-        int n = JOptionPane.showOptionDialog(this,
-            "Thank you for ordering a pet from Chimera! Your pet should be "
-                    + "delivered within the next week.",
-            "Chimera",
-            JOptionPane.OK_OPTION,
-            JOptionPane.INFORMATION_MESSAGE,
-            null,
-            options,
-            options[0]);
-        if (n == 0){
-            CardLayout cl = (CardLayout)(animalPanel.getLayout());
-            cl.first(animalPanel);
-            cl = (CardLayout)(CardPanel.getLayout());
-            cl.first(CardPanel);
-            designPanelResizeHandler.setSelectedIndex(0);
-            resetSkills();
+        boolean validated = this.formValidation();
+        if (validated){
+            Object[] options = {"Finish"};
+            int n = JOptionPane.showOptionDialog(this,
+                "Thank you for ordering a pet from Chimera! Your pet should be "
+                        + "delivered within the next week.",
+                "Chimera",
+                JOptionPane.OK_OPTION,
+                JOptionPane.INFORMATION_MESSAGE,
+                null,
+                options,
+                options[0]);
+            if (n == 0){
+                CardLayout cl = (CardLayout)(animalPanel.getLayout());
+                cl.first(animalPanel);
+                cl = (CardLayout)(CardPanel.getLayout());
+                cl.first(CardPanel);
+                designPanelResizeHandler.setSelectedIndex(0);
+                resetSkills();
+            }
         }
     }//GEN-LAST:event_completeOrderButtonMouseClicked
 
@@ -2490,6 +2499,18 @@ public class Chimera extends javax.swing.JFrame {
         highEnergyPanel.setBorder(selectedBorder);
         personalityEnergyLevelLabel.setText(highEnergyLabel.getText());
     }//GEN-LAST:event_highEnergyPanelMouseClicked
+
+    private void billingMailingCheckBoxMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_billingMailingCheckBoxMouseClicked
+        if (billingMailingCheckBox.isSelected()){
+            billingStreetAddressTextField.setText(mailingStreetAddressTextField.getText());
+            billingCityTextField.setText(mailingCityTextField.getText());
+            billingPostalCodeTextField.setText(mailingPostalCodeTextField.getText());
+        } else {
+            billingStreetAddressTextField.setText("");
+            billingCityTextField.setText("");
+            billingPostalCodeTextField.setText("");
+        }
+    }//GEN-LAST:event_billingMailingCheckBoxMouseClicked
     
     private void onSelectSkillCheckBox(JCheckBox checkBox, JLabel label){
         if (checkBox.isSelected()){
@@ -2652,8 +2673,8 @@ public class Chimera extends javax.swing.JFrame {
     }
     
     private void resetCheckoutForm(){
-        firstNameTextField.setText("First");
-        lastNameTextField.setText("Last");
+        firstNameTextField.setText("");
+        lastNameTextField.setText("");
         contactEmailTextField.setText("");
         mailingStreetAddressTextField.setText("");
         mailingCityTextField.setText("");
@@ -2666,6 +2687,60 @@ public class Chimera extends javax.swing.JFrame {
         mailingStateComboBox.setSelectedIndex(0);
         billingStateComboBox.setSelectedIndex(0);
 
+    }
+    
+    private boolean formValidation(){
+        boolean result = true;
+        String errorMsg = "";
+        
+        if (firstNameTextField.getText().length() == 0){
+            result = false;
+            errorMsg = "Please fill in your first name and try again.";
+        } else if (lastNameTextField.getText().length() == 0){
+            result = false;
+            errorMsg = "Please fill in your last name and try again.";
+        } else if ((contactEmailTextField.getText().length() == 0) ||
+                   (!contactEmailTextField.getText().contains("@"))){
+            result = false;
+            errorMsg = "Please fill in your contact e-mail correctly and try again.";
+        } else if (mailingStreetAddressTextField.getText().length() == 0){
+            result = false;
+            errorMsg = "Please fill in your mailing street address and try again.";
+        } else if (mailingCityTextField.getText().length() == 0){
+            result = false;
+            errorMsg = "Please fill in your mailing city and try again.";
+        } else if (mailingPostalCodeTextField.getText().length() == 0){
+            result = false;
+            errorMsg = "Please fill in your mailing postal code and try again.";
+        } else if (billingStreetAddressTextField.getText().length() == 0){
+            result = false;
+            errorMsg = "Please fill in your billing street address and try again.";
+        } else if (billingCityTextField.getText().length() == 0){
+            result = false;
+            errorMsg = "Please fill in your billing city and try again.";
+        } else if (billingPostalCodeTextField.getText().length() == 0){
+            result = false;
+            errorMsg = "Please fill in your billing postal code and try again.";
+        } else if (nameOnCardTextField.getText().length() == 0){
+            result = false;
+            errorMsg = "Please fill in your name on card and try again.";
+        } else if (cardNumberTextField.getText().length() == 0){
+            result = false;
+            errorMsg = "Please fill in your credit card number and try again.";
+        }
+        
+        if (result == false){
+            this.displayFormErrorModal(errorMsg);
+        }
+        
+        return result;
+    }
+    
+    public void displayFormErrorModal(String errorMsg){
+        JOptionPane.showMessageDialog(this,
+            errorMsg,
+            "Checkout error",
+            JOptionPane.ERROR_MESSAGE);
     }
     
     /**
@@ -2857,6 +2932,7 @@ public class Chimera extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JOptionPane jOptionPane1;
+    private javax.swing.JOptionPane jOptionPane2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
