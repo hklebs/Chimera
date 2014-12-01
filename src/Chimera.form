@@ -989,8 +989,8 @@
                           </Properties>
                           <Constraints>
                             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-                              <JTabbedPaneConstraints tabName="                  Design                  ">
-                                <Property name="tabTitle" type="java.lang.String" value="                  Design                  "/>
+                              <JTabbedPaneConstraints tabName="&lt;html&gt;&lt;body leftmargin=25 topmargin=8 marginwidth=25 marginheight=5&gt;Design&lt;/body&gt;&lt;/html&gt;">
+                                <Property name="tabTitle" type="java.lang.String" value="&lt;html&gt;&lt;body leftmargin=25 topmargin=8 marginwidth=25 marginheight=5&gt;Design&lt;/body&gt;&lt;/html&gt;"/>
                               </JTabbedPaneConstraints>
                             </Constraint>
                           </Constraints>
@@ -1232,8 +1232,8 @@
                         <Container class="javax.swing.JPanel" name="personalityPanel">
                           <Constraints>
                             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-                              <JTabbedPaneConstraints tabName="                Personality                ">
-                                <Property name="tabTitle" type="java.lang.String" value="                Personality                "/>
+                              <JTabbedPaneConstraints tabName="&lt;html&gt;&lt;body leftmargin=25 topmargin=8 marginwidth=25 marginheight=5&gt;Personality&lt;/body&gt;&lt;/html&gt;">
+                                <Property name="tabTitle" type="java.lang.String" value="&lt;html&gt;&lt;body leftmargin=25 topmargin=8 marginwidth=25 marginheight=5&gt;Personality&lt;/body&gt;&lt;/html&gt;"/>
                               </JTabbedPaneConstraints>
                             </Constraint>
                           </Constraints>
@@ -1684,8 +1684,8 @@
                         <Container class="javax.swing.JPanel" name="skillsPanel">
                           <Constraints>
                             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-                              <JTabbedPaneConstraints tabName="                   Skills                   ">
-                                <Property name="tabTitle" type="java.lang.String" value="                   Skills                   "/>
+                              <JTabbedPaneConstraints tabName="&lt;html&gt;&lt;body leftmargin=25 topmargin=8 marginwidth=25 marginheight=5&gt;Skills&lt;/body&gt;&lt;/html&gt;">
+                                <Property name="tabTitle" type="java.lang.String" value="&lt;html&gt;&lt;body leftmargin=25 topmargin=8 marginwidth=25 marginheight=5&gt;Skills&lt;/body&gt;&lt;/html&gt;"/>
                               </JTabbedPaneConstraints>
                             </Constraint>
                           </Constraints>
@@ -2341,8 +2341,8 @@
                         <Container class="javax.swing.JPanel" name="breedPanel">
                           <Constraints>
                             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-                              <JTabbedPaneConstraints tabName="                   Breed                   ">
-                                <Property name="tabTitle" type="java.lang.String" value="                   Breed                   "/>
+                              <JTabbedPaneConstraints tabName="&lt;html&gt;&lt;body leftmargin=25 topmargin=8 marginwidth=25 marginheight=5&gt;Breed&lt;/body&gt;&lt;/html&gt;">
+                                <Property name="tabTitle" type="java.lang.String" value="&lt;html&gt;&lt;body leftmargin=25 topmargin=8 marginwidth=25 marginheight=5&gt;Breed&lt;/body&gt;&lt;/html&gt;"/>
                               </JTabbedPaneConstraints>
                             </Constraint>
                           </Constraints>

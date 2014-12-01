@@ -906,7 +906,7 @@ public class Chimera extends javax.swing.JFrame {
 
         designPanel.add(jPanel13, java.awt.BorderLayout.CENTER);
 
-        designPanelResizeHandler.addTab("                  Design                  ", designPanel);
+        designPanelResizeHandler.addTab("<html><body leftmargin=25 topmargin=8 marginwidth=25 marginheight=5>Design</body></html>", designPanel);
 
         personalityPanel.setLayout(new java.awt.GridLayout(1, 2));
 
@@ -1094,7 +1094,7 @@ public class Chimera extends javax.swing.JFrame {
 
         personalityPanel.add(energyPanel);
 
-        designPanelResizeHandler.addTab("                Personality                ", personalityPanel);
+        designPanelResizeHandler.addTab("<html><body leftmargin=25 topmargin=8 marginwidth=25 marginheight=5>Personality</body></html>", personalityPanel);
 
         skillsPanel.setLayout(new java.awt.GridLayout(1, 2));
 
@@ -1433,7 +1433,7 @@ public class Chimera extends javax.swing.JFrame {
 
         skillsPanel.add(trainingPanel);
 
-        designPanelResizeHandler.addTab("                   Skills                   ", skillsPanel);
+        designPanelResizeHandler.addTab("<html><body leftmargin=25 topmargin=8 marginwidth=25 marginheight=5>Skills</body></html>", skillsPanel);
 
         breedPanel.setLayout(new java.awt.GridLayout(3, 1));
 
@@ -1626,7 +1626,7 @@ public class Chimera extends javax.swing.JFrame {
 
         breedPanel.add(breedLegsPanel);
 
-        designPanelResizeHandler.addTab("                   Breed                   ", breedPanel);
+        designPanelResizeHandler.addTab("<html><body leftmargin=25 topmargin=8 marginwidth=25 marginheight=5>Breed</body></html>", breedPanel);
 
         customizationPanel.add(designPanelResizeHandler, java.awt.BorderLayout.CENTER);
 
